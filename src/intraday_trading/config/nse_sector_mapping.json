@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "description": "NSE Sector/Underlying Correlation Groups for Position Filtering",
+    "purpose": "Limit positions per correlation group (max 2 positions per group)",
+    "last_updated": "2025-12-03",
+    "note": "For options, symbols are grouped by underlying asset. Symbols are normalized using RedisKeyStandards.canonical_symbol() before matching."
+  },
+  "NIFTY_OPTIONS": [
+    "NIFTY",
+    "NSENIFTY",
+    "NIFTY50",
+    "NIFTY_50"
+  ],
+  "BANKNIFTY_OPTIONS": [
+    "BANKNIFTY",
+    "NIFTYBANK",
+    "NIFTY_BANK",
+    "NSENIFTYBANK"
+  ],
+  "FINNIFTY_OPTIONS": [
+    "FINNIFTY",
+    "NIFTYFIN",
+    "NIFTY_FIN",
+    "NSENIFTYFIN"
+  ],
+  "MIDCPNIFTY_OPTIONS": [
+    "MIDCPNIFTY",
+    "NIFTYMID",
+    "NIFTY_MID",
+    "NSENIFTYMID"
+  ],
+  "COMMODITY_GOLD": [
+    "GOLD",
+    "GOLDM",
+    "GOLDMCX"
+  ],
+  "COMMODITY_SILVER": [
+    "SILVER",
+    "SILVERM",
+    "SILVERMCX"
+  ],
+  "COMMODITY_CRUDE": [
+    "CRUDEOIL",
+    "CRUDE",
+    "CRUDEMCX"
+  ],
+  "COMMODITY_NATURALGAS": [
+    "NATURALGAS",
+    "NATGAS",
+    "NATGASMCX"
+  ]
+}
+

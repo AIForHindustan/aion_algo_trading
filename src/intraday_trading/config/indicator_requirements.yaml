@@ -1,0 +1,38 @@
+# config/indicator_requirements.yaml
+indicator_requirements:
+  equity:
+    required:
+      - rsi
+      - macd
+      - volume_ratio
+      - ema_20
+    optional:
+      - bollinger_bands
+      - atr
+    
+  option:
+    required:
+      - delta
+      - gamma
+      - theta
+      - vega
+      - option_price
+      - rsi
+      - volume_ratio
+    optional:
+      - rho
+      - implied_volatility
+    
+  future:
+    required:
+      - rsi
+      - volume_ratio
+      - open_interest
+    optional:
+      - basis
+      - roll_yield
+
+symbol_classification:
+  NIFTY25NOVFUT: future
+  BANKNIFTY25NOV58000CE: option
+  RELIANCE: equity

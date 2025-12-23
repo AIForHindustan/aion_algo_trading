@@ -1,0 +1,30 @@
+{
+  "indices": {
+    "NIFTY": 25979.1,
+    "BANKNIFTY": 58490,
+    "MIDCPNIFTY": 13924.8
+  },
+  "tier2_equities": {
+    "WIPRO": 246.6,
+    "TECHM": 1465.5,
+    "JSWSTEEL": 1185.7,
+    "INDIGO": 5795.5,
+    "TATACONSUM": 1164,
+    "POWERGRID": 268.3,
+    "SBILIFE": 2002,
+    "TATASTEEL": 179.55,
+    "ADANIENT": 2490.1,
+    "NTPC": 327.3,
+    "AXISBANK": 1225.4,
+    "RELIANCE": 1517.5,
+    "HDFCBANK": 995.05,
+    "ICICIBANK": 1361.6,
+    "INFY": 1530.6,
+    "TCS": 3135.2,
+    "SBIN": 957.6,
+    "KOTAKBANK": 2093.2,
+    "BAJFINANCE": 1016.2,
+    "HINDUNILVR": 2435.1,
+    "ITC": 408.8
+  }
+}

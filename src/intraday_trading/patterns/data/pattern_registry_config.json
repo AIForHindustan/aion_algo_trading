@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "version": "6.0",
+    "description": "8 Core Patterns - Advanced Pattern Detectors + Strategies",
+    "created_date": "2025-10-09",
+    "last_updated": "2025-11-30",
+    "total_patterns": 8,
+    "total_categories": 1,
+    "mathematical_integrity": true,
+    "risk_manager_integration": true,
+    "emergency_filter_integration": true,
+    "threshold_source": "config/thresholds.py",
+    "emergency_filter_source": "alerts/alert_manager.py",
+    "note": "This registry contains the 8 actual patterns in use: 5 advanced patterns from advanced_pattern_detectors.py + 2 strategies + 1 game theory pattern"
+  },
+  "categories": {
+    "CORE_PATTERNS_ADVANCED": {
+      "enabled": true,
+      "description": "8 Core patterns: 5 Advanced Pattern Detectors + 2 Strategies + 1 Game Theory Pattern",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "patterns": [
+        "order_flow_breakout",
+        "gamma_exposure_reversal",
+        "microstructure_divergence",
+        "cross_asset_arbitrage",
+        "vix_momentum",
+        "ict_iron_condor",
+        "game_theory_signal"
+      ],
+      "disabled_patterns": [
+        "kow_signal_straddle"
+      ]
+    }
+  },
+  "pattern_configs": {
+    "order_flow_breakout": {
+      "enabled": true,
+      "category": "CORE_PATTERNS_ADVANCED",
+      "description": "Order flow imbalance breakout with price confirmation - predicts moves 2-3 ticks early",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "weight": 1.0,
+      "detector_class": "OrderFlowBreakoutDetector",
+      "source_file": "patterns/advanced_pattern_detectors.py"
+    },
+    "gamma_exposure_reversal": {
+      "enabled": true,
+      "category": "CORE_PATTERNS_ADVANCED",
+      "description": "Gamma exposure reversal zones for options - institutional flow prediction",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "weight": 1.2,
+      "base_confidence": 0.65,
+      "detector_class": "GammaExposureReversalDetector",
+      "source_file": "patterns/advanced_pattern_detectors.py"
+    },
+    "microstructure_divergence": {
+      "enabled": true,
+      "category": "CORE_PATTERNS_ADVANCED",
+      "description": "Price vs microprice divergence and order flow absorption - spoofing detection",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "weight": 1.1,
+      "base_confidence": 0.60,
+      "detector_class": "MicrostructureDivergenceDetector",
+      "source_file": "patterns/advanced_pattern_detectors.py"
+    },
+    "cross_asset_arbitrage": {
+      "enabled": true,
+      "category": "CORE_PATTERNS_ADVANCED",
+      "description": "USDINR-Gold arbitrage opportunities - cross-asset correlation analysis",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "weight": 1.0,
+      "base_confidence": 0.60,
+      "detector_class": "CrossAssetArbitrageDetector",
+      "source_file": "patterns/advanced_pattern_detectors.py"
+    },
+    "vix_momentum": {
+      "enabled": true,
+      "category": "CORE_PATTERNS_ADVANCED",
+      "description": "VIX-regime momentum adaptation - adapts strategy to VIX regime",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "weight": 0.9,
+      "base_confidence": 0.60,
+      "detector_class": "VIXRegimeMomentumDetector",
+      "source_file": "patterns/advanced_pattern_detectors.py"
+    },
+    "kow_signal_straddle": {
+      "enabled": false,
+      "category": "CORE_PATTERNS_ADVANCED",
+      "description": "VWAP-based Kow Signal Straddle strategy",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "emergency_filter_tier": "TIER_1",
+      "emergency_filter_note": "Always send immediately (bypass filters/grouping when confidence >= 0.85)",
+      "detector_class": "KowSignalStraddleStrategy",
+      "source_file": "patterns/kow_signal_straddle.py",
+      "disabled_note": "Temporarily disabled for testing other 7 patterns"
+    },
+    "ict_iron_condor": {
+      "enabled": true,
+      "category": "CORE_PATTERNS_ADVANCED",
+      "description": "ICT-based Iron Condor strategy",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "detector_class": "ICTIronCondor",
+      "source_file": "patterns/ict/ict_iron_condor.py"
+    },
+    "game_theory_signal": {
+      "enabled": true,
+      "category": "CORE_PATTERNS_ADVANCED",
+      "description": "Game Theory Signal - Nash equilibrium, FOMO, and Prisoner's Dilemma fusion. Analyzes order book imbalance and tick sequences to generate signals.",
+      "mathematical_integrity": true,
+      "risk_manager_integration": true,
+      "priority": 90,
+      "timeframe": "1-5min",
+      "volume_dependent": false,
+      "killzone_filter": true,
+      "confidence_range": [
+        0.7,
+        0.95
+      ],
+      "requires": [
+        "order_book",
+        "ticks"
+      ],
+      "indicators": [
+        "volume_ratio",
+        "last_price"
+      ],
+      "designed_to_check": "order_book_imbalance",
+      "detector_class": "GameTheoryPatternDetector",
+      "source_file": "patterns/game_theory_pattern_detector.py"
+    }
+  }
+}

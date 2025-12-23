@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Databases & Data Files
+*.rdb
+*.aof
+*.duckdb
+*.db
+*.sqlite*
+dump.rdb
+*.parquet
+*.csv
+*.pkl
+*.pickle
+
+# Logs
+*.log
+logs/
+nohup.out
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Heavy data directories
+bayesian_model/
+appendonlydir/
+store/
+parquet_recovery/
+legacy_*/
+backup_*/
+hdfc_csv_files/
+educational_content_shared/
+alert_validation/
+
+# Temporary files
+temp-*
+*.tmp
+
+# Redis
+dump.rdb
+*.aof
+appendonlydir/
+
+# Large JSON/CSV files
+*_consolidated.json
+*_lookup_*.json
+redis_inventory.json
+redis_migration_plan.csv
+session_metadata_summary.json

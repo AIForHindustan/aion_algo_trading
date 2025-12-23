@@ -1,0 +1,1511 @@
+{
+  "metadata": {
+    "generated_at": "2025-11-06T07:59:02.367217",
+    "source": "Zerodha Kite Connect API",
+    "window_days": 20,
+    "sectors": 9,
+    "formula": "volatility = sqrt(252) * std_dev(returns)",
+    "data_type": "index_volatility",
+    "description": "Overall volatility for sectoral indices (baseline understanding)",
+    "straddle_patterns": {
+      "description": "Straddle strategy patterns for NIFTY/BANKNIFTY options",
+      "underlying_symbols": [
+        "NIFTY",
+        "BANKNIFTY"
+      ],
+      "strike_selection": "atm",
+      "expiry_preference": "weekly",
+      "confidence_threshold": 0.85,
+      "telegram_routing": true
+    }
+  },
+  "index_volatility": {
+    "NIFTY_50": {
+      "symbol": "NIFTY_50",
+      "instrument_token": 256265,
+      "current_price": 25597.65,
+      "volatility_20d_pct": 8.05,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:58:57.479335"
+    },
+    "NIFTY_BANK": {
+      "symbol": "NIFTY_BANK",
+      "instrument_token": 260105,
+      "current_price": 57827.05,
+      "volatility_20d_pct": 8.08,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:58:58.028439"
+    },
+    "NIFTY_AUTO": {
+      "symbol": "NIFTY_AUTO",
+      "instrument_token": 263433,
+      "current_price": 26610.05,
+      "volatility_20d_pct": 9.88,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:58:58.575896"
+    },
+    "NIFTY_IT": {
+      "symbol": "NIFTY_IT",
+      "instrument_token": 259849,
+      "current_price": 35274.55,
+      "volatility_20d_pct": 14.92,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:58:59.121277"
+    },
+    "NIFTY_PHARMA": {
+      "symbol": "NIFTY_PHARMA",
+      "instrument_token": 262409,
+      "current_price": 22334.45,
+      "volatility_20d_pct": 10.87,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:58:59.666940"
+    },
+    "NIFTY_FMCG": {
+      "symbol": "NIFTY_FMCG",
+      "instrument_token": 261897,
+      "current_price": 55815.6,
+      "volatility_20d_pct": 12.31,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:59:00.220313"
+    },
+    "NIFTY_METAL": {
+      "symbol": "NIFTY_METAL",
+      "instrument_token": 263689,
+      "current_price": 10499.05,
+      "volatility_20d_pct": 16.29,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:59:00.769763"
+    },
+    "NIFTY_ENERGY": {
+      "symbol": "NIFTY_ENERGY",
+      "instrument_token": 261641,
+      "current_price": 36278.4,
+      "volatility_20d_pct": 10.16,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:59:01.317657"
+    },
+    "NIFTY_REALTY": {
+      "symbol": "NIFTY_REALTY",
+      "instrument_token": 261129,
+      "current_price": 961.1,
+      "volatility_20d_pct": 19.45,
+      "volatility_55d_pct": 0.0,
+      "data_points": 40,
+      "last_updated": "2025-11-06T07:59:01.865508"
+    }
+  },
+  "sectors": {
+    "NIFTY_50": [
+      {
+        "symbol": "ADANIENT",
+        "volatility_pct_ann": 76.68,
+        "avg_volume_20d": 1807880.45,
+        "avg_price_20d": 2530.76,
+        "avg_volume_55d": 1179143.73,
+        "avg_price_55d": 2414.15,
+        "equity_token": 6401,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ADANIPORTS",
+        "volatility_pct_ann": 42.53,
+        "avg_volume_20d": 2230839.25,
+        "avg_price_20d": 1411.62,
+        "avg_volume_55d": 2038646.56,
+        "avg_price_55d": 1374.79,
+        "equity_token": 3861249,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "APOLLOHOSP",
+        "volatility_pct_ann": 6.07,
+        "avg_volume_20d": 284979.75,
+        "avg_price_20d": 7661.45,
+        "avg_volume_55d": 377556.24,
+        "avg_price_55d": 7632.25,
+        "equity_token": 40193,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ASIANPAINT",
+        "volatility_pct_ann": 39.2,
+        "avg_volume_20d": 912923.75,
+        "avg_price_20d": 2400.62,
+        "avg_volume_55d": 1082469.0,
+        "avg_price_55d": 2461.4,
+        "equity_token": 60417,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "AXISBANK",
+        "volatility_pct_ann": 80.83,
+        "avg_volume_20d": 8811726.55,
+        "avg_price_20d": 1156.86,
+        "avg_volume_55d": 7103964.22,
+        "avg_price_55d": 1100.81,
+        "equity_token": 1510401,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BAJAJ-AUTO",
+        "volatility_pct_ann": 34.76,
+        "avg_volume_20d": 376463.8,
+        "avg_price_20d": 8883.15,
+        "avg_volume_55d": 414155.13,
+        "avg_price_55d": 8692.8,
+        "equity_token": 4267265,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BAJFINANCE",
+        "volatility_pct_ann": 115.25,
+        "avg_volume_20d": 7650548.2,
+        "avg_price_20d": 1008.49,
+        "avg_volume_55d": 7678185.2,
+        "avg_price_55d": 940.23,
+        "equity_token": 81153,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BAJAJFINSV",
+        "volatility_pct_ann": 37.65,
+        "avg_volume_20d": 929997.8,
+        "avg_price_20d": 2038.67,
+        "avg_volume_55d": 1064822.05,
+        "avg_price_55d": 1991.44,
+        "equity_token": 4268801,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BEL",
+        "volatility_pct_ann": 64.57,
+        "avg_volume_20d": 14640734.1,
+        "avg_price_20d": 406.01,
+        "avg_volume_55d": 13405638.71,
+        "avg_price_55d": 390.14,
+        "equity_token": 98049,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BHARTIARTL",
+        "volatility_pct_ann": 13.04,
+        "avg_volume_20d": 5007234.75,
+        "avg_price_20d": 1926.22,
+        "avg_volume_55d": 6282126.02,
+        "avg_price_55d": 1910.53,
+        "equity_token": 2714625,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "CIPLA",
+        "volatility_pct_ann": 12.81,
+        "avg_volume_20d": 1190499.4,
+        "avg_price_20d": 1530.94,
+        "avg_volume_55d": 1367350.47,
+        "avg_price_55d": 1543.39,
+        "equity_token": 177665,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "COALINDIA",
+        "volatility_pct_ann": 18.51,
+        "avg_volume_20d": 5212148.1,
+        "avg_price_20d": 389.47,
+        "avg_volume_55d": 5459073.6,
+        "avg_price_55d": 384.98,
+        "equity_token": 5215745,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "DRREDDY",
+        "volatility_pct_ann": 10.97,
+        "avg_volume_20d": 1797395.4,
+        "avg_price_20d": 1272.94,
+        "avg_volume_55d": 1634071.22,
+        "avg_price_55d": 1264.2,
+        "equity_token": 225537,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "EICHERMOT",
+        "volatility_pct_ann": 153.02,
+        "avg_volume_20d": 420434.35,
+        "avg_price_20d": 6948.2,
+        "avg_volume_55d": 542949.65,
+        "avg_price_55d": 6337.32,
+        "equity_token": 232961,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "GRASIM",
+        "volatility_pct_ann": 10.19,
+        "avg_volume_20d": 506923.4,
+        "avg_price_20d": 2808.3,
+        "avg_volume_55d": 580171.42,
+        "avg_price_55d": 2790.39,
+        "equity_token": 315393,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HCLTECH",
+        "volatility_pct_ann": 19.49,
+        "avg_volume_20d": 2529366.15,
+        "avg_price_20d": 1443.0,
+        "avg_volume_55d": 2877021.87,
+        "avg_price_55d": 1460.94,
+        "equity_token": 1850625,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HDFCBANK",
+        "volatility_pct_ann": 18.49,
+        "avg_volume_20d": 20665539.35,
+        "avg_price_20d": 965.65,
+        "avg_volume_55d": 17380313.76,
+        "avg_price_55d": 977.03,
+        "equity_token": 341249,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HDFCLIFE",
+        "volatility_pct_ann": 5.25,
+        "avg_volume_20d": 2695215.55,
+        "avg_price_20d": 764.97,
+        "avg_volume_55d": 2499122.67,
+        "avg_price_55d": 767.51,
+        "equity_token": 119553,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HEROMOTOCO",
+        "volatility_pct_ann": 110.12,
+        "avg_volume_20d": 1123293.85,
+        "avg_price_20d": 5426.4,
+        "avg_volume_55d": 1000778.65,
+        "avg_price_55d": 5074.4,
+        "equity_token": 345089,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HINDALCO",
+        "volatility_pct_ann": 72.51,
+        "avg_volume_20d": 4228815.7,
+        "avg_price_20d": 758.41,
+        "avg_volume_55d": 4605168.2,
+        "avg_price_55d": 725.28,
+        "equity_token": 348929,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HINDUNILVR",
+        "volatility_pct_ann": 13.46,
+        "avg_volume_20d": 1353146.0,
+        "avg_price_20d": 2538.19,
+        "avg_volume_55d": 1542240.56,
+        "avg_price_55d": 2559.9,
+        "equity_token": 356865,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ICICIBANK",
+        "volatility_pct_ann": 35.49,
+        "avg_volume_20d": 12569606.0,
+        "avg_price_20d": 1383.84,
+        "avg_volume_55d": 9579581.18,
+        "avg_price_55d": 1415.49,
+        "equity_token": 1270529,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "INDIGO",
+        "volatility_pct_ann": 25.61,
+        "avg_volume_20d": 1302570.05,
+        "avg_price_20d": 5690.15,
+        "avg_volume_55d": 1311027.11,
+        "avg_price_55d": 5783.44,
+        "equity_token": 2865921,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "INFY",
+        "volatility_pct_ann": 5.1,
+        "avg_volume_20d": 7670090.25,
+        "avg_price_20d": 1488.55,
+        "avg_volume_55d": 8127541.24,
+        "avg_price_55d": 1483.78,
+        "equity_token": 408065,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ITC",
+        "volatility_pct_ann": 12.99,
+        "avg_volume_20d": 13731813.95,
+        "avg_price_20d": 404.73,
+        "avg_volume_55d": 13355452.05,
+        "avg_price_55d": 408.07,
+        "equity_token": 424961,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "JIOFIN",
+        "volatility_pct_ann": 39.74,
+        "avg_volume_20d": 10435254.05,
+        "avg_price_20d": 307.27,
+        "avg_volume_55d": 12155201.56,
+        "avg_price_55d": 315.16,
+        "equity_token": 4644609,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "JSWSTEEL",
+        "volatility_pct_ann": 75.42,
+        "avg_volume_20d": 1542589.25,
+        "avg_price_20d": 1139.69,
+        "avg_volume_55d": 1602305.27,
+        "avg_price_55d": 1088.0,
+        "equity_token": 3001089,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "KOTAKBANK",
+        "volatility_pct_ann": 38.04,
+        "avg_volume_20d": 3723787.1,
+        "avg_price_20d": 2061.15,
+        "avg_volume_55d": 3623604.62,
+        "avg_price_55d": 2012.91,
+        "equity_token": 492033,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "LT",
+        "volatility_pct_ann": 29.82,
+        "avg_volume_20d": 1899883.55,
+        "avg_price_20d": 3696.03,
+        "avg_volume_55d": 1708464.24,
+        "avg_price_55d": 3627.87,
+        "equity_token": 2939649,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "M&M",
+        "volatility_pct_ann": 53.01,
+        "avg_volume_20d": 2176824.7,
+        "avg_price_20d": 3511.29,
+        "avg_volume_55d": 2588510.96,
+        "avg_price_55d": 3397.83,
+        "equity_token": 519937,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "MARUTI",
+        "volatility_pct_ann": 154.11,
+        "avg_volume_20d": 458623.0,
+        "avg_price_20d": 15975.6,
+        "avg_volume_55d": 480369.33,
+        "avg_price_55d": 14561.93,
+        "equity_token": 2815745,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "NESTLEIND",
+        "volatility_pct_ann": 24.66,
+        "avg_volume_20d": 1214363.1,
+        "avg_price_20d": 1182.61,
+        "avg_volume_55d": 1419337.36,
+        "avg_price_55d": 1164.52,
+        "equity_token": 4598529,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "NTPC",
+        "volatility_pct_ann": 15.75,
+        "avg_volume_20d": 9618180.85,
+        "avg_price_20d": 338.91,
+        "avg_volume_55d": 9084616.85,
+        "avg_price_55d": 335.58,
+        "equity_token": 2977281,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ONGC",
+        "volatility_pct_ann": 14.75,
+        "avg_volume_20d": 9136235.4,
+        "avg_price_20d": 239.99,
+        "avg_volume_55d": 8599853.6,
+        "avg_price_55d": 237.78,
+        "equity_token": 633601,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "POWERGRID",
+        "volatility_pct_ann": 0.61,
+        "avg_volume_20d": 12774465.15,
+        "avg_price_20d": 286.31,
+        "avg_volume_55d": 11056926.82,
+        "avg_price_55d": 286.2,
+        "equity_token": 3834113,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "RELIANCE",
+        "volatility_pct_ann": 3.08,
+        "avg_volume_20d": 10103690.95,
+        "avg_price_20d": 1384.24,
+        "avg_volume_55d": 10034600.16,
+        "avg_price_55d": 1386.93,
+        "equity_token": 738561,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "SBIN",
+        "volatility_pct_ann": 61.67,
+        "avg_volume_20d": 10840124.65,
+        "avg_price_20d": 861.88,
+        "avg_volume_55d": 8585404.24,
+        "avg_price_55d": 829.65,
+        "equity_token": 779521,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "SBILIFE",
+        "volatility_pct_ann": 13.33,
+        "avg_volume_20d": 957309.5,
+        "avg_price_20d": 1807.01,
+        "avg_volume_55d": 915619.18,
+        "avg_price_55d": 1822.31,
+        "equity_token": 5582849,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "SHRIRAMFIN",
+        "volatility_pct_ann": 40.94,
+        "avg_volume_20d": 4862530.15,
+        "avg_price_20d": 637.97,
+        "avg_volume_55d": 5953280.91,
+        "avg_price_55d": 621.93,
+        "equity_token": 1102337,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "SUNPHARMA",
+        "volatility_pct_ann": 3.48,
+        "avg_volume_20d": 2496835.05,
+        "avg_price_20d": 1632.1,
+        "avg_volume_55d": 2551114.33,
+        "avg_price_55d": 1628.53,
+        "equity_token": 857857,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TATACONSUM",
+        "volatility_pct_ann": 47.99,
+        "avg_volume_20d": 1200183.25,
+        "avg_price_20d": 1125.88,
+        "avg_volume_55d": 1128125.44,
+        "avg_price_55d": 1092.84,
+        "equity_token": 878593,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TATAMOTORS",
+        "volatility_pct_ann": 21.68,
+        "avg_volume_20d": 15940758.35,
+        "avg_price_20d": 694.1,
+        "avg_volume_55d": 12340053.96,
+        "avg_price_55d": 684.75,
+        "equity_token": 884737,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TATASTEEL",
+        "volatility_pct_ann": 64.07,
+        "avg_volume_20d": 24335211.6,
+        "avg_price_20d": 171.42,
+        "avg_volume_55d": 23152918.84,
+        "avg_price_55d": 164.77,
+        "equity_token": 895745,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TCS",
+        "volatility_pct_ann": 16.07,
+        "avg_volume_20d": 3300773.9,
+        "avg_price_20d": 3024.57,
+        "avg_volume_55d": 2903746.25,
+        "avg_price_55d": 3055.51,
+        "equity_token": 2953217,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TECHM",
+        "volatility_pct_ann": 16.38,
+        "avg_volume_20d": 1965596.35,
+        "avg_price_20d": 1466.17,
+        "avg_volume_55d": 1684759.91,
+        "avg_price_55d": 1481.46,
+        "equity_token": 3465729,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TITAN",
+        "volatility_pct_ann": 19.24,
+        "avg_volume_20d": 1530635.65,
+        "avg_price_20d": 3463.41,
+        "avg_volume_55d": 969593.05,
+        "avg_price_55d": 3505.9,
+        "equity_token": 897537,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TRENT",
+        "volatility_pct_ann": 87.96,
+        "avg_volume_20d": 1120469.1,
+        "avg_price_20d": 4854.56,
+        "avg_volume_55d": 1043878.64,
+        "avg_price_55d": 5139.33,
+        "equity_token": 502785,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ULTRACEMCO",
+        "volatility_pct_ann": 16.26,
+        "avg_volume_20d": 238203.9,
+        "avg_price_20d": 12279.8,
+        "avg_volume_55d": 234766.31,
+        "avg_price_55d": 12406.89,
+        "equity_token": 2952193,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "WIPRO",
+        "volatility_pct_ann": 8.08,
+        "avg_volume_20d": 8513284.25,
+        "avg_price_20d": 246.29,
+        "avg_volume_55d": 8244240.6,
+        "avg_price_55d": 247.55,
+        "equity_token": 969473,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ETERNAL",
+        "volatility_pct_ann": 59.91,
+        "avg_volume_20d": 20211386.85,
+        "avg_price_20d": 334.35,
+        "avg_volume_55d": 43184689.89,
+        "avg_price_55d": 322.19,
+        "equity_token": 1304833,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ],
+    "NIFTY_BANK": [
+      {
+        "symbol": "AXISBANK",
+        "volatility_pct_ann": 80.83,
+        "avg_volume_20d": 8811726.55,
+        "avg_price_20d": 1156.86,
+        "avg_volume_55d": 7103964.22,
+        "avg_price_55d": 1100.81,
+        "equity_token": 1510401,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BANDHANBNK",
+        "volatility_pct_ann": 27.34,
+        "avg_volume_20d": 7512703.0,
+        "avg_price_20d": 163.21,
+        "avg_volume_55d": 5417352.89,
+        "avg_price_55d": 166.07,
+        "equity_token": 579329,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BANKBARODA",
+        "volatility_pct_ann": 66.25,
+        "avg_volume_20d": 10986717.0,
+        "avg_price_20d": 255.61,
+        "avg_volume_55d": 8017046.93,
+        "avg_price_55d": 245.37,
+        "equity_token": 1195009,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "FEDERALBNK",
+        "volatility_pct_ann": 2.33,
+        "avg_volume_20d": 6444545.8,
+        "avg_price_20d": 197.51,
+        "avg_volume_55d": 6923104.73,
+        "avg_price_55d": 197.22,
+        "equity_token": 261889,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HDFCBANK",
+        "volatility_pct_ann": 18.49,
+        "avg_volume_20d": 20665539.35,
+        "avg_price_20d": 965.65,
+        "avg_volume_55d": 17380313.76,
+        "avg_price_55d": 977.03,
+        "equity_token": 341249,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ICICIBANK",
+        "volatility_pct_ann": 35.49,
+        "avg_volume_20d": 12569606.0,
+        "avg_price_20d": 1383.84,
+        "avg_volume_55d": 9579581.18,
+        "avg_price_55d": 1415.49,
+        "equity_token": 1270529,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "IDFCFIRSTB",
+        "volatility_pct_ann": 13.05,
+        "avg_volume_20d": 17597060.1,
+        "avg_price_20d": 71.13,
+        "avg_volume_55d": 17391197.29,
+        "avg_price_55d": 70.55,
+        "equity_token": 2863105,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "INDUSINDBK",
+        "volatility_pct_ann": 46.95,
+        "avg_volume_20d": 5707624.05,
+        "avg_price_20d": 741.8,
+        "avg_volume_55d": 4326289.49,
+        "avg_price_55d": 764.41,
+        "equity_token": 1346049,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "KOTAKBANK",
+        "volatility_pct_ann": 38.04,
+        "avg_volume_20d": 3723787.1,
+        "avg_price_20d": 2061.15,
+        "avg_volume_55d": 3623604.62,
+        "avg_price_55d": 2012.91,
+        "equity_token": 492033,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "PNB",
+        "volatility_pct_ann": 66.44,
+        "avg_volume_20d": 19012308.85,
+        "avg_price_20d": 112.52,
+        "avg_volume_55d": 15196621.87,
+        "avg_price_55d": 108.0,
+        "equity_token": 2730497,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "SBIN",
+        "volatility_pct_ann": 61.67,
+        "avg_volume_20d": 10840124.65,
+        "avg_price_20d": 861.88,
+        "avg_volume_55d": 8585404.24,
+        "avg_price_55d": 829.65,
+        "equity_token": 779521,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "AUBANK",
+        "volatility_pct_ann": 7.94,
+        "avg_volume_20d": 2715636.7,
+        "avg_price_20d": 737.58,
+        "avg_volume_55d": 2502587.11,
+        "avg_price_55d": 733.91,
+        "equity_token": 5436929,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ],
+    "NIFTY_AUTO": [
+      {
+        "symbol": "ASHOKLEY",
+        "volatility_pct_ann": 97.36,
+        "avg_volume_20d": 16097589.45,
+        "avg_price_20d": 139.48,
+        "avg_volume_55d": 15562357.84,
+        "avg_price_55d": 131.42,
+        "equity_token": 54273,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BAJAJ-AUTO",
+        "volatility_pct_ann": 34.76,
+        "avg_volume_20d": 376463.8,
+        "avg_price_20d": 8883.15,
+        "avg_volume_55d": 414155.13,
+        "avg_price_55d": 8692.8,
+        "equity_token": 4267265,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "EICHERMOT",
+        "volatility_pct_ann": 153.02,
+        "avg_volume_20d": 420434.35,
+        "avg_price_20d": 6948.2,
+        "avg_volume_55d": 542949.65,
+        "avg_price_55d": 6337.32,
+        "equity_token": 232961,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HEROMOTOCO",
+        "volatility_pct_ann": 110.12,
+        "avg_volume_20d": 1123293.85,
+        "avg_price_20d": 5426.4,
+        "avg_volume_55d": 1000778.65,
+        "avg_price_55d": 5074.4,
+        "equity_token": 345089,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "M&M",
+        "volatility_pct_ann": 53.01,
+        "avg_volume_20d": 2176824.7,
+        "avg_price_20d": 3511.29,
+        "avg_volume_55d": 2588510.96,
+        "avg_price_55d": 3397.83,
+        "equity_token": 519937,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "MARUTI",
+        "volatility_pct_ann": 154.11,
+        "avg_volume_20d": 458623.0,
+        "avg_price_20d": 15975.6,
+        "avg_volume_55d": 480369.33,
+        "avg_price_55d": 14561.93,
+        "equity_token": 2815745,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "MOTHERSON",
+        "volatility_pct_ann": 101.58,
+        "avg_volume_20d": 19935089.75,
+        "avg_price_20d": 106.75,
+        "avg_volume_55d": 19220340.85,
+        "avg_price_55d": 100.33,
+        "equity_token": 1076225,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TATAMOTORS",
+        "volatility_pct_ann": 21.68,
+        "avg_volume_20d": 15940758.35,
+        "avg_price_20d": 694.1,
+        "avg_volume_55d": 12340053.96,
+        "avg_price_55d": 684.75,
+        "equity_token": 884737,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TVSMOTOR",
+        "volatility_pct_ann": 100.01,
+        "avg_volume_20d": 531994.4,
+        "avg_price_20d": 3482.36,
+        "avg_volume_55d": 858365.24,
+        "avg_price_55d": 3275.97,
+        "equity_token": 2170625,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BOSCHLTD",
+        "volatility_pct_ann": 21.41,
+        "avg_volume_20d": 25368.25,
+        "avg_price_20d": 38909.75,
+        "avg_volume_55d": 34044.55,
+        "avg_price_55d": 39441.82,
+        "equity_token": 558337,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ],
+    "NIFTY_IT": [
+      {
+        "symbol": "COFORGE",
+        "volatility_pct_ann": 12.47,
+        "avg_volume_20d": 1924996.65,
+        "avg_price_20d": 1683.08,
+        "avg_volume_55d": 2026599.56,
+        "avg_price_55d": 1696.41,
+        "equity_token": 2955009,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HCLTECH",
+        "volatility_pct_ann": 19.49,
+        "avg_volume_20d": 2529366.15,
+        "avg_price_20d": 1443.0,
+        "avg_volume_55d": 2877021.87,
+        "avg_price_55d": 1460.94,
+        "equity_token": 1850625,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "INFY",
+        "volatility_pct_ann": 5.1,
+        "avg_volume_20d": 7670090.25,
+        "avg_price_20d": 1488.55,
+        "avg_volume_55d": 8127541.24,
+        "avg_price_55d": 1483.78,
+        "equity_token": 408065,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "LTIM",
+        "volatility_pct_ann": 29.96,
+        "avg_volume_20d": 273115.15,
+        "avg_price_20d": 5302.0,
+        "avg_volume_55d": 240701.05,
+        "avg_price_55d": 5203.78,
+        "equity_token": 4561409,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "MPHASIS",
+        "volatility_pct_ann": 5.55,
+        "avg_volume_20d": 445806.8,
+        "avg_price_20d": 2804.66,
+        "avg_volume_55d": 496047.44,
+        "avg_price_55d": 2794.89,
+        "equity_token": 1152769,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "PERSISTENT",
+        "volatility_pct_ann": 2.4,
+        "avg_volume_20d": 502844.65,
+        "avg_price_20d": 5234.68,
+        "avg_volume_55d": 519444.35,
+        "avg_price_55d": 5242.6,
+        "equity_token": 4701441,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TCS",
+        "volatility_pct_ann": 16.07,
+        "avg_volume_20d": 3300773.9,
+        "avg_price_20d": 3024.57,
+        "avg_volume_55d": 2903746.25,
+        "avg_price_55d": 3055.51,
+        "equity_token": 2953217,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TECHM",
+        "volatility_pct_ann": 16.38,
+        "avg_volume_20d": 1965596.35,
+        "avg_price_20d": 1466.17,
+        "avg_volume_55d": 1684759.91,
+        "avg_price_55d": 1481.46,
+        "equity_token": 3465729,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "WIPRO",
+        "volatility_pct_ann": 8.08,
+        "avg_volume_20d": 8513284.25,
+        "avg_price_20d": 246.29,
+        "avg_volume_55d": 8244240.6,
+        "avg_price_55d": 247.55,
+        "equity_token": 969473,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ],
+    "NIFTY_PHARMA": [
+      {
+        "symbol": "ALKEM",
+        "volatility_pct_ann": 54.14,
+        "avg_volume_20d": 171226.9,
+        "avg_price_20d": 5484.8,
+        "avg_volume_55d": 170503.38,
+        "avg_price_55d": 5303.91,
+        "equity_token": 2995969,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "AUROPHARMA",
+        "volatility_pct_ann": 28.15,
+        "avg_volume_20d": 1407049.55,
+        "avg_price_20d": 1101.89,
+        "avg_volume_55d": 1457784.58,
+        "avg_price_55d": 1082.69,
+        "equity_token": 70401,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BIOCON",
+        "volatility_pct_ann": 36.78,
+        "avg_volume_20d": 3113848.5,
+        "avg_price_20d": 353.28,
+        "avg_volume_55d": 2987150.95,
+        "avg_price_55d": 361.66,
+        "equity_token": 2911489,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "CIPLA",
+        "volatility_pct_ann": 12.81,
+        "avg_volume_20d": 1190499.4,
+        "avg_price_20d": 1530.94,
+        "avg_volume_55d": 1367350.47,
+        "avg_price_55d": 1543.39,
+        "equity_token": 177665,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "DIVISLAB",
+        "volatility_pct_ann": 30.11,
+        "avg_volume_20d": 543624.85,
+        "avg_price_20d": 6020.55,
+        "avg_volume_55d": 455949.47,
+        "avg_price_55d": 6136.95,
+        "equity_token": 2800641,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "DRREDDY",
+        "volatility_pct_ann": 10.97,
+        "avg_volume_20d": 1797395.4,
+        "avg_price_20d": 1272.94,
+        "avg_volume_55d": 1634071.22,
+        "avg_price_55d": 1264.2,
+        "equity_token": 225537,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "GLENMARK",
+        "volatility_pct_ann": 19.48,
+        "avg_volume_20d": 619394.25,
+        "avg_price_20d": 1998.3,
+        "avg_volume_55d": 735911.04,
+        "avg_price_55d": 2023.13,
+        "equity_token": 1895937,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "LUPIN",
+        "volatility_pct_ann": 19.1,
+        "avg_volume_20d": 910401.65,
+        "avg_price_20d": 1978.66,
+        "avg_volume_55d": 912071.8,
+        "avg_price_55d": 1955.14,
+        "equity_token": 2672641,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "SUNPHARMA",
+        "volatility_pct_ann": 3.48,
+        "avg_volume_20d": 2496835.05,
+        "avg_price_20d": 1632.1,
+        "avg_volume_55d": 2551114.33,
+        "avg_price_55d": 1628.53,
+        "equity_token": 857857,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TORNTPHARM",
+        "volatility_pct_ann": 15.06,
+        "avg_volume_20d": 300084.7,
+        "avg_price_20d": 3566.58,
+        "avg_volume_55d": 310519.55,
+        "avg_price_55d": 3600.74,
+        "equity_token": 900609,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ],
+    "NIFTY_FMCG": [
+      {
+        "symbol": "BRITANNIA",
+        "volatility_pct_ann": 45.49,
+        "avg_volume_20d": 296656.6,
+        "avg_price_20d": 5986.98,
+        "avg_volume_55d": 376857.84,
+        "avg_price_55d": 5820.21,
+        "equity_token": 140033,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "COLPAL",
+        "volatility_pct_ann": 7.61,
+        "avg_volume_20d": 438620.6,
+        "avg_price_20d": 2273.74,
+        "avg_volume_55d": 609648.67,
+        "avg_price_55d": 2284.69,
+        "equity_token": 3876097,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "DABUR",
+        "volatility_pct_ann": 34.28,
+        "avg_volume_20d": 3223139.45,
+        "avg_price_20d": 507.42,
+        "avg_volume_55d": 3053079.64,
+        "avg_price_55d": 518.62,
+        "equity_token": 197633,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "GODREJCP",
+        "volatility_pct_ann": 44.65,
+        "avg_volume_20d": 1538467.8,
+        "avg_price_20d": 1180.69,
+        "avg_volume_55d": 1425439.8,
+        "avg_price_55d": 1214.86,
+        "equity_token": 2585345,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HINDUNILVR",
+        "volatility_pct_ann": 13.46,
+        "avg_volume_20d": 1353146.0,
+        "avg_price_20d": 2538.19,
+        "avg_volume_55d": 1542240.56,
+        "avg_price_55d": 2559.9,
+        "equity_token": 356865,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ITC",
+        "volatility_pct_ann": 12.99,
+        "avg_volume_20d": 13731813.95,
+        "avg_price_20d": 404.73,
+        "avg_volume_55d": 13355452.05,
+        "avg_price_55d": 408.07,
+        "equity_token": 424961,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "MARICO",
+        "volatility_pct_ann": 12.95,
+        "avg_volume_20d": 2127587.5,
+        "avg_price_20d": 711.46,
+        "avg_volume_55d": 2000250.76,
+        "avg_price_55d": 717.31,
+        "equity_token": 1041153,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "NESTLEIND",
+        "volatility_pct_ann": 24.66,
+        "avg_volume_20d": 1214363.1,
+        "avg_price_20d": 1182.61,
+        "avg_volume_55d": 1419337.36,
+        "avg_price_55d": 1164.52,
+        "equity_token": 4598529,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TATACONSUM",
+        "volatility_pct_ann": 47.99,
+        "avg_volume_20d": 1200183.25,
+        "avg_price_20d": 1125.88,
+        "avg_volume_55d": 1128125.44,
+        "avg_price_55d": 1092.84,
+        "equity_token": 878593,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "VBL",
+        "volatility_pct_ann": 97.13,
+        "avg_volume_20d": 4653374.85,
+        "avg_price_20d": 452.64,
+        "avg_volume_55d": 5984497.71,
+        "avg_price_55d": 482.14,
+        "equity_token": 4843777,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ],
+    "NIFTY_METAL": [
+      {
+        "symbol": "ADANIENT",
+        "volatility_pct_ann": 76.68,
+        "avg_volume_20d": 1807880.45,
+        "avg_price_20d": 2530.76,
+        "avg_volume_55d": 1179143.73,
+        "avg_price_55d": 2414.15,
+        "equity_token": 6401,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "APLAPOLLO",
+        "volatility_pct_ann": 52.54,
+        "avg_volume_20d": 536286.4,
+        "avg_price_20d": 1706.63,
+        "avg_volume_55d": 617918.65,
+        "avg_price_55d": 1651.96,
+        "equity_token": 6599681,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HINDALCO",
+        "volatility_pct_ann": 72.51,
+        "avg_volume_20d": 4228815.7,
+        "avg_price_20d": 758.41,
+        "avg_volume_55d": 4605168.2,
+        "avg_price_55d": 725.28,
+        "equity_token": 348929,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "HINDZINC",
+        "volatility_pct_ann": 97.9,
+        "avg_volume_20d": 6850998.25,
+        "avg_price_20d": 474.44,
+        "avg_volume_55d": 3987283.85,
+        "avg_price_55d": 446.88,
+        "equity_token": 364545,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "JSWSTEEL",
+        "volatility_pct_ann": 75.42,
+        "avg_volume_20d": 1542589.25,
+        "avg_price_20d": 1139.69,
+        "avg_volume_55d": 1602305.27,
+        "avg_price_55d": 1088.0,
+        "equity_token": 3001089,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "NATIONALUM",
+        "volatility_pct_ann": 103.73,
+        "avg_volume_20d": 10655561.35,
+        "avg_price_20d": 214.72,
+        "avg_volume_55d": 8288788.16,
+        "avg_price_55d": 201.55,
+        "equity_token": 1629185,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "NMDC",
+        "volatility_pct_ann": 63.24,
+        "avg_volume_20d": 21030035.85,
+        "avg_price_20d": 76.48,
+        "avg_volume_55d": 19683392.18,
+        "avg_price_55d": 73.55,
+        "equity_token": 3924993,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "SAIL",
+        "volatility_pct_ann": 70.68,
+        "avg_volume_20d": 15864488.4,
+        "avg_price_20d": 133.95,
+        "avg_volume_55d": 12256611.62,
+        "avg_price_55d": 128.24,
+        "equity_token": 758529,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "TATASTEEL",
+        "volatility_pct_ann": 64.07,
+        "avg_volume_20d": 24335211.6,
+        "avg_price_20d": 171.42,
+        "avg_volume_55d": 23152918.84,
+        "avg_price_55d": 164.77,
+        "equity_token": 895745,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "VEDL",
+        "volatility_pct_ann": 83.78,
+        "avg_volume_20d": 11711778.35,
+        "avg_price_20d": 463.59,
+        "avg_volume_55d": 8942874.6,
+        "avg_price_55d": 440.35,
+        "equity_token": 784129,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ],
+    "NIFTY_ENERGY": [
+      {
+        "symbol": "ADANIGREEN",
+        "volatility_pct_ann": 95.81,
+        "avg_volume_20d": 5707894.4,
+        "avg_price_20d": 1049.95,
+        "avg_volume_55d": 3103912.02,
+        "avg_price_55d": 990.19,
+        "equity_token": 912129,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "BPCL",
+        "volatility_pct_ann": 42.55,
+        "avg_volume_20d": 6841745.35,
+        "avg_price_20d": 333.26,
+        "avg_volume_55d": 6085765.05,
+        "avg_price_55d": 324.56,
+        "equity_token": 134657,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "COALINDIA",
+        "volatility_pct_ann": 18.51,
+        "avg_volume_20d": 5212148.1,
+        "avg_price_20d": 389.47,
+        "avg_volume_55d": 5459073.6,
+        "avg_price_55d": 384.98,
+        "equity_token": 5215745,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "GAIL",
+        "volatility_pct_ann": 14.38,
+        "avg_volume_20d": 7824448.5,
+        "avg_price_20d": 178.25,
+        "avg_volume_55d": 9018430.56,
+        "avg_price_55d": 176.65,
+        "equity_token": 1207553,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "IOC",
+        "volatility_pct_ann": 59.68,
+        "avg_volume_20d": 10394277.2,
+        "avg_price_20d": 149.59,
+        "avg_volume_55d": 8933704.53,
+        "avg_price_55d": 144.17,
+        "equity_token": 415745,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "NTPC",
+        "volatility_pct_ann": 15.75,
+        "avg_volume_20d": 9618180.85,
+        "avg_price_20d": 338.91,
+        "avg_volume_55d": 9084616.85,
+        "avg_price_55d": 335.58,
+        "equity_token": 2977281,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "ONGC",
+        "volatility_pct_ann": 14.75,
+        "avg_volume_20d": 9136235.4,
+        "avg_price_20d": 239.99,
+        "avg_volume_55d": 8599853.6,
+        "avg_price_55d": 237.78,
+        "equity_token": 633601,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "POWERGRID",
+        "volatility_pct_ann": 0.61,
+        "avg_volume_20d": 12774465.15,
+        "avg_price_20d": 286.31,
+        "avg_volume_55d": 11056926.82,
+        "avg_price_55d": 286.2,
+        "equity_token": 3834113,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "RELIANCE",
+        "volatility_pct_ann": 3.08,
+        "avg_volume_20d": 10103690.95,
+        "avg_price_20d": 1384.24,
+        "avg_volume_55d": 10034600.16,
+        "avg_price_55d": 1386.93,
+        "equity_token": 738561,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ],
+    "NIFTY_REALTY": [
+      {
+        "symbol": "DLF",
+        "volatility_pct_ann": 30.62,
+        "avg_volume_20d": 2677659.75,
+        "avg_price_20d": 745.4,
+        "avg_volume_55d": 2404876.22,
+        "avg_price_55d": 760.06,
+        "equity_token": 3771393,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "GODREJPROP",
+        "volatility_pct_ann": 7.22,
+        "avg_volume_20d": 540826.3,
+        "avg_price_20d": 2048.8,
+        "avg_volume_55d": 667861.05,
+        "avg_price_55d": 2039.52,
+        "equity_token": 4576001,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "LODHA",
+        "volatility_pct_ann": 51.53,
+        "avg_volume_20d": 1426011.5,
+        "avg_price_20d": 1163.65,
+        "avg_volume_55d": 1383668.45,
+        "avg_price_55d": 1202.69,
+        "equity_token": 824321,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "OBEROIRLTY",
+        "volatility_pct_ann": 8.48,
+        "avg_volume_20d": 526185.4,
+        "avg_price_20d": 1620.25,
+        "avg_volume_55d": 510977.55,
+        "avg_price_55d": 1628.95,
+        "equity_token": 5181953,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "PHOENIXLTD",
+        "volatility_pct_ann": 57.65,
+        "avg_volume_20d": 489583.4,
+        "avg_price_20d": 1593.12,
+        "avg_volume_55d": 704071.27,
+        "avg_price_55d": 1537.29,
+        "equity_token": 3725313,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      },
+      {
+        "symbol": "PRESTIGE",
+        "volatility_pct_ann": 19.79,
+        "avg_volume_20d": 801316.45,
+        "avg_price_20d": 1573.31,
+        "avg_volume_55d": 722863.42,
+        "avg_price_55d": 1593.17,
+        "equity_token": 5197313,
+        "instrument_type": "EQ",
+        "turtle_ready": true
+      }
+    ]
+  }
+}

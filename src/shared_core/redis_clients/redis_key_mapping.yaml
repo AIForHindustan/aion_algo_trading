@@ -1,0 +1,745 @@
+# Redis Key Mapping Configuration
+# Comprehensive mapping of all Redis keys and field names for downstream consumers
+# Version: 2.0
+# Last Updated: 2025-01-XX
+
+version: "2.0"
+description: "Comprehensive Redis key and field mappings for all consumers - ensures no data is lost"
+
+# ============================================================================
+# DB1: LIVE DATA KEYS (Ticks, OHLC, Volume, Indicators, Greeks)
+# ============================================================================
+
+# Tick Data Storage
+tick_storage:
+  # Hash storage (latest tick per symbol)
+  hash:
+    canonical: "ticks:{symbol}"
+    method: "live_ticks_hash"
+    aliases:
+      - "tick:{symbol}"
+      - "ticks:latest:{symbol}"
+      - "tick:latest:{symbol}"
+    fields:
+      - "last_price"
+      - "bucket_incremental_volume"
+      - "bucket_cumulative_volume"
+      - "zerodha_cumulative_volume"
+      - "zerodha_last_traded_quantity"
+      - "volume_ratio"
+      - "price_change"
+      - "price_change_pct"
+      - "net_change"
+      - "live_upper_circuit"
+      - "live_lower_circuit"
+      - "upper_circuit_limit"
+      - "lower_circuit_limit"
+      - "days_ohlc"
+      - "ohlc_days"
+      - "instrument_token"
+      - "symbol"
+      - "exchange"
+      - "segment"
+      - "asset_class"
+      - "instrument_type"
+      - "timestamp"
+      - "exchange_timestamp"
+      - "ohlc"
+      - "open_price"
+      - "high_price"
+      - "low_price"
+      - "close_price"
+      - "oi"
+      - "oi_day_high"
+      - "oi_day_low"
+      - "depth"
+      - "best_bid_price"
+      - "best_ask_price"
+      - "delta"
+      - "gamma"
+      - "theta"
+      - "vega"
+      - "iv"
+      - "implied_volatility"
+      - "strike_price"
+      - "expiry_date"
+      - "option_type"
+      - "underlying_price"
+      - "spot_price"
+      - "dte_years"
+      - "trading_dte"
+  
+  # Latest tick hash (quick access)
+  latest_hash:
+    canonical: "ticks:latest:{symbol}"
+    method: "live_ticks_latest"
+    aliases:
+      - "tick:latest:{symbol}"
+      - "latest_tick:{symbol}"
+  
+  # Per-symbol stream
+  stream:
+    canonical: "ticks:stream:{symbol}"
+    method: "live_ticks_stream"
+    aliases:
+      - "ticks:realtime:{symbol}"
+      - "tick:stream:{symbol}"
+  
+  # Raw tick stream
+  raw_stream:
+    canonical: "ticks:raw:{symbol}"
+    method: "live_ticks_raw_stream"
+    aliases:
+      - "ticks:raw:binary"
+      - "ticks:binary:{symbol}"
+  
+  # Global processed stream
+  processed_stream:
+    canonical: "ticks:intraday:processed"
+    method: "live_processed_stream"
+    aliases:
+      - "ticks:live:processed"
+      - "ticks:processed"
+      - "market_data.ticks"
+      - "ticks:intraday:stream"
+  
+  # Unified raw stream
+  unified_raw_stream:
+    canonical: "ticks:unified:raw"
+    method: "live_unified_raw_stream"
+    aliases:
+      - "ticks:unified:binary"
+      - "ticks:all:raw"
+  
+  # Raw binary stream
+  raw_binary_stream:
+    canonical: "ticks:raw:binary"
+    method: "live_raw_binary_stream"
+    aliases:
+      - "ticks:binary"
+      - "market_data.raw"
+  
+  # Historical raw ticks
+  historical_raw:
+    canonical: "ticks:historical:raw:{symbol}"
+    method: "live_historical_ticks_raw"
+    aliases:
+      - "ticks:history:raw:{symbol}"
+      - "historical:ticks:{symbol}"
+
+# OHLC Data Storage
+ohlc_storage:
+  # Latest OHLC hash
+  latest:
+    canonical: "ohlc_latest:{symbol}"
+    method: "live_ohlc_latest"
+    aliases:
+      - "ohlc:latest:{symbol}"
+      - "latest_ohlc:{symbol}"
+    fields:
+      - "open"
+      - "high"
+      - "low"
+      - "close"
+      - "volume"
+      - "timestamp"
+      - "exchange_timestamp"
+      - "open_price"
+      - "high_price"
+      - "low_price"
+      - "close_price"
+  
+  # OHLC time series
+  timeseries:
+    canonical: "ohlc:{symbol}:{interval}"
+    method: "live_ohlc_timeseries"
+    aliases:
+      - "ohlc:timeseries:{symbol}:{interval}"
+      - "ohlc_ts:{symbol}:{interval}"
+    intervals:
+      - "1d"
+      - "1h"
+      - "15m"
+      - "5m"
+      - "1m"
+  
+  # Daily OHLC
+  daily:
+    canonical: "ohlc_daily:{symbol}"
+    method: "live_ohlc_daily"
+    aliases:
+      - "ohlc:daily:{symbol}"
+      - "daily_ohlc:{symbol}"
+  
+  # OHLC stats (if method exists)
+  stats:
+    canonical: "ohlc_stats:{symbol}"
+    method: "live_ohlc_stats"
+    aliases:
+      - "ohlc:stats:{symbol}"
+      - "stats:ohlc:{symbol}"
+    fields:
+      - "avg_volume_20d"
+      - "avg_volume_55d"
+      - "volatility"
+      - "atr"
+
+# Price Data
+price_storage:
+  # Real-time price
+  realtime:
+    canonical: "price:realtime:{symbol}"
+    method: "live_price_realtime"
+    aliases:
+      - "price:latest:{symbol}"
+      - "latest_price:{symbol}"
+      - "price:{symbol}"
+  
+  # Underlying price (for options)
+  underlying:
+    canonical: "underlying_price:{symbol}"
+    method: "live_underlying_price"
+    aliases:
+      - "underlying:{symbol}"
+      - "spot_price:{symbol}"
+
+# Volume Data Storage
+volume_storage:
+  # Volume state (per instrument token)
+  state:
+    canonical: "vol:state:{instrument_token}"
+    method: "live_volume_state"
+    aliases:
+      - "volume:state:{instrument_token}"
+      - "vol_state:{instrument_token}"
+    fields:
+      - "last_cumulative"
+      - "session_date"
+      - "update_count"
+      - "last_update_timestamp"
+  
+  # Volume baseline
+  baseline:
+    canonical: "vol:baseline:{symbol}"
+    method: "live_volume_baseline"
+    aliases:
+      - "baseline:volume:{symbol}"
+      - "volume:baseline:{symbol}"
+      - "vol_baseline:{symbol}"
+    fields:
+      - "avg_volume_20d"
+      - "avg_volume_55d"
+      - "baseline_volume"
+      - "session_multiplier"
+      - "time_aware_baseline"
+  
+  # Volume profile (general)
+  profile:
+    canonical: "vol:profile:{symbol}:{profile_type}"
+    method: "live_volume_profile"
+    aliases:
+      - "volume_profile:{symbol}:{profile_type}"
+      - "vp:{symbol}:{profile_type}"
+    profile_types:
+      - "session"
+      - "distribution"
+      - "nodes"
+      - "historical"
+  
+  # Volume profile realtime
+  profile_realtime:
+    canonical: "volume_profile:realtime:{symbol}"
+    method: "live_volume_profile_realtime"
+    aliases:
+      - "vp:realtime:{symbol}"
+      - "volume_profile:live:{symbol}"
+    fields:
+      - "poc_price"
+      - "poc_volume"
+      - "value_area_high"
+      - "value_area_low"
+      - "profile_strength"
+      - "support_levels"
+      - "resistance_levels"
+  
+  # Volume profile POC
+  profile_poc:
+    canonical: "volume_profile:poc:{symbol}"
+    method: "live_volume_profile_poc"
+    aliases:
+      - "vp:poc:{symbol}"
+      - "poc:{symbol}"
+    fields:
+      - "poc_price"
+      - "poc_volume"
+      - "value_area_high"
+      - "value_area_low"
+      - "profile_strength"
+  
+  # Bucket history
+  bucket_history:
+    canonical: "bucket_incremental_volume:history:{resolution}:{symbol}"
+    method: "live_bucket_history"
+    aliases:
+      - "bucket:history:{symbol}:{resolution}"
+      - "volume_bucket:{symbol}:{resolution}"
+    resolutions:
+      - "5min"
+      - "10min"
+      - "15min"
+      - "1h"
+
+# Indicator Storage
+indicator_storage:
+  # General indicator pattern
+  pattern: "ind:{category}:{symbol}:{indicator_name}"
+  method: "live_indicator"
+  
+  # Technical Analysis indicators
+  ta:
+    canonical: "ind:ta:{symbol}:{indicator_name}"
+    category: "ta"
+    aliases:
+      - "indicator:ta:{symbol}:{indicator_name}"
+      - "ta:{symbol}:{indicator_name}"
+    indicators:
+      - "rsi"
+      - "macd"
+      - "macd_signal"
+      - "macd_histogram"
+      - "atr"
+      - "bollinger_upper"
+      - "bollinger_lower"
+      - "bollinger_middle"
+      - "ema_9"
+      - "ema_21"
+      - "ema_50"
+      - "ema_200"
+      - "sma_20"
+      - "sma_50"
+      - "vwap"
+      - "stochastic_k"
+      - "stochastic_d"
+      - "adx"
+      - "williams_r"
+      - "cci"
+      - "mfi"
+      - "obv"
+      - "roc"
+      - "momentum"
+      - "historical_volatility"
+      - "z_score"
+  
+  # Volume indicators
+  volume:
+    canonical: "ind:volume:{symbol}:{indicator_name}"
+    category: "volume"
+    aliases:
+      - "indicator:volume:{symbol}:{indicator_name}"
+      - "vol_ind:{symbol}:{indicator_name}"
+    indicators:
+      - "volume_ratio"
+      - "volume_spike"
+      - "volume_trend"
+      - "volume_profile_strength"
+  
+  # Greeks (Options)
+  greeks:
+    canonical: "ind:greeks:{symbol}:{greek_name}"
+    method: "live_greeks"
+    category: "greeks"
+    aliases:
+      - "indicator:greeks:{symbol}:{greek_name}"
+      - "greeks:{symbol}:{greek_name}"
+    greek_names:
+      - "delta"
+      - "gamma"
+      - "theta"
+      - "vega"
+      - "rho"
+      - "iv"
+      - "implied_volatility"
+      - "dte_years"
+      - "trading_dte"
+      - "option_price"
+      - "underlying_price"
+      - "spot_price"
+      - "strike_price"
+      - "expiry_date"
+      - "option_type"
+
+# Session Data
+session_storage:
+  # Trading session
+  session:
+    canonical: "session:{symbol}:{date}"
+    method: "live_session"
+    aliases:
+      - "trading_session:{symbol}:{date}"
+      - "session_data:{symbol}:{date}"
+    fields:
+      - "zerodha_cumulative_volume"
+      - "bucket_cumulative_volume"
+      - "bucket_incremental_volume"
+      - "last_price"
+      - "high"
+      - "low"
+      - "session_date"
+      - "update_count"
+      - "last_update_timestamp"
+      - "first_update"
+      - "last_update"
+      - "first_price"
+      - "close_price"
+
+# Option Chain Data
+option_chain:
+  # Option chain snapshot
+  chain:
+    canonical: "options:chain:{underlying}"
+    method: "get_option_chain_key"
+    aliases:
+      - "option_chain:{underlying}"
+      - "chain:{underlying}"
+  
+  # Individual option data
+  option:
+    canonical: "options:{underlying}:{strike}{option_type}:{field}"
+    method: "live_option_chain"
+    aliases:
+      - "option:{underlying}:{strike}{option_type}:{field}"
+    fields:
+      - "price"
+      - "volume"
+      - "oi"
+      - "delta"
+      - "gamma"
+      - "theta"
+      - "vega"
+      - "iv"
+
+# ============================================================================
+# DB2: ANALYTICS KEYS (Pattern History, Performance Metrics)
+# ============================================================================
+
+analytics_storage:
+  # Pattern history
+  pattern_history:
+    canonical: "pattern_history:{pattern_type}:{symbol}:{field}"
+    method: "analytics_pattern_history"
+    aliases:
+      - "history:pattern:{pattern_type}:{symbol}:{field}"
+    fields:
+      - "detections"
+      - "signals"
+      - "performance"
+  
+  # Scanner performance
+  scanner_performance:
+    canonical: "scanner:{metric}:{timeframe}"
+    method: "analytics_scanner_performance"
+    aliases:
+      - "performance:scanner:{metric}:{timeframe}"
+  
+  # Alert performance stats
+  alert_performance_stats:
+    canonical: "alert_performance:stats"
+    method: "analytics_alert_performance_stats"
+    aliases:
+      - "alert:performance:stats"
+  
+  # Alert performance by pattern
+  alert_performance_pattern:
+    canonical: "alert_performance:pattern:{pattern}"
+    method: "analytics_alert_performance_pattern"
+    aliases:
+      - "alert:performance:{pattern}"
+  
+  # Signal quality
+  signal_quality:
+    canonical: "signal_quality:{symbol}:{pattern_type}"
+    method: "analytics_signal_quality"
+    aliases:
+      - "quality:signal:{symbol}:{pattern_type}"
+  
+  # Pattern performance
+  pattern_performance:
+    canonical: "pattern_performance:{symbol}:{pattern_type}"
+    method: "analytics_pattern_performance"
+    aliases:
+      - "performance:pattern:{symbol}:{pattern_type}"
+  
+  # Pattern metrics
+  pattern_metrics:
+    canonical: "pattern_metrics:{symbol}:{pattern_type}"
+    method: "analytics_pattern_metrics"
+    aliases:
+      - "metrics:pattern:{symbol}:{pattern_type}"
+  
+  # Validation storage
+  validation:
+    canonical: "forward_validation:{alert_id}"
+    method: "analytics_validation"
+    aliases:
+      - "validation:{alert_id}"
+  
+  # Final validation
+  final_validation:
+    canonical: "final_validation:{pattern_type}:{symbol}"
+    method: "analytics_final_validation"
+    aliases:
+      - "validation:final:{pattern_type}:{symbol}"
+  
+  # Pattern window aggregate
+  pattern_window_aggregate:
+    canonical: "pattern_window_aggregate:{pattern_type}:{window_key}"
+    method: "analytics_pattern_window_aggregate"
+    aliases:
+      - "aggregate:pattern:{pattern_type}:{window_key}"
+  
+  # Time window performance
+  time_window_performance:
+    canonical: "time_window_performance:{pattern_type}:{symbol}:{window_key}"
+    method: "analytics_time_window_performance"
+    aliases:
+      - "performance:window:{pattern_type}:{symbol}:{window_key}"
+  
+  # Alert timeline
+  alert_timeline:
+    canonical: "alert_timeline:{alert_id}"
+    method: "analytics_alert_timeline"
+    aliases:
+      - "timeline:alert:{alert_id}"
+  
+  # Sharpe inputs
+  sharpe_inputs:
+    canonical: "sharpe_inputs:{pattern_type}:{window_key}"
+    method: "analytics_sharpe_inputs"
+    aliases:
+      - "sharpe:{pattern_type}:{window_key}"
+
+# ============================================================================
+# PUB/SUB CHANNELS (Alert Publishing)
+# ============================================================================
+
+pubsub_channels:
+  # Alerts stream
+  alerts_stream:
+    canonical: "alerts:stream"
+    method: "live_alerts_stream"
+    aliases:
+      - "alerts"
+      - "alert_stream"
+  
+  # Telegram alerts
+  alerts_telegram:
+    canonical: "alerts:telegram"
+    method: "live_alerts_telegram"
+    aliases:
+      - "telegram:alerts"
+  
+  # Pattern stream
+  pattern_stream:
+    canonical: "patterns:{pattern_type}:{symbol}"
+    method: "live_pattern_stream"
+    aliases:
+      - "pattern:{pattern_type}:{symbol}"
+  
+  # Asset class channels
+  asset_class_channel:
+    canonical: "ticks:{asset_class}"
+    method: "live_asset_class_channel"
+    asset_classes:
+      - "EQUITY"
+      - "FNO"
+      - "CURRENCY"
+      - "COMMODITY"
+      - "INDEX"
+
+# ============================================================================
+# FIELD NAME MAPPINGS (From optimized_field_mapping.yaml)
+# ============================================================================
+
+field_mappings:
+  # Core WebSocket fields
+  websocket_core:
+    instrument_token: "instrument_token"
+    tradingsymbol: "tradingsymbol"
+    exchange: "exchange"
+    segment: "segment"
+    last_price: "last_price"
+    last_traded_quantity: "zerodha_last_traded_quantity"
+    volume_traded: "zerodha_cumulative_volume"
+    volume: "bucket_incremental_volume"
+    average_price: "average_price"
+    ohlc: "ohlc"
+    exchange_timestamp: "exchange_timestamp"
+    timestamp_ns: "timestamp_ns"
+    last_trade_time: "last_trade_time"
+    mode: "mode"
+    tradable: "tradable"
+    buy_quantity: "total_buy_quantity"
+    sell_quantity: "total_sell_quantity"
+    net_change: "net_change"
+    lower_circuit_limit: "lower_circuit_limit"
+    upper_circuit_limit: "upper_circuit_limit"
+    oi: "oi"
+    oi_day_high: "oi_day_high"
+    oi_day_low: "oi_day_low"
+    depth: "depth"
+  
+  # Redis session fields (canonical names)
+  redis_session:
+    zerodha_cumulative_volume: "volume_traded_for_the_day"
+    bucket_cumulative_volume: "bucket_cumulative_volume"
+    bucket_incremental_volume: "bucket_incremental_volume"
+    incremental_volume: "incremental_volume"
+    volume: "volume"
+    zerodha_last_traded_quantity: "zerodha_last_traded_quantity"
+    last_traded_quantity: "zerodha_last_traded_quantity"
+    last_quantity: "zerodha_last_traded_quantity"
+    volume_traded: "volume_traded_for_the_day"
+    cumulative_volume: "cumulative_volume"
+    last_price: "last_price"
+    high: "high"
+    low: "low"
+    session_date: "session_date"
+    update_count: "update_count"
+    last_update_timestamp: "last_update_timestamp"
+    first_update: "first_update"
+    last_update: "last_update"
+    first_price: "first_price"
+    close_price: "close_price"
+    high_price: "high_price"
+    low_price: "low_price"
+  
+  # Calculated indicator fields
+  calculated_indicators:
+    volume_ratio: "volume_ratio"
+    volume: "bucket_incremental_volume"
+    bucket_incremental_volume: "bucket_incremental_volume"
+    bucket_cumulative_volume: "bucket_cumulative_volume"
+    cumulative_volume: "bucket_cumulative_volume"
+    incremental_volume: "bucket_incremental_volume"
+    price_change: "price_change"
+    price_change_pct: "price_change_pct"
+    last_price: "last_price"
+    current_price: "current_price"
+    expected_move: "expected_move"
+    confidence: "confidence"
+    signal: "signal"
+    pattern: "pattern"
+    resistance_level: "resistance_level"
+    support_level: "support_level"
+    vix_level: "vix_level"
+    poc_price: "poc_price"
+    poc_volume: "poc_volume"
+    value_area_high: "value_area_high"
+    value_area_low: "value_area_low"
+    profile_strength: "profile_strength"
+    support_levels: "support_levels"
+    resistance_levels: "resistance_levels"
+  
+  # Circuit limits (from quote mode)
+  circuit_limits:
+    upper_circuit_limit: "upper_circuit_limit"
+    upper_circuit: "upper_circuit"
+    live_upper_circuit: "live_upper_circuit"
+    lower_circuit_limit: "lower_circuit_limit"
+    lower_circuit: "lower_circuit"
+    live_lower_circuit: "live_lower_circuit"
+  
+  # OHLC days data (from quote mode)
+  ohlc_days:
+    days_ohlc: "days_ohlc"
+    ohlc_days: "ohlc_days"
+  
+  # Greeks fields
+  greeks:
+    delta: "delta"
+    gamma: "gamma"
+    theta: "theta"
+    vega: "vega"
+    rho: "rho"
+    iv: "iv"
+    implied_volatility: "implied_volatility"
+    dte_years: "dte_years"
+    trading_dte: "trading_dte"
+    option_price: "option_price"
+    underlying_price: "underlying_price"
+    spot_price: "spot_price"
+    strike_price: "strike_price"
+    expiry_date: "expiry_date"
+    option_type: "option_type"
+    expiry_series: "expiry_series"
+
+# ============================================================================
+# CONSUMER-SPECIFIC FIELD ALIASES
+# ============================================================================
+
+consumer_aliases:
+  # Pattern detector aliases
+  pattern:
+    price: "last_price"
+    volume: "bucket_incremental_volume"
+    price_change: "price_change_pct"
+    cumulative_volume: "bucket_cumulative_volume"
+    volume_ratio: "volume_ratio"
+  
+  # Scanner aliases
+  scanner:
+    volume: "bucket_incremental_volume"
+    cumulative_volume: "zerodha_cumulative_volume"
+    price: "last_price"
+    volume_ratio: "volume_ratio"
+  
+  # Dashboard aliases
+  dashboard:
+    current_price: "last_price"
+    volume: "bucket_incremental_volume"
+    price_change: "price_change_pct"
+    volume_ratio: "volume_ratio"
+
+# ============================================================================
+# KEY RESOLUTION RULES
+# ============================================================================
+
+key_resolution:
+  # Priority order for key resolution
+  priority:
+    - "canonical"
+    - "method_generated"
+    - "aliases"
+  
+  # Symbol normalization
+  symbol_normalization:
+    use_canonical_symbol: true
+    method: "RedisKeyStandards.canonical_symbol"
+  
+  # Database assignment
+  database_assignment:
+    db1_prefixes:
+      - "ohlc:"
+      - "session:"
+      - "vol:"
+      - "ind:"
+      - "ticks:"
+      - "underlying_price:"
+      - "options:"
+      - "bucket_incremental_volume:"
+      - "price:realtime:"
+      - "volume_profile:"
+    db2_prefixes:
+      - "pattern_history:"
+      - "scanner:"
+      - "alert_performance:"
+      - "signal_quality:"
+      - "pattern_performance:"
+      - "pattern_metrics:"
+      - "forward_validation:"
+      - "analysis_cache:"
+      - "time_window_performance:"
+      - "pattern_window_aggregate:"
+      - "sharpe_inputs:"
+      - "alert_timeline:"
+      - "final_validation:"

@@ -1,0 +1,390 @@
+# Redis Key Standards Configuration
+# ==================================
+# 
+# This file documents the Redis key structure and database assignments.
+# All keys are generated via DatabaseAwareKeyBuilder in redis_key_standards.py
+# 
+# Usage:
+#   from shared_core.redis_clients.redis_key_standards import get_key_builder
+#   key_builder = get_key_builder()
+#   key = key_builder.live_ticks_hash("NIFTY25NOV26000CE")
+#
+# Last Updated: 2025-11-30
+
+# Database Assignments
+databases:
+  DB1_LIVE_DATA: 1
+    description: "Live ticks, OHLC data, volume data, indicators, session data, alerts streams"
+    prefixes:
+      - "ohlc:"
+      - "session:"
+      - "vol:"
+      - "ind:"
+      - "ticks:"
+      - "underlying_price:"
+      - "options:"
+      - "bucket_incremental_volume:"
+      - "price:realtime:"
+      - "volume_profile:"
+      - "alerts:stream"
+      - "patterns:"
+  
+  DB2_ANALYTICS: 2
+    description: "Analytics, alert validations, performance metrics, pattern history"
+    prefixes:
+      - "pattern_history:"
+      - "scanner:"
+      - "alert_performance:"
+      - "signal_quality:"
+      - "pattern_performance:"
+      - "pattern_metrics:"
+      - "forward_validation:"
+      - "analysis_cache:"
+      - "time_window_performance:"
+      - "pattern_window_aggregate:"
+      - "sharpe_inputs:"
+      - "alert_timeline:"
+      - "final_validation:"
+      - "alert:"
+      - "validation:"
+      - "alerts:validation:"
+
+# Key Patterns (DB1: Live Data)
+live_data_keys:
+  # Tick Storage
+  ticks_hash: "ticks:{canonical_symbol}"
+    method: "live_ticks_hash(symbol)"
+    database: 1
+    type: "hash"
+    description: "Latest tick data for symbol"
+  
+  ticks_latest: "ticks:latest:{canonical_symbol}"
+    method: "live_ticks_latest(symbol)"
+    database: 1
+    type: "hash"
+    description: "Latest tick snapshot"
+  
+  ticks_stream: "ticks:stream:{canonical_symbol}"
+    method: "live_ticks_stream(symbol)"
+    database: 1
+    type: "stream"
+    description: "Per-symbol tick stream"
+  
+  ticks_processed: "ticks:intraday:processed"
+    method: "live_processed_stream()"
+    database: 1
+    type: "stream"
+    description: "Global processed tick stream"
+  
+  ticks_raw_binary: "ticks:raw:binary"
+    method: "live_raw_binary_stream()"
+    database: 1
+    type: "stream"
+    description: "Raw binary tick stream"
+  
+  ticks_historical_raw: "ticks:historical:raw:{canonical_symbol}"
+    method: "live_historical_ticks_raw(symbol)"
+    database: 1
+    type: "sorted_set"
+    description: "Historical raw ticks archive"
+  
+  # OHLC Storage
+  ohlc_latest: "ohlc_latest:{normalized_symbol}"
+    method: "live_ohlc_latest(symbol)"
+    database: 1
+    type: "hash"
+    description: "Latest OHLC data"
+  
+  ohlc_timeseries: "ohlc:{normalized_symbol}:{interval}"
+    method: "live_ohlc_timeseries(symbol, interval)"
+    database: 1
+    type: "time_series"
+    description: "OHLC time series data"
+    default_interval: "1d"
+  
+  ohlc_daily: "ohlc_daily:{normalized_symbol}"
+    method: "live_ohlc_daily(symbol)"
+    database: 1
+    type: "sorted_set"
+    description: "Daily OHLC data"
+  
+  # Volume Storage
+  volume_baseline: "vol:baseline:{symbol}"
+    method: "live_volume_baseline(symbol)"
+    database: 1
+    type: "hash"
+    description: "Volume baseline (20-day average)"
+  
+  volume_state: "vol:state:{instrument_token}"
+    method: "live_volume_state(instrument_token)"
+    database: 1
+    type: "hash"
+    description: "Volume state tracking"
+  
+  volume_profile_realtime: "volume_profile:realtime:{canonical_symbol}"
+    method: "live_volume_profile_realtime(symbol)"
+    database: 1
+    type: "hash"
+    description: "Real-time volume profile"
+  
+  volume_profile_poc: "volume_profile:poc:{canonical_symbol}"
+    method: "live_volume_profile_poc(symbol)"
+    database: 1
+    type: "string"
+    description: "Volume profile POC (Point of Control)"
+  
+  volume_profile: "vol:profile:{symbol}:{profile_type}:{date?}"
+    method: "live_volume_profile(symbol, profile_type, date?)"
+    database: 1
+    type: "hash"
+    description: "Volume profile data (date optional)"
+  
+  bucket_history: "bucket_incremental_volume:history:{resolution}:{symbol}"
+    method: "live_bucket_history(symbol, resolution)"
+    database: 1
+    type: "list"
+    description: "Bucket volume history"
+    default_resolution: "5min"
+  
+  # Indicators
+  indicator: "ind:{category}:{canonical_symbol}:{indicator_name}"
+    method: "live_indicator(symbol, indicator_name, category?)"
+    database: 1
+    type: "hash"
+    description: "Technical indicator data"
+    categories:
+      - "ta"  # Technical Analysis
+      - "volume"
+      - "price"
+      - "momentum"
+    auto_category: true
+  
+  greeks: "ind:greeks:{canonical_symbol}:{greek_name?}"
+    method: "live_greeks(symbol, greek_name?)"
+    database: 1
+    type: "hash"
+    description: "Option Greeks (delta, gamma, theta, vega, rho)"
+    default_key: "ind:greeks:{canonical_symbol}:greeks"
+  
+  # Session Data
+  session: "session:{symbol}:{date}"
+    method: "live_session(symbol, date)"
+    database: 1
+    type: "hash"
+    description: "Trading session data"
+  
+  # Price Data
+  price_realtime: "price:realtime:{canonical_symbol}"
+    method: "live_price_realtime(symbol)"
+    database: 1
+    type: "string"
+    description: "Real-time price"
+  
+  underlying_price: "underlying_price:{symbol}"
+    method: "live_underlying_price(symbol)"
+    database: 1
+    type: "string"
+    description: "Underlying asset price"
+  
+  # Option Chain
+  option_chain: "options:{underlying_lower}:{strike}{option_type}:{field}"
+    method: "live_option_chain(underlying, strike, option_type, field)"
+    database: 1
+    type: "hash"
+    description: "Option chain field data"
+  
+  option_chain_snapshot: "options:chain:{sanitized_underlying}"
+    method: "get_option_chain_key(underlying)"
+    database: 1
+    type: "string"
+    description: "Full option chain snapshot (JSON blob)"
+  
+  # Alert Streams (DB1 - Live Data)
+  alerts_stream: "alerts:stream"
+    method: "live_alerts_stream()"
+    database: 1
+    type: "stream"
+    description: "Main alert stream"
+  
+  alerts_telegram: "alerts:telegram"
+    method: "live_alerts_telegram()"
+    database: 1
+    type: "stream"
+    description: "Telegram alert stream"
+  
+  pattern_stream: "patterns:{pattern_type}:{canonical_symbol}"
+    method: "live_pattern_stream(pattern_type, symbol)"
+    database: 1
+    type: "stream"
+    description: "Pattern-specific stream"
+
+# Key Patterns (DB2: Analytics)
+analytics_keys:
+  # Pattern History
+  pattern_history: "pattern_history:{pattern_type}:{symbol}:{field}"
+    method: "analytics_pattern_history(pattern_type, symbol, field)"
+    database: 2
+    type: "hash"
+    description: "Pattern detection history"
+  
+  # Scanner Performance
+  scanner_performance: "scanner:performance:{metric}:{timeframe}"
+    method: "analytics_scanner_performance(metric, timeframe)"
+    database: 2
+    type: "hash"
+    description: "Scanner performance metrics"
+  
+  # Alert Performance
+  alert_performance_stats: "alert_performance:stats"
+    method: "analytics_alert_performance_stats()"
+    database: 2
+    type: "hash"
+    description: "Overall alert performance statistics"
+  
+  alert_performance_pattern: "alert_performance:stats:{pattern}"
+    method: "analytics_alert_performance_pattern(pattern)"
+    database: 2
+    type: "hash"
+    description: "Pattern-specific alert performance"
+  
+  # Signal Quality
+  signal_quality: "signal_quality:{symbol}:{pattern_type}"
+    method: "analytics_signal_quality(symbol, pattern_type)"
+    database: 2
+    type: "hash"
+    description: "Signal quality metrics"
+  
+  # Pattern Performance
+  pattern_performance: "pattern_performance:{symbol}:{pattern_type}"
+    method: "analytics_pattern_performance(symbol, pattern_type)"
+    database: 2
+    type: "hash"
+    description: "Pattern performance data"
+  
+  pattern_metrics: "pattern_metrics:{symbol}:{pattern_type}"
+    method: "analytics_pattern_metrics(symbol, pattern_type)"
+    database: 2
+    type: "hash"
+    description: "Pattern metrics"
+  
+  # Validation
+  validation: "forward_validation:alert:{alert_id}"
+    method: "analytics_validation(alert_id)"
+    database: 2
+    type: "hash"
+    description: "Alert validation data"
+  
+  validation_storage: "validation:{alert_id}"
+    method: "analytics_validation_storage(alert_id)"
+    database: 2
+    type: "hash"
+    description: "Validation storage"
+  
+  validation_stream: "alerts:validation:results"
+    method: "analytics_validation_stream()"
+    database: 2
+    type: "stream"
+    description: "Validation results stream"
+  
+  validation_recent: "alerts:validation:recent"
+    method: "analytics_validation_recent()"
+    database: 2
+    type: "list"
+    description: "Recent validation results"
+  
+  final_validation: "final_validation:{pattern_type}:{canonical_symbol}"
+    method: "analytics_final_validation(pattern_type, symbol)"
+    database: 2
+    type: "hash"
+    description: "Final validation results with time-window data"
+  
+  # Time Window Performance
+  time_window_performance: "time_window_performance:{pattern_type}:{canonical_symbol}:{window_key}"
+    method: "analytics_time_window_performance(pattern_type, symbol, window_key)"
+    database: 2
+    type: "hash"
+    description: "Time-window performance data"
+  
+  pattern_window_aggregate: "pattern_window_aggregate:{pattern_type}:{window_key}"
+    method: "analytics_pattern_window_aggregate(pattern_type, window_key)"
+    database: 2
+    type: "hash"
+    description: "Pattern-window aggregate statistics"
+  
+  # Sharpe Ratio
+  sharpe_inputs: "sharpe_inputs:{pattern_type}:{window_key}"
+    method: "analytics_sharpe_inputs(pattern_type, window_key)"
+    database: 2
+    type: "hash"
+    description: "Sharpe ratio calculation inputs"
+  
+  # Alert Timeline
+  alert_timeline: "alert_timeline:{alert_id}"
+    method: "analytics_alert_timeline(alert_id)"
+    database: 2
+    type: "list"
+    description: "Alert validation timeline"
+  
+  # Alert Storage
+  alert_storage: "alert:{alert_id}"
+    method: "analytics_alert_storage(alert_id)"
+    database: 2
+    type: "hash"
+    description: "Alert storage"
+  
+  # Legacy Cache
+  analysis_cache: "analysis_cache:indicators:{symbol}:{indicator_name}"
+    method: "analytics_legacy_cache(symbol, indicator_name)"
+    database: 2
+    type: "hash"
+    description: "Legacy analysis cache (for migration)"
+
+# Symbol Normalization
+symbol_normalization:
+  method: "RedisKeyStandards.canonical_symbol(symbol)"
+  description: "Normalizes symbols to canonical format (e.g., NFO:NIFTY25NOV26000CE)"
+  parser: "UniversalSymbolParser (via get_symbol_parser())"
+  
+  examples:
+    - input: "BANKNIFTY25NOV57900CE"
+      output: "NFOBANKNIFTY25NOV57900CE"
+    - input: "NSE:RELIANCE"
+      output: "NSERELIANCE"
+    - input: "NFO:NIFTY25NOV26000CE"
+      output: "NFONIFTY25NOV26000CE"
+
+# Key Builder Usage
+usage:
+  import: "from shared_core.redis_clients.redis_key_standards import get_key_builder, RedisKeyStandards"
+  
+  example:
+    - code: |
+        key_builder = get_key_builder()
+        canonical = RedisKeyStandards.canonical_symbol("BANKNIFTY25NOV57900CE")
+        tick_key = key_builder.live_ticks_hash(canonical)
+        # Returns: "ticks:NFOBANKNIFTY25NOV57900CE"
+    
+    - code: |
+        key_builder = get_key_builder()
+        rsi_key = key_builder.live_indicator("NSE:RELIANCE", "rsi", "ta")
+        # Returns: "ind:ta:NSERELIANCE:rsi"
+    
+    - code: |
+        key_builder = get_key_builder()
+        delta_key = key_builder.live_greeks("NFONIFTY25NOV26000CE", "delta")
+        # Returns: "ind:greeks:NFONIFTY25NOV26000CE:delta"
+    
+    - code: |
+        key_builder = get_key_builder()
+        pattern_key = key_builder.analytics_pattern_performance("RELIANCE", "volume_spike")
+        # Returns: "pattern_performance:RELIANCE:volume_spike"
+
+# Important Notes
+notes:
+  - "All keys MUST be generated via DatabaseAwareKeyBuilder methods - never construct keys manually"
+  - "Symbol normalization is automatic via canonical_symbol() method"
+  - "Database assignment is automatic based on key prefix"
+  - "Pattern matching (KEYS, SCAN) is FORBIDDEN except in admin/debug scripts"
+  - "All operations use O(1) direct key lookups for performance"
+  - "Key structure is enforced through DatabaseAwareKeyBuilder class"
+

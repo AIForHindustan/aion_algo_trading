@@ -1,0 +1,28 @@
+{
+  "generated_at": "2025-11-16T10:34:11.880030",
+  "total_problematic": 174,
+  "option_groups_processed": 0,
+  "fixes": {},
+  "other_instruments": [
+    {
+      "symbol": "NFO:TATAMOTORS28OCTFUT",
+      "token": 13448194,
+      "info": {
+        "avg_volume_20d": 18852400.0,
+        "avg_price_20d": 407.7,
+        "data_points_20d": 2,
+        "avg_volume_55d": 18852400.0,
+        "avg_price_55d": 407.7,
+        "data_points_55d": 2,
+        "last_updated": "2025-10-28T07:51:39.438640",
+        "name": "TATAMOTORS28OCTFUT",
+        "current_price": 0,
+        "instrument_type": "FUT",
+        "exchange": "NFO",
+        "source": "trading_crawler",
+        "resolved_symbol": "NFO:TATAMOTORS28OCTFUT",
+        "turtle_ready": false
+      }
+    }
+  ]
+}

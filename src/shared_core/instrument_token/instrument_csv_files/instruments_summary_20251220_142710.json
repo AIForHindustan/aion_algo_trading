@@ -1,0 +1,78 @@
+{
+  "download_timestamp": "2025-12-20T14:27:10.594283",
+  "total_instruments": 126174,
+  "exchanges": {
+    "BFO": 4809,
+    "BSE": 12775,
+    "CDS": 8454,
+    "NSE": 9048,
+    "MCX": 32885,
+    "NSEIX": 1,
+    "GLOBAL": 12,
+    "NCO": 20896,
+    "NFO": 37294
+  },
+  "instrument_types": {
+    "FUT": 1051,
+    "CE": 51651,
+    "PE": 51601,
+    "EQ": 21871
+  },
+  "csv_file": "/Users/lokeshgupta/Projects/aion_algo_trading/src/shared_core/instrument_token/instrument_csv_files/zerodha_instruments_20251220_142710.csv",
+  "top_exchanges": [
+    [
+      "NFO",
+      37294
+    ],
+    [
+      "MCX",
+      32885
+    ],
+    [
+      "NCO",
+      20896
+    ],
+    [
+      "BSE",
+      12775
+    ],
+    [
+      "NSE",
+      9048
+    ],
+    [
+      "CDS",
+      8454
+    ],
+    [
+      "BFO",
+      4809
+    ],
+    [
+      "GLOBAL",
+      12
+    ],
+    [
+      "NSEIX",
+      1
+    ]
+  ],
+  "top_instrument_types": [
+    [
+      "CE",
+      51651
+    ],
+    [
+      "PE",
+      51601
+    ],
+    [
+      "EQ",
+      21871
+    ],
+    [
+      "FUT",
+      1051
+    ]
+  ]
+}

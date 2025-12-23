@@ -1,0 +1,1751 @@
+{
+  "total_unmatched": 174,
+  "unmatched_by_type": {
+    "FUTURES": 6,
+    "OPTIONS": 168,
+    "OTHER": 0
+  },
+  "unmatched_instruments": [
+    {
+      "tradingsymbol": "BANKNIFTY26JANFUT",
+      "instrument_type": "FUT",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 0.0,
+      "converted_symbol": "BANKNIFTY26JANFUT",
+      "instrument_token": 12601346,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JANFUT",
+      "instrument_type": "FUT",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 0.0,
+      "converted_symbol": "NIFTY26JANFUT",
+      "instrument_token": 12602626,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DECFUT",
+      "instrument_type": "FUT",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 0.0,
+      "converted_symbol": "BANKNIFTY25DECFUT",
+      "instrument_token": 12674050,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DECFUT",
+      "instrument_type": "FUT",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 0.0,
+      "converted_symbol": "NIFTY25DECFUT",
+      "instrument_token": 12683010,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58300CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58300.0,
+      "converted_symbol": "BANKNIFTY25DEC58300CE",
+      "instrument_token": 13150722,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58300PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58300.0,
+      "converted_symbol": "BANKNIFTY25DEC58300PE",
+      "instrument_token": 13150978,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58400CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58400.0,
+      "converted_symbol": "BANKNIFTY25DEC58400CE",
+      "instrument_token": 13151746,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58400PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58400.0,
+      "converted_symbol": "BANKNIFTY25DEC58400PE",
+      "instrument_token": 13152002,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58600CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58600.0,
+      "converted_symbol": "BANKNIFTY25DEC58600CE",
+      "instrument_token": 13155330,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58600PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58600.0,
+      "converted_symbol": "BANKNIFTY25DEC58600PE",
+      "instrument_token": 13155586,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58700CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58700.0,
+      "converted_symbol": "BANKNIFTY25DEC58700CE",
+      "instrument_token": 13157122,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58700PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58700.0,
+      "converted_symbol": "BANKNIFTY25DEC58700PE",
+      "instrument_token": 13157378,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58800CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58800.0,
+      "converted_symbol": "BANKNIFTY25DEC58800CE",
+      "instrument_token": 13157634,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58800PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58800.0,
+      "converted_symbol": "BANKNIFTY25DEC58800PE",
+      "instrument_token": 13157890,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58900CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58900.0,
+      "converted_symbol": "BANKNIFTY25DEC58900CE",
+      "instrument_token": 13161474,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58900PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58900.0,
+      "converted_symbol": "BANKNIFTY25DEC58900PE",
+      "instrument_token": 13161730,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59000CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59000.0,
+      "converted_symbol": "BANKNIFTY25DEC59000CE",
+      "instrument_token": 13161986,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59000PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59000.0,
+      "converted_symbol": "BANKNIFTY25DEC59000PE",
+      "instrument_token": 13162242,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59100CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59100.0,
+      "converted_symbol": "BANKNIFTY25DEC59100CE",
+      "instrument_token": 13162498,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59100PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59100.0,
+      "converted_symbol": "BANKNIFTY25DEC59100PE",
+      "instrument_token": 13162754,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59200CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59200.0,
+      "converted_symbol": "BANKNIFTY25DEC59200CE",
+      "instrument_token": 13163522,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59200PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59200.0,
+      "converted_symbol": "BANKNIFTY25DEC59200PE",
+      "instrument_token": 13163778,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59300CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59300.0,
+      "converted_symbol": "BANKNIFTY25DEC59300CE",
+      "instrument_token": 13168386,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59300PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59300.0,
+      "converted_symbol": "BANKNIFTY25DEC59300PE",
+      "instrument_token": 13168642,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59400CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59400.0,
+      "converted_symbol": "BANKNIFTY25DEC59400CE",
+      "instrument_token": 13173762,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59400PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59400.0,
+      "converted_symbol": "BANKNIFTY25DEC59400PE",
+      "instrument_token": 13174018,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59500CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59500.0,
+      "converted_symbol": "BANKNIFTY25DEC59500CE",
+      "instrument_token": 13177602,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59500PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59500.0,
+      "converted_symbol": "BANKNIFTY25DEC59500PE",
+      "instrument_token": 13177858,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59600CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59600.0,
+      "converted_symbol": "BANKNIFTY25DEC59600CE",
+      "instrument_token": 13182210,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59600PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59600.0,
+      "converted_symbol": "BANKNIFTY25DEC59600PE",
+      "instrument_token": 13183490,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59700CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59700.0,
+      "converted_symbol": "BANKNIFTY25DEC59700CE",
+      "instrument_token": 13183746,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59700PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59700.0,
+      "converted_symbol": "BANKNIFTY25DEC59700PE",
+      "instrument_token": 13184002,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59800CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59800.0,
+      "converted_symbol": "BANKNIFTY25DEC59800CE",
+      "instrument_token": 13184258,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59800PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59800.0,
+      "converted_symbol": "BANKNIFTY25DEC59800PE",
+      "instrument_token": 13184514,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59900CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59900.0,
+      "converted_symbol": "BANKNIFTY25DEC59900CE",
+      "instrument_token": 13185794,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC59900PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 59900.0,
+      "converted_symbol": "BANKNIFTY25DEC59900PE",
+      "instrument_token": 13186562,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC60100CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 60100.0,
+      "converted_symbol": "BANKNIFTY25DEC60100CE",
+      "instrument_token": 13187330,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC60100PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 60100.0,
+      "converted_symbol": "BANKNIFTY25DEC60100PE",
+      "instrument_token": 13187586,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC60200CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 60200.0,
+      "converted_symbol": "BANKNIFTY25DEC60200CE",
+      "instrument_token": 13189890,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC60200PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 60200.0,
+      "converted_symbol": "BANKNIFTY25DEC60200PE",
+      "instrument_token": 13190146,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC60300CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 60300.0,
+      "converted_symbol": "BANKNIFTY25DEC60300CE",
+      "instrument_token": 13190402,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC60300PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 60300.0,
+      "converted_symbol": "BANKNIFTY25DEC60300PE",
+      "instrument_token": 13190658,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58300CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58300.0,
+      "converted_symbol": "BANKNIFTY26JAN58300CE",
+      "instrument_token": 13262338,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58300PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58300.0,
+      "converted_symbol": "BANKNIFTY26JAN58300PE",
+      "instrument_token": 13262594,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58400CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58400.0,
+      "converted_symbol": "BANKNIFTY26JAN58400CE",
+      "instrument_token": 13262850,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58400PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58400.0,
+      "converted_symbol": "BANKNIFTY26JAN58400PE",
+      "instrument_token": 13263106,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58500CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58500.0,
+      "converted_symbol": "BANKNIFTY26JAN58500CE",
+      "instrument_token": 13263362,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58500PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58500.0,
+      "converted_symbol": "BANKNIFTY26JAN58500PE",
+      "instrument_token": 13275394,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58600CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58600.0,
+      "converted_symbol": "BANKNIFTY26JAN58600CE",
+      "instrument_token": 13275650,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58600PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58600.0,
+      "converted_symbol": "BANKNIFTY26JAN58600PE",
+      "instrument_token": 13277954,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58700CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58700.0,
+      "converted_symbol": "BANKNIFTY26JAN58700CE",
+      "instrument_token": 13278210,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58700PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58700.0,
+      "converted_symbol": "BANKNIFTY26JAN58700PE",
+      "instrument_token": 13283074,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58800CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58800.0,
+      "converted_symbol": "BANKNIFTY26JAN58800CE",
+      "instrument_token": 13283330,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58800PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58800.0,
+      "converted_symbol": "BANKNIFTY26JAN58800PE",
+      "instrument_token": 13289218,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58900CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58900.0,
+      "converted_symbol": "BANKNIFTY26JAN58900CE",
+      "instrument_token": 13289986,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN58900PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 58900.0,
+      "converted_symbol": "BANKNIFTY26JAN58900PE",
+      "instrument_token": 13290242,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59000CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59000.0,
+      "converted_symbol": "BANKNIFTY26JAN59000CE",
+      "instrument_token": 13290498,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59000PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59000.0,
+      "converted_symbol": "BANKNIFTY26JAN59000PE",
+      "instrument_token": 13293314,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59100CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59100.0,
+      "converted_symbol": "BANKNIFTY26JAN59100CE",
+      "instrument_token": 13294082,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59100PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59100.0,
+      "converted_symbol": "BANKNIFTY26JAN59100PE",
+      "instrument_token": 13297410,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59200CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59200.0,
+      "converted_symbol": "BANKNIFTY26JAN59200CE",
+      "instrument_token": 13297666,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59200PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59200.0,
+      "converted_symbol": "BANKNIFTY26JAN59200PE",
+      "instrument_token": 13297922,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59300CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59300.0,
+      "converted_symbol": "BANKNIFTY26JAN59300CE",
+      "instrument_token": 13298178,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59300PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59300.0,
+      "converted_symbol": "BANKNIFTY26JAN59300PE",
+      "instrument_token": 13300482,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59400CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59400.0,
+      "converted_symbol": "BANKNIFTY26JAN59400CE",
+      "instrument_token": 13300738,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59400PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59400.0,
+      "converted_symbol": "BANKNIFTY26JAN59400PE",
+      "instrument_token": 13309698,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59500CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59500.0,
+      "converted_symbol": "BANKNIFTY26JAN59500CE",
+      "instrument_token": 13309954,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59500PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59500.0,
+      "converted_symbol": "BANKNIFTY26JAN59500PE",
+      "instrument_token": 13314306,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59600CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59600.0,
+      "converted_symbol": "BANKNIFTY26JAN59600CE",
+      "instrument_token": 13317634,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59600PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59600.0,
+      "converted_symbol": "BANKNIFTY26JAN59600PE",
+      "instrument_token": 13318402,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59700CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59700.0,
+      "converted_symbol": "BANKNIFTY26JAN59700CE",
+      "instrument_token": 13320194,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59700PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59700.0,
+      "converted_symbol": "BANKNIFTY26JAN59700PE",
+      "instrument_token": 13323010,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59800CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59800.0,
+      "converted_symbol": "BANKNIFTY26JAN59800CE",
+      "instrument_token": 13324290,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59800PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59800.0,
+      "converted_symbol": "BANKNIFTY26JAN59800PE",
+      "instrument_token": 13338882,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59900CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59900.0,
+      "converted_symbol": "BANKNIFTY26JAN59900CE",
+      "instrument_token": 13339138,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN59900PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 59900.0,
+      "converted_symbol": "BANKNIFTY26JAN59900PE",
+      "instrument_token": 13347586,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN60000CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 60000.0,
+      "converted_symbol": "BANKNIFTY26JAN60000CE",
+      "instrument_token": 13347842,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN60000PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 60000.0,
+      "converted_symbol": "BANKNIFTY26JAN60000PE",
+      "instrument_token": 13433858,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN60100CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 60100.0,
+      "converted_symbol": "BANKNIFTY26JAN60100CE",
+      "instrument_token": 13446146,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN60100PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 60100.0,
+      "converted_symbol": "BANKNIFTY26JAN60100PE",
+      "instrument_token": 13566722,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN60200CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 60200.0,
+      "converted_symbol": "BANKNIFTY26JAN60200CE",
+      "instrument_token": 13567234,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN60200PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 60200.0,
+      "converted_symbol": "BANKNIFTY26JAN60200PE",
+      "instrument_token": 13567490,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN60300CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 60300.0,
+      "converted_symbol": "BANKNIFTY26JAN60300CE",
+      "instrument_token": 13568258,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY26JAN60300PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 60300.0,
+      "converted_symbol": "BANKNIFTY26JAN60300PE",
+      "instrument_token": 13568514,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25700CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25700.0,
+      "converted_symbol": "NIFTY26JAN25700CE",
+      "instrument_token": 15040258,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25700PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25700.0,
+      "converted_symbol": "NIFTY26JAN25700PE",
+      "instrument_token": 15040514,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25750CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25750.0,
+      "converted_symbol": "NIFTY26JAN25750CE",
+      "instrument_token": 15049730,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25750PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25750.0,
+      "converted_symbol": "NIFTY26JAN25750PE",
+      "instrument_token": 15049986,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25800CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25800.0,
+      "converted_symbol": "NIFTY26JAN25800CE",
+      "instrument_token": 15050242,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25800PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25800.0,
+      "converted_symbol": "NIFTY26JAN25800PE",
+      "instrument_token": 15050498,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25850CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25850.0,
+      "converted_symbol": "NIFTY26JAN25850CE",
+      "instrument_token": 15051522,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25850PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25850.0,
+      "converted_symbol": "NIFTY26JAN25850PE",
+      "instrument_token": 15051778,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25900CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25900.0,
+      "converted_symbol": "NIFTY26JAN25900CE",
+      "instrument_token": 15052034,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25900PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25900.0,
+      "converted_symbol": "NIFTY26JAN25900PE",
+      "instrument_token": 15052290,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25950CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25950.0,
+      "converted_symbol": "NIFTY26JAN25950CE",
+      "instrument_token": 15052546,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN25950PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 25950.0,
+      "converted_symbol": "NIFTY26JAN25950PE",
+      "instrument_token": 15052802,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26000CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26000.0,
+      "converted_symbol": "NIFTY26JAN26000CE",
+      "instrument_token": 15053058,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26000PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26000.0,
+      "converted_symbol": "NIFTY26JAN26000PE",
+      "instrument_token": 15053314,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26050CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26050.0,
+      "converted_symbol": "NIFTY26JAN26050CE",
+      "instrument_token": 15053570,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26050PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26050.0,
+      "converted_symbol": "NIFTY26JAN26050PE",
+      "instrument_token": 15053826,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26100CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26100.0,
+      "converted_symbol": "NIFTY26JAN26100CE",
+      "instrument_token": 15054082,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26100PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26100.0,
+      "converted_symbol": "NIFTY26JAN26100PE",
+      "instrument_token": 15054338,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26150CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26150.0,
+      "converted_symbol": "NIFTY26JAN26150CE",
+      "instrument_token": 15054594,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26150PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26150.0,
+      "converted_symbol": "NIFTY26JAN26150PE",
+      "instrument_token": 15054850,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26200CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26200.0,
+      "converted_symbol": "NIFTY26JAN26200CE",
+      "instrument_token": 15055106,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26200PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26200.0,
+      "converted_symbol": "NIFTY26JAN26200PE",
+      "instrument_token": 15055362,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26250CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26250.0,
+      "converted_symbol": "NIFTY26JAN26250CE",
+      "instrument_token": 15055618,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26250PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26250.0,
+      "converted_symbol": "NIFTY26JAN26250PE",
+      "instrument_token": 15055874,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26300CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26300.0,
+      "converted_symbol": "NIFTY26JAN26300CE",
+      "instrument_token": 15056130,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26300PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26300.0,
+      "converted_symbol": "NIFTY26JAN26300PE",
+      "instrument_token": 15056386,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26350CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26350.0,
+      "converted_symbol": "NIFTY26JAN26350CE",
+      "instrument_token": 15056642,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26350PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26350.0,
+      "converted_symbol": "NIFTY26JAN26350PE",
+      "instrument_token": 15056898,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26400CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26400.0,
+      "converted_symbol": "NIFTY26JAN26400CE",
+      "instrument_token": 15057154,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26400PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26400.0,
+      "converted_symbol": "NIFTY26JAN26400PE",
+      "instrument_token": 15057410,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26450CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26450.0,
+      "converted_symbol": "NIFTY26JAN26450CE",
+      "instrument_token": 15057666,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26450PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26450.0,
+      "converted_symbol": "NIFTY26JAN26450PE",
+      "instrument_token": 15057922,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26500CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26500.0,
+      "converted_symbol": "NIFTY26JAN26500CE",
+      "instrument_token": 15058690,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26500PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26500.0,
+      "converted_symbol": "NIFTY26JAN26500PE",
+      "instrument_token": 15058946,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26550CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26550.0,
+      "converted_symbol": "NIFTY26JAN26550CE",
+      "instrument_token": 15059202,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26550PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26550.0,
+      "converted_symbol": "NIFTY26JAN26550PE",
+      "instrument_token": 15059458,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26600CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26600.0,
+      "converted_symbol": "NIFTY26JAN26600CE",
+      "instrument_token": 15059714,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26600PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26600.0,
+      "converted_symbol": "NIFTY26JAN26600PE",
+      "instrument_token": 15059970,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26650CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26650.0,
+      "converted_symbol": "NIFTY26JAN26650CE",
+      "instrument_token": 15060226,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26650PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26650.0,
+      "converted_symbol": "NIFTY26JAN26650PE",
+      "instrument_token": 15060482,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26700CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26700.0,
+      "converted_symbol": "NIFTY26JAN26700CE",
+      "instrument_token": 15060738,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY26JAN26700PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2026-01-27",
+      "strike": 26700.0,
+      "converted_symbol": "NIFTY26JAN26700PE",
+      "instrument_token": 15060994,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58500CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58500.0,
+      "converted_symbol": "BANKNIFTY25DEC58500CE",
+      "instrument_token": 15401986,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC58500PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 58500.0,
+      "converted_symbol": "BANKNIFTY25DEC58500PE",
+      "instrument_token": 15402242,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC60000CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 60000.0,
+      "converted_symbol": "BANKNIFTY25DEC60000CE",
+      "instrument_token": 15402498,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "BANKNIFTY25DEC60000PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 60000.0,
+      "converted_symbol": "BANKNIFTY25DEC60000PE",
+      "instrument_token": 15402754,
+      "name": "BANKNIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25700CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25700.0,
+      "converted_symbol": "NIFTY25DEC25700CE",
+      "instrument_token": 16783106,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25700PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25700.0,
+      "converted_symbol": "NIFTY25DEC25700PE",
+      "instrument_token": 16783362,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25750CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25750.0,
+      "converted_symbol": "NIFTY25DEC25750CE",
+      "instrument_token": 16783618,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25750PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25750.0,
+      "converted_symbol": "NIFTY25DEC25750PE",
+      "instrument_token": 16783874,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25800CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25800.0,
+      "converted_symbol": "NIFTY25DEC25800CE",
+      "instrument_token": 16784130,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25800PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25800.0,
+      "converted_symbol": "NIFTY25DEC25800PE",
+      "instrument_token": 16784386,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25850CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25850.0,
+      "converted_symbol": "NIFTY25DEC25850CE",
+      "instrument_token": 16785666,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25850PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25850.0,
+      "converted_symbol": "NIFTY25DEC25850PE",
+      "instrument_token": 16785922,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25900CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25900.0,
+      "converted_symbol": "NIFTY25DEC25900CE",
+      "instrument_token": 16786178,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25900PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25900.0,
+      "converted_symbol": "NIFTY25DEC25900PE",
+      "instrument_token": 16793346,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25950CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25950.0,
+      "converted_symbol": "NIFTY25DEC25950CE",
+      "instrument_token": 16793602,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC25950PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 25950.0,
+      "converted_symbol": "NIFTY25DEC25950PE",
+      "instrument_token": 16798722,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26050CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26050.0,
+      "converted_symbol": "NIFTY25DEC26050CE",
+      "instrument_token": 16798978,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26050PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26050.0,
+      "converted_symbol": "NIFTY25DEC26050PE",
+      "instrument_token": 16799234,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26100CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26100.0,
+      "converted_symbol": "NIFTY25DEC26100CE",
+      "instrument_token": 16799490,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26100PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26100.0,
+      "converted_symbol": "NIFTY25DEC26100PE",
+      "instrument_token": 16800770,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26150CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26150.0,
+      "converted_symbol": "NIFTY25DEC26150CE",
+      "instrument_token": 16801026,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26150PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26150.0,
+      "converted_symbol": "NIFTY25DEC26150PE",
+      "instrument_token": 16802306,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26200CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26200.0,
+      "converted_symbol": "NIFTY25DEC26200CE",
+      "instrument_token": 16802562,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26200PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26200.0,
+      "converted_symbol": "NIFTY25DEC26200PE",
+      "instrument_token": 16803586,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26250CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26250.0,
+      "converted_symbol": "NIFTY25DEC26250CE",
+      "instrument_token": 16803842,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26250PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26250.0,
+      "converted_symbol": "NIFTY25DEC26250PE",
+      "instrument_token": 16805634,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26300CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26300.0,
+      "converted_symbol": "NIFTY25DEC26300CE",
+      "instrument_token": 16806658,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26300PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26300.0,
+      "converted_symbol": "NIFTY25DEC26300PE",
+      "instrument_token": 16806914,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26350CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26350.0,
+      "converted_symbol": "NIFTY25DEC26350CE",
+      "instrument_token": 16816386,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26350PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26350.0,
+      "converted_symbol": "NIFTY25DEC26350PE",
+      "instrument_token": 16816642,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26400CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26400.0,
+      "converted_symbol": "NIFTY25DEC26400CE",
+      "instrument_token": 16816898,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26400PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26400.0,
+      "converted_symbol": "NIFTY25DEC26400PE",
+      "instrument_token": 16817154,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26450CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26450.0,
+      "converted_symbol": "NIFTY25DEC26450CE",
+      "instrument_token": 16817410,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26450PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26450.0,
+      "converted_symbol": "NIFTY25DEC26450PE",
+      "instrument_token": 16817666,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26500CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26500.0,
+      "converted_symbol": "NIFTY25DEC26500CE",
+      "instrument_token": 16817922,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26500PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26500.0,
+      "converted_symbol": "NIFTY25DEC26500PE",
+      "instrument_token": 16819458,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26550CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26550.0,
+      "converted_symbol": "NIFTY25DEC26550CE",
+      "instrument_token": 16819714,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26550PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26550.0,
+      "converted_symbol": "NIFTY25DEC26550PE",
+      "instrument_token": 16821762,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26600CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26600.0,
+      "converted_symbol": "NIFTY25DEC26600CE",
+      "instrument_token": 16822018,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26600PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26600.0,
+      "converted_symbol": "NIFTY25DEC26600PE",
+      "instrument_token": 16822274,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26650CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26650.0,
+      "converted_symbol": "NIFTY25DEC26650CE",
+      "instrument_token": 16822530,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26650PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26650.0,
+      "converted_symbol": "NIFTY25DEC26650PE",
+      "instrument_token": 16822786,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26700CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26700.0,
+      "converted_symbol": "NIFTY25DEC26700CE",
+      "instrument_token": 16823042,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26700PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26700.0,
+      "converted_symbol": "NIFTY25DEC26700PE",
+      "instrument_token": 16823298,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26000CE",
+      "instrument_type": "CE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26000.0,
+      "converted_symbol": "NIFTY25DEC26000CE",
+      "instrument_token": 18278146,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "NIFTY25DEC26000PE",
+      "instrument_type": "PE",
+      "exchange": "NFO",
+      "expiry": "2025-12-30",
+      "strike": 26000.0,
+      "converted_symbol": "NIFTY25DEC26000PE",
+      "instrument_token": 18279170,
+      "name": "NIFTY"
+    },
+    {
+      "tradingsymbol": "GOLDPETAL25DECFUT",
+      "instrument_type": "FUT",
+      "exchange": "MCX",
+      "expiry": "2025-12-31",
+      "strike": 0.0,
+      "converted_symbol": "GOLDPETAL25DECFUT",
+      "instrument_token": 119741703,
+      "name": "GOLDPETAL"
+    },
+    {
+      "tradingsymbol": "GOLDTEN25DECFUT",
+      "instrument_type": "FUT",
+      "exchange": "MCX",
+      "expiry": "2025-12-31",
+      "strike": 0.0,
+      "converted_symbol": "GOLDTEN25DECFUT",
+      "instrument_token": 121032199,
+      "name": "GOLDTEN"
+    }
+  ],
+  "created_at": "2025-12-08T16:20:06.115719"
+}

@@ -1,0 +1,14 @@
+{
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "db1": 1,
+    "db2": 2,
+    "password": null
+  },
+  "debug": false,
+  "continuous": true,
+  "min_confidence": 0.6,
+  "volume_threshold": 1.5
+}
+

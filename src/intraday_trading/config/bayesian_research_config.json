@@ -1,0 +1,110 @@
+{
+  "research_mode": {
+    "auto_start": false,
+    "requires_manual_launch": true,
+    "description": "Bayesian data extraction - MANUAL START ONLY"
+  },
+  "operating_hours": {
+    "pre_market_start": "08:00",
+    "market_open": "09:15",
+    "market_close": "15:30",
+    "post_market_end": "16:00",
+    "timezone": "Asia/Kolkata"
+  },
+  "market_calendar": {
+    "require_trading_day": true,
+    "skip_weekends": true
+  },
+  "extraction": {
+    "mode": "continuous",
+    "interval_seconds": 120,
+    "export_directory": "research_data/bayesian_extracts",
+    "databases_to_extract": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      10,
+      11,
+      13
+    ],
+    "redis_host": "localhost",
+    "redis_port": 6379,
+    "daily_extraction_schedule": {
+      "pre_market_extract": "08:45",
+      "market_open_extract": "09:15",
+      "mid_market_extract": "12:00",
+      "market_close_extract": "15:25",
+      "post_market_extract": "15:45",
+      "final_daily_extract": "16:00"
+    },
+    "data_sources": {
+      "session_data": {
+        "db": 0,
+        "keys": "session:*"
+      },
+      "price_data": {
+        "db": 2,
+        "keys": "*"
+      },
+      "premarket_volume": {
+        "db": 3,
+        "keys": "premarket:*"
+      },
+      "continuous_market": {
+        "db": 4,
+        "keys": "*"
+      },
+      "cumulative_volume": {
+        "db": 5,
+        "keys": "*"
+      },
+      "alert_system": {
+        "db": 6,
+        "keys": "alert:*"
+      },
+      "market_microstructure": {
+        "db": 8,
+        "keys": "*"
+      },
+      "pattern_detection": {
+        "db": 10,
+        "keys": "*"
+      },
+      "news_sentiment": {
+        "db": 11,
+        "keys": "news:*"
+      },
+      "performance_metrics": {
+        "db": 13,
+        "keys": "*"
+      }
+    }
+  },
+  "data_retention": {
+    "keep_raw_days": 30,
+    "compress_after_days": 7,
+    "delete_compressed_after_days": 365,
+    "keep_monthly_summaries_days": 1095,
+    "bayesian_model_retention": {
+      "keep_daily_extracts": 365,
+      "keep_weekly_consolidated": 104,
+      "keep_monthly_models": 24,
+      "build_confidence_models": true
+    }
+  },
+  "safety_limits": {
+    "max_memory_mb": 2048,
+    "max_disk_usage_gb": 500,
+    "auto_stop_at_market_close": false,
+    "check_main_system_running": false
+  },
+  "logging": {
+    "log_directory": "logs/bayesian_research",
+    "log_level": "INFO",
+    "separate_from_main": true
+  }
+}

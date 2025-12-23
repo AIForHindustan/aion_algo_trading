@@ -1,0 +1,93 @@
+# Apple Silicon Optimized Requirements for vectorBT/Numba
+# ========================================================
+# Optimized for M4 Silicon with Metal GPU acceleration
+# No CUDA support - using Apple's Metal Performance Shaders
+
+# Core Numerical Computing
+numpy>=1.24.0
+scipy>=1.10.0
+py_vollib>=1.0.1                  # Option Greeks calculations (Black-Scholes)
+pandas_market_calendars>=4.3.3   # Trading calendar for DTE calculations
+
+# High-Performance Computing (Apple Silicon Optimized)
+numba>=0.58.0                    # JIT compilation with Apple Silicon support
+llvmlite>=0.41.0                 # LLVM backend for Numba
+vectorbt>=0.25.0                 # Vectorized backtesting and analysis
+polars>=0.19.0                   # Fast DataFrame library (faster than pandas)
+
+# Alternative to pandas (much faster on Apple Silicon)
+polars>=0.19.0
+
+# WebSocket and Real-time Data
+websocket-client>=1.6.0
+redis>=5.0.0
+
+# Date/Time Handling
+pytz>=2023.3
+python-dateutil>=2.8.2
+
+# File Operations and Compression
+pyarrow>=12.0.0                  # Apache Arrow for efficient data interchange
+gzip-utils>=1.0.0
+orjson>=3.9.0                    # Fast JSON parsing
+
+# Logging and Monitoring
+structlog>=23.1.0
+psutil>=5.9.5
+
+# Configuration
+pyyaml>=6.0
+toml>=0.10.2
+
+# Apple Silicon Specific Optimizations
+metalcompute>=0.1.0              # Metal Performance Shaders for GPU acceleration
+pyobjc-framework-Metal>=9.0      # Metal framework bindings
+
+# Development and Testing
+pytest>=7.3.0
+pytest-asyncio>=0.21.0
+black>=23.3.0
+flake8>=6.0.0
+mypy>=1.3.0
+
+# Performance Profiling
+line-profiler>=4.0.0
+memory-profiler>=0.60.0
+
+# Optional: Machine Learning (Apple Silicon Optimized)
+scikit-learn>=1.3.0              # ML algorithms
+joblib>=1.3.0                    # Parallel processing
+
+# Version Pinning for Stability on Apple Silicon
+numpy==1.24.3
+numba==0.58.0
+llvmlite==0.41.0
+vectorbt==0.25.0
+polars==0.19.0
+websocket-client==1.6.0
+redis==5.0.0
+pyarrow==12.0.1
+orjson==3.9.0
+pytz==2023.3
+python-dateutil==2.8.2
+pyyaml==6.0
+toml==0.10.2
+structlog==23.1.0
+psutil==5.9.5
+pytest==7.3.1
+pytest-asyncio==0.21.0
+black==23.3.0
+flake8==6.0.0
+mypy==1.3.0
+
+# Installation Notes for Apple Silicon:
+# 1. Use conda for better Apple Silicon support:
+#    conda install -c conda-forge numba llvmlite pyarrow
+#
+# 2. For Metal GPU acceleration, ensure you have:
+#    - macOS 13.0 or later
+#    - Xcode Command Line Tools installed
+#    - Metal Performance Shaders framework available
+#
+# 3. Test Metal support:
+#    python -c "import numba; print('Numba Metal support:', numba.npyufunc.parallel._is_metal_available())"

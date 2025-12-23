@@ -1,0 +1,58 @@
+{
+  "redis": {
+    "host": "127.0.0.1",
+    "url": "redis://localhost:6379",
+    "port": 6379,
+    "decode_responses": true,
+    "socket_timeout": 30,
+    "socket_connect_timeout": 30,
+    "retry_on_timeout": true,
+    "max_connections": 100,
+    "health_check_interval": 30,
+    "db0": 0,
+    "db1": 1,
+    "db2": 2,
+    "password": null
+  },
+  "stream_settings": {
+    "block": 5000,
+    "count": 100
+  },
+  "debug": false,
+  "continuous": true,
+  "min_confidence": 0.6,
+  "volume_threshold": 1.5,
+  "patterns": {
+    "enabled": [
+      "order_flow_breakout",
+      "gamma_exposure_reversal",
+      "microstructure_divergence",
+      "cross_asset_arbitrage",
+      "vix_momentum",
+      "kow_signal_straddle",
+      "ict_iron_condor",
+      "game_theory_signal"
+    ]
+  },
+  "alerts": {
+    "min_confidence": 0.85,
+    "use_enhanced_validator": false
+  },
+  "optimized_processor": {
+    "enabled": true,
+    "workers": 5,
+    "batch_size": 50
+  },
+  "enable_intraday_game_theory": true,
+  "game_theory_min_confidence": 0.7,
+  "game_theory_confirmation_required": true,
+  "game_theory": {
+    "min_tick_count": 16,
+    "require_order_book": false,
+    "min_volume_ratio": 1.5
+  },
+  "use_redis_streams": true,
+  "use_optimized_stream_processor": true,
+  "optimized_processor_workers": 5,
+  "optimized_processor_batch_size": 50
+}

@@ -1,0 +1,7376 @@
+{
+  "generated_at": "2025-11-16T10:35:24.639927",
+  "total_problematic": 174,
+  "option_groups_processed": 18,
+  "fixes": {
+    "BANKNIFTY_2025-11-25": {
+      "underlying": "BANKNIFTY",
+      "expiry": "2025-11-25",
+      "underlying_price": 58517.55,
+      "atm_strike": 58500.0,
+      "current_tokens": [
+        12775426
+      ],
+      "correct_tokens": [
+        12812034,
+        12812290,
+        12812546,
+        12812802,
+        12813058,
+        12813314,
+        12813570,
+        12813826,
+        12814082,
+        12814338,
+        12814594,
+        12814850,
+        12815106,
+        12815362,
+        12815618,
+        12815874,
+        12817154,
+        12817922,
+        12818178,
+        12818434,
+        12818690,
+        12818946,
+        12819202,
+        12820994,
+        12821250,
+        12822018,
+        12822274,
+        12822530,
+        12822786,
+        12823042,
+        12823298,
+        12823554,
+        12823810,
+        12824066,
+        12824322,
+        12824578,
+        12824834,
+        12825090,
+        12825346,
+        12825602,
+        12825858,
+        12826114
+      ],
+      "missing_tokens": [
+        12812546,
+        12813058,
+        12812034,
+        12812290,
+        12812802,
+        12813314,
+        12813570,
+        12813826,
+        12814082,
+        12814338,
+        12824322,
+        12824578,
+        12824834,
+        12820994,
+        12825090,
+        12817154,
+        12821250,
+        12825346,
+        12825602,
+        12825858,
+        12817922,
+        12822018,
+        12826114,
+        12818178,
+        12822274,
+        12818434,
+        12822530,
+        12814594,
+        12818690,
+        12822786,
+        12824066,
+        12814850,
+        12818946,
+        12823042,
+        12815106,
+        12819202,
+        12823298,
+        12815362,
+        12823554,
+        12815618,
+        12823810,
+        12815874
+      ],
+      "extra_tokens": [
+        12775426
+      ],
+      "redis_checks": {
+        "12775426": {
+          "redis_days": 0,
+          "api_price": 16.25,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57500CE",
+          "token": 12812034,
+          "strike": 57500.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57500PE",
+          "token": 12812290,
+          "strike": 57500.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57600CE",
+          "token": 12812546,
+          "strike": 57600.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57600PE",
+          "token": 12812802,
+          "strike": 57600.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57700CE",
+          "token": 12813058,
+          "strike": 57700.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57700PE",
+          "token": 12813314,
+          "strike": 57700.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57800CE",
+          "token": 12813570,
+          "strike": 57800.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57800PE",
+          "token": 12813826,
+          "strike": 57800.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57900CE",
+          "token": 12814082,
+          "strike": 57900.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV57900PE",
+          "token": 12814338,
+          "strike": 57900.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58000CE",
+          "token": 12814594,
+          "strike": 58000.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58000PE",
+          "token": 12814850,
+          "strike": 58000.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58100CE",
+          "token": 12815106,
+          "strike": 58100.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58100PE",
+          "token": 12815362,
+          "strike": 58100.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58200CE",
+          "token": 12815618,
+          "strike": 58200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58200PE",
+          "token": 12815874,
+          "strike": 58200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58300CE",
+          "token": 12817154,
+          "strike": 58300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58300PE",
+          "token": 12817922,
+          "strike": 58300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58400CE",
+          "token": 12818178,
+          "strike": 58400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58400PE",
+          "token": 12818434,
+          "strike": 58400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58500CE",
+          "token": 12818690,
+          "strike": 58500.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58500PE",
+          "token": 12818946,
+          "strike": 58500.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58600CE",
+          "token": 12819202,
+          "strike": 58600.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58600PE",
+          "token": 12820994,
+          "strike": 58600.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58700CE",
+          "token": 12821250,
+          "strike": 58700.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58700PE",
+          "token": 12822018,
+          "strike": 58700.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58800CE",
+          "token": 12822274,
+          "strike": 58800.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58800PE",
+          "token": 12822530,
+          "strike": 58800.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58900CE",
+          "token": 12822786,
+          "strike": 58900.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV58900PE",
+          "token": 12823042,
+          "strike": 58900.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59000CE",
+          "token": 12823298,
+          "strike": 59000.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59000PE",
+          "token": 12823554,
+          "strike": 59000.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59100CE",
+          "token": 12823810,
+          "strike": 59100.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59100PE",
+          "token": 12824066,
+          "strike": 59100.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59200CE",
+          "token": 12824322,
+          "strike": 59200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59200PE",
+          "token": 12824578,
+          "strike": 59200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59300CE",
+          "token": 12824834,
+          "strike": 59300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59300PE",
+          "token": 12825090,
+          "strike": 59300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59400CE",
+          "token": 12825346,
+          "strike": 59400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59400PE",
+          "token": 12825602,
+          "strike": 59400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59500CE",
+          "token": 12825858,
+          "strike": 59500.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "BANKNIFTY25NOV59500PE",
+          "token": 12826114,
+          "strike": 59500.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "FINNIFTY_2025-11-25": {
+      "underlying": "FINNIFTY",
+      "expiry": "2025-11-25",
+      "underlying_price": 27491.85,
+      "atm_strike": 27500.0,
+      "current_tokens": [
+        13074946,
+        13075202,
+        13088770,
+        13094146
+      ],
+      "correct_tokens": [
+        13100802,
+        13101570,
+        13954818,
+        13955074,
+        13101826,
+        13102082,
+        13955330,
+        13955586,
+        13102338,
+        13102594,
+        13955842,
+        13956098,
+        13102850,
+        13103106,
+        13956354,
+        13956610,
+        13103362,
+        13103618,
+        13956866,
+        13957122,
+        13103874,
+        13104130,
+        13957378,
+        13957634,
+        13104386,
+        13105154,
+        13957890,
+        13958146,
+        13105410,
+        13105666,
+        13958402,
+        13958658,
+        13105922,
+        13106178,
+        13958914,
+        13959170,
+        13106434,
+        13106690,
+        13959426,
+        13959682,
+        13106946,
+        13107202
+      ],
+      "missing_tokens": [
+        13103618,
+        13954818,
+        13100802,
+        13101570,
+        13955074,
+        13101826,
+        13102082,
+        13955330,
+        13955586,
+        13102338,
+        13102850,
+        13103106,
+        13959170,
+        13106946,
+        13107202,
+        13103362,
+        13959426,
+        13959682,
+        13955842,
+        13103874,
+        13958658,
+        13956098,
+        13104130,
+        13956354,
+        13104386,
+        13956610,
+        13956866,
+        13957122,
+        13105154,
+        13958914,
+        13957378,
+        13105410,
+        13957634,
+        13105666,
+        13957890,
+        13105922,
+        13106690,
+        13958146,
+        13106178,
+        13958402,
+        13106434,
+        13102594
+      ],
+      "extra_tokens": [
+        13074946,
+        13075202,
+        13088770,
+        13094146
+      ],
+      "redis_checks": {
+        "13074946": {
+          "redis_days": 0,
+          "api_price": 13.7,
+          "redis_price": null
+        },
+        "13075202": {
+          "redis_days": 0,
+          "api_price": 1455.1,
+          "redis_price": null
+        },
+        "13088770": {
+          "redis_days": 0,
+          "api_price": 14,
+          "redis_price": null
+        },
+        "13094146": {
+          "redis_days": 0,
+          "api_price": 1025.95,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "FINNIFTY25NOV27000CE",
+          "token": 13100802,
+          "strike": 27000.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27000PE",
+          "token": 13101570,
+          "strike": 27000.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27050CE",
+          "token": 13954818,
+          "strike": 27050.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27050PE",
+          "token": 13955074,
+          "strike": 27050.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27100CE",
+          "token": 13101826,
+          "strike": 27100.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27100PE",
+          "token": 13102082,
+          "strike": 27100.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27150CE",
+          "token": 13955330,
+          "strike": 27150.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27150PE",
+          "token": 13955586,
+          "strike": 27150.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27200CE",
+          "token": 13102338,
+          "strike": 27200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27200PE",
+          "token": 13102594,
+          "strike": 27200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27250CE",
+          "token": 13955842,
+          "strike": 27250.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27250PE",
+          "token": 13956098,
+          "strike": 27250.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27300CE",
+          "token": 13102850,
+          "strike": 27300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27300PE",
+          "token": 13103106,
+          "strike": 27300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27350CE",
+          "token": 13956354,
+          "strike": 27350.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27350PE",
+          "token": 13956610,
+          "strike": 27350.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27400CE",
+          "token": 13103362,
+          "strike": 27400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27400PE",
+          "token": 13103618,
+          "strike": 27400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27450CE",
+          "token": 13956866,
+          "strike": 27450.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27450PE",
+          "token": 13957122,
+          "strike": 27450.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27500CE",
+          "token": 13103874,
+          "strike": 27500.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27500PE",
+          "token": 13104130,
+          "strike": 27500.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27550CE",
+          "token": 13957378,
+          "strike": 27550.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27550PE",
+          "token": 13957634,
+          "strike": 27550.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27600CE",
+          "token": 13104386,
+          "strike": 27600.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27600PE",
+          "token": 13105154,
+          "strike": 27600.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27650CE",
+          "token": 13957890,
+          "strike": 27650.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27650PE",
+          "token": 13958146,
+          "strike": 27650.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27700CE",
+          "token": 13105410,
+          "strike": 27700.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27700PE",
+          "token": 13105666,
+          "strike": 27700.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27750CE",
+          "token": 13958402,
+          "strike": 27750.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27750PE",
+          "token": 13958658,
+          "strike": 27750.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27800CE",
+          "token": 13105922,
+          "strike": 27800.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27800PE",
+          "token": 13106178,
+          "strike": 27800.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27850CE",
+          "token": 13958914,
+          "strike": 27850.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27850PE",
+          "token": 13959170,
+          "strike": 27850.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27900CE",
+          "token": 13106434,
+          "strike": 27900.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27900PE",
+          "token": 13106690,
+          "strike": 27900.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27950CE",
+          "token": 13959426,
+          "strike": 27950.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV27950PE",
+          "token": 13959682,
+          "strike": 27950.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV28000CE",
+          "token": 13106946,
+          "strike": 28000.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "FINNIFTY25NOV28000PE",
+          "token": 13107202,
+          "strike": 28000.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "AXISBANK_2025-11-25": {
+      "underlying": "AXISBANK",
+      "expiry": "2025-11-25",
+      "underlying_price": 1241.6,
+      "atm_strike": 1240.0,
+      "current_tokens": [
+        14871810
+      ],
+      "correct_tokens": [
+        14864130,
+        14864386,
+        19050242,
+        19051266,
+        14864642,
+        14864898,
+        19052290,
+        19052546,
+        14865666,
+        14865922,
+        19052802,
+        19053570,
+        14866178,
+        14866434,
+        19053826,
+        19054082,
+        14866690,
+        14866946,
+        19054338,
+        19054594,
+        14868226,
+        14868482,
+        19054850,
+        19055106,
+        14868738,
+        14869250,
+        19055362,
+        19055618,
+        14869506,
+        14869762,
+        19055874,
+        19056642,
+        14871042,
+        14871298,
+        19056898,
+        19057666,
+        14871554,
+        14871810,
+        19057922,
+        19058178,
+        14872066,
+        14872322
+      ],
+      "missing_tokens": [
+        14864642,
+        14864130,
+        14864386,
+        19051266,
+        19050242,
+        14864898,
+        19052290,
+        19052546,
+        14865666,
+        14865922,
+        19054338,
+        19054594,
+        14868482,
+        19054850,
+        14868738,
+        19055106,
+        19058178,
+        14869250,
+        19055362,
+        14872066,
+        19055618,
+        14869506,
+        14869762,
+        19055874,
+        14866178,
+        14868226,
+        14866434,
+        19056642,
+        14872322,
+        19052802,
+        14866690,
+        19056898,
+        14866946,
+        14871042,
+        14871298,
+        19053570,
+        19057666,
+        14871554,
+        19053826,
+        19057922,
+        19054082
+      ],
+      "extra_tokens": [],
+      "redis_checks": {
+        "14871810": {
+          "redis_days": 42,
+          "api_price": 75.45,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "AXISBANK25NOV1140CE",
+          "token": 14864130,
+          "strike": 1140.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1140PE",
+          "token": 14864386,
+          "strike": 1140.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1150CE",
+          "token": 19050242,
+          "strike": 1150.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1150PE",
+          "token": 19051266,
+          "strike": 1150.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1160CE",
+          "token": 14864642,
+          "strike": 1160.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1160PE",
+          "token": 14864898,
+          "strike": 1160.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1170CE",
+          "token": 19052290,
+          "strike": 1170.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1170PE",
+          "token": 19052546,
+          "strike": 1170.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1180CE",
+          "token": 14865666,
+          "strike": 1180.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1180PE",
+          "token": 14865922,
+          "strike": 1180.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1190CE",
+          "token": 19052802,
+          "strike": 1190.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1190PE",
+          "token": 19053570,
+          "strike": 1190.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1200CE",
+          "token": 14866178,
+          "strike": 1200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1200PE",
+          "token": 14866434,
+          "strike": 1200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1210CE",
+          "token": 19053826,
+          "strike": 1210.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1210PE",
+          "token": 19054082,
+          "strike": 1210.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1220CE",
+          "token": 14866690,
+          "strike": 1220.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1220PE",
+          "token": 14866946,
+          "strike": 1220.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1230CE",
+          "token": 19054338,
+          "strike": 1230.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1230PE",
+          "token": 19054594,
+          "strike": 1230.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1240CE",
+          "token": 14868226,
+          "strike": 1240.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1240PE",
+          "token": 14868482,
+          "strike": 1240.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1250CE",
+          "token": 19054850,
+          "strike": 1250.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1250PE",
+          "token": 19055106,
+          "strike": 1250.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1260CE",
+          "token": 14868738,
+          "strike": 1260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1260PE",
+          "token": 14869250,
+          "strike": 1260.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1270CE",
+          "token": 19055362,
+          "strike": 1270.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1270PE",
+          "token": 19055618,
+          "strike": 1270.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1280CE",
+          "token": 14869506,
+          "strike": 1280.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1280PE",
+          "token": 14869762,
+          "strike": 1280.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1290CE",
+          "token": 19055874,
+          "strike": 1290.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1290PE",
+          "token": 19056642,
+          "strike": 1290.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1300CE",
+          "token": 14871042,
+          "strike": 1300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1300PE",
+          "token": 14871298,
+          "strike": 1300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1310CE",
+          "token": 19056898,
+          "strike": 1310.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1310PE",
+          "token": 19057666,
+          "strike": 1310.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1320CE",
+          "token": 14871554,
+          "strike": 1320.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1320PE",
+          "token": 14871810,
+          "strike": 1320.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1330CE",
+          "token": 19057922,
+          "strike": 1330.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1330PE",
+          "token": 19058178,
+          "strike": 1330.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1340CE",
+          "token": 14872066,
+          "strike": 1340.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "AXISBANK25NOV1340PE",
+          "token": 14872322,
+          "strike": 1340.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "HINDUNILVR_2025-11-25": {
+      "underlying": "HINDUNILVR",
+      "expiry": "2025-11-25",
+      "underlying_price": 2427.7,
+      "atm_strike": 2420.0,
+      "current_tokens": [
+        22589698
+      ],
+      "correct_tokens": [
+        28476162,
+        28476418,
+        22573826,
+        22574082,
+        28476674,
+        28476930,
+        22574338,
+        22574594,
+        28477186,
+        28477442,
+        22574850,
+        22575106,
+        28485122,
+        28485378,
+        22575362,
+        22575618,
+        28487682,
+        28487938,
+        22575874,
+        22576130,
+        28488194,
+        28488450,
+        22576386,
+        22576642,
+        28488706,
+        28488962,
+        22576898,
+        22577154,
+        28489218,
+        28489474,
+        22577410,
+        22577666,
+        28489730,
+        28490498,
+        22577922,
+        22578178,
+        28490754,
+        28491010,
+        22578434,
+        22578690,
+        28491266,
+        28491522
+      ],
+      "missing_tokens": [
+        28476674,
+        28476162,
+        28476418,
+        22573826,
+        22574082,
+        28476930,
+        22574338,
+        22574594,
+        28477186,
+        28477442,
+        28487682,
+        22577154,
+        28487938,
+        22577410,
+        28491266,
+        28488194,
+        22577666,
+        28488450,
+        22577922,
+        28488706,
+        22578178,
+        22576898,
+        28488962,
+        22578434,
+        28485122,
+        28489218,
+        22578690,
+        28491522,
+        22574850,
+        28485378,
+        28489474,
+        22575106,
+        28489730,
+        22575362,
+        22575618,
+        22575874,
+        28490498,
+        22576130,
+        28490754,
+        22576386,
+        28491010,
+        22576642
+      ],
+      "extra_tokens": [
+        22589698
+      ],
+      "redis_checks": {
+        "22589698": {
+          "redis_days": 53,
+          "api_price": 238,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2220CE",
+          "token": 28476162,
+          "strike": 2220.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2220PE",
+          "token": 28476418,
+          "strike": 2220.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2240CE",
+          "token": 22573826,
+          "strike": 2240.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2240PE",
+          "token": 22574082,
+          "strike": 2240.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2260CE",
+          "token": 28476674,
+          "strike": 2260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2260PE",
+          "token": 28476930,
+          "strike": 2260.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2280CE",
+          "token": 22574338,
+          "strike": 2280.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2280PE",
+          "token": 22574594,
+          "strike": 2280.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2300CE",
+          "token": 28477186,
+          "strike": 2300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2300PE",
+          "token": 28477442,
+          "strike": 2300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2320CE",
+          "token": 22574850,
+          "strike": 2320.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2320PE",
+          "token": 22575106,
+          "strike": 2320.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2340CE",
+          "token": 28485122,
+          "strike": 2340.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2340PE",
+          "token": 28485378,
+          "strike": 2340.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2360CE",
+          "token": 22575362,
+          "strike": 2360.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2360PE",
+          "token": 22575618,
+          "strike": 2360.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2380CE",
+          "token": 28487682,
+          "strike": 2380.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2380PE",
+          "token": 28487938,
+          "strike": 2380.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2400CE",
+          "token": 22575874,
+          "strike": 2400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2400PE",
+          "token": 22576130,
+          "strike": 2400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2420CE",
+          "token": 28488194,
+          "strike": 2420.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2420PE",
+          "token": 28488450,
+          "strike": 2420.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2440CE",
+          "token": 22576386,
+          "strike": 2440.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2440PE",
+          "token": 22576642,
+          "strike": 2440.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2460CE",
+          "token": 28488706,
+          "strike": 2460.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2460PE",
+          "token": 28488962,
+          "strike": 2460.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2480CE",
+          "token": 22576898,
+          "strike": 2480.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2480PE",
+          "token": 22577154,
+          "strike": 2480.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2500CE",
+          "token": 28489218,
+          "strike": 2500.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2500PE",
+          "token": 28489474,
+          "strike": 2500.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2520CE",
+          "token": 22577410,
+          "strike": 2520.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2520PE",
+          "token": 22577666,
+          "strike": 2520.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2540CE",
+          "token": 28489730,
+          "strike": 2540.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2540PE",
+          "token": 28490498,
+          "strike": 2540.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2560CE",
+          "token": 22577922,
+          "strike": 2560.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2560PE",
+          "token": 22578178,
+          "strike": 2560.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2580CE",
+          "token": 28490754,
+          "strike": 2580.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2580PE",
+          "token": 28491010,
+          "strike": 2580.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2600CE",
+          "token": 22578434,
+          "strike": 2600.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2600PE",
+          "token": 22578690,
+          "strike": 2600.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2620CE",
+          "token": 28491266,
+          "strike": 2620.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "HINDUNILVR25NOV2620PE",
+          "token": 28491522,
+          "strike": 2620.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "ICICIBANK_2025-11-25": {
+      "underlying": "ICICIBANK",
+      "expiry": "2025-11-25",
+      "underlying_price": 1373.0,
+      "atm_strike": 1370.0,
+      "current_tokens": [
+        22870786
+      ],
+      "correct_tokens": [
+        29026306,
+        29032962,
+        22853890,
+        22854146,
+        29033218,
+        29034242,
+        22854402,
+        22854658,
+        29035522,
+        29043970,
+        22854914,
+        22856962,
+        29044482,
+        29044738,
+        22857218,
+        22861570,
+        29044994,
+        29045250,
+        22862082,
+        22862594,
+        29045506,
+        29045762,
+        22863106,
+        22867714,
+        29046274,
+        29046530,
+        22868482,
+        22868738,
+        29046786,
+        29047042,
+        22868994,
+        22869250,
+        29047554,
+        29047810,
+        22869506,
+        22869762,
+        29048066,
+        29048322,
+        22870018,
+        22870274,
+        29049346,
+        29049602
+      ],
+      "missing_tokens": [
+        22854146,
+        29026306,
+        29032962,
+        22853890,
+        29033218,
+        29034242,
+        22854402,
+        22854658,
+        29035522,
+        29043970,
+        29044482,
+        29044738,
+        29044994,
+        29045250,
+        22868482,
+        29049346,
+        29045506,
+        22868738,
+        29049602,
+        29045762,
+        22868994,
+        22856962,
+        22869250,
+        22857218,
+        29046274,
+        22869506,
+        22861570,
+        29046530,
+        22869762,
+        22867714,
+        29046786,
+        22870018,
+        22862082,
+        29047042,
+        22870274,
+        22862594,
+        29047554,
+        29047810,
+        22854914,
+        22863106,
+        29048066,
+        29048322
+      ],
+      "extra_tokens": [
+        22870786
+      ],
+      "redis_checks": {
+        "22870786": {
+          "redis_days": 53,
+          "api_price": 110,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "ICICIBANK25NOV1270CE",
+          "token": 29026306,
+          "strike": 1270.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1270PE",
+          "token": 29032962,
+          "strike": 1270.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1280CE",
+          "token": 22853890,
+          "strike": 1280.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1280PE",
+          "token": 22854146,
+          "strike": 1280.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1290CE",
+          "token": 29033218,
+          "strike": 1290.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1290PE",
+          "token": 29034242,
+          "strike": 1290.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1300CE",
+          "token": 22854402,
+          "strike": 1300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1300PE",
+          "token": 22854658,
+          "strike": 1300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1310CE",
+          "token": 29035522,
+          "strike": 1310.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1310PE",
+          "token": 29043970,
+          "strike": 1310.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1320CE",
+          "token": 22854914,
+          "strike": 1320.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1320PE",
+          "token": 22856962,
+          "strike": 1320.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1330CE",
+          "token": 29044482,
+          "strike": 1330.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1330PE",
+          "token": 29044738,
+          "strike": 1330.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1340CE",
+          "token": 22857218,
+          "strike": 1340.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1340PE",
+          "token": 22861570,
+          "strike": 1340.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1350CE",
+          "token": 29044994,
+          "strike": 1350.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1350PE",
+          "token": 29045250,
+          "strike": 1350.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1360CE",
+          "token": 22862082,
+          "strike": 1360.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1360PE",
+          "token": 22862594,
+          "strike": 1360.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1370CE",
+          "token": 29045506,
+          "strike": 1370.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1370PE",
+          "token": 29045762,
+          "strike": 1370.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1380CE",
+          "token": 22863106,
+          "strike": 1380.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1380PE",
+          "token": 22867714,
+          "strike": 1380.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1390CE",
+          "token": 29046274,
+          "strike": 1390.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1390PE",
+          "token": 29046530,
+          "strike": 1390.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1400CE",
+          "token": 22868482,
+          "strike": 1400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1400PE",
+          "token": 22868738,
+          "strike": 1400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1410CE",
+          "token": 29046786,
+          "strike": 1410.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1410PE",
+          "token": 29047042,
+          "strike": 1410.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1420CE",
+          "token": 22868994,
+          "strike": 1420.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1420PE",
+          "token": 22869250,
+          "strike": 1420.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1430CE",
+          "token": 29047554,
+          "strike": 1430.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1430PE",
+          "token": 29047810,
+          "strike": 1430.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1440CE",
+          "token": 22869506,
+          "strike": 1440.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1440PE",
+          "token": 22869762,
+          "strike": 1440.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1450CE",
+          "token": 29048066,
+          "strike": 1450.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1450PE",
+          "token": 29048322,
+          "strike": 1450.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1460CE",
+          "token": 22870018,
+          "strike": 1460.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1460PE",
+          "token": 22870274,
+          "strike": 1460.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1470CE",
+          "token": 29049346,
+          "strike": 1470.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ICICIBANK25NOV1470PE",
+          "token": 29049602,
+          "strike": 1470.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "JSWSTEEL_2025-11-25": {
+      "underlying": "JSWSTEEL",
+      "expiry": "2025-11-25",
+      "underlying_price": 1167.8,
+      "atm_strike": 1170.0,
+      "current_tokens": [
+        24585730
+      ],
+      "correct_tokens": [
+        33068546,
+        33068802,
+        24585730,
+        24585986,
+        33069058,
+        33069314,
+        24586242,
+        24586498,
+        33069570,
+        33072386,
+        24586754,
+        24587010,
+        33072642,
+        33072898,
+        24587266,
+        24587522,
+        33073154,
+        33073410,
+        24587778,
+        24588034,
+        33073666,
+        33073922,
+        24588290,
+        24588546,
+        33074178,
+        33074690,
+        24592386,
+        24592642,
+        33076482,
+        33081090,
+        24592898,
+        24593154,
+        33081346,
+        33085186,
+        24593410,
+        24593666,
+        33085442,
+        33089538,
+        24593922,
+        24594178,
+        33090306,
+        33093122
+      ],
+      "missing_tokens": [
+        33068546,
+        33068802,
+        24585986,
+        33069058,
+        33069314,
+        24586242,
+        24586498,
+        33069570,
+        33072386,
+        24588034,
+        24588290,
+        24592386,
+        24588546,
+        33074690,
+        24592642,
+        24592898,
+        24593154,
+        24593410,
+        33076482,
+        24593666,
+        33072642,
+        24593922,
+        33093122,
+        33072898,
+        33081090,
+        33085186,
+        24594178,
+        33073154,
+        33081346,
+        33085442,
+        33089538,
+        33073410,
+        24586754,
+        33073666,
+        24587010,
+        33073922,
+        33090306,
+        24587266,
+        33074178,
+        24587522,
+        24587778
+      ],
+      "extra_tokens": [],
+      "redis_checks": {
+        "24585730": {
+          "redis_days": 53,
+          "api_price": 81.35,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1070CE",
+          "token": 33068546,
+          "strike": 1070.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1070PE",
+          "token": 33068802,
+          "strike": 1070.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1080CE",
+          "token": 24585730,
+          "strike": 1080.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1080PE",
+          "token": 24585986,
+          "strike": 1080.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1090CE",
+          "token": 33069058,
+          "strike": 1090.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1090PE",
+          "token": 33069314,
+          "strike": 1090.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1100CE",
+          "token": 24586242,
+          "strike": 1100.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1100PE",
+          "token": 24586498,
+          "strike": 1100.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1110CE",
+          "token": 33069570,
+          "strike": 1110.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1110PE",
+          "token": 33072386,
+          "strike": 1110.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1120CE",
+          "token": 24586754,
+          "strike": 1120.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1120PE",
+          "token": 24587010,
+          "strike": 1120.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1130CE",
+          "token": 33072642,
+          "strike": 1130.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1130PE",
+          "token": 33072898,
+          "strike": 1130.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1140CE",
+          "token": 24587266,
+          "strike": 1140.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1140PE",
+          "token": 24587522,
+          "strike": 1140.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1150CE",
+          "token": 33073154,
+          "strike": 1150.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1150PE",
+          "token": 33073410,
+          "strike": 1150.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1160CE",
+          "token": 24587778,
+          "strike": 1160.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1160PE",
+          "token": 24588034,
+          "strike": 1160.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1170CE",
+          "token": 33073666,
+          "strike": 1170.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1170PE",
+          "token": 33073922,
+          "strike": 1170.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1180CE",
+          "token": 24588290,
+          "strike": 1180.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1180PE",
+          "token": 24588546,
+          "strike": 1180.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1190CE",
+          "token": 33074178,
+          "strike": 1190.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1190PE",
+          "token": 33074690,
+          "strike": 1190.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1200CE",
+          "token": 24592386,
+          "strike": 1200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1200PE",
+          "token": 24592642,
+          "strike": 1200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1210CE",
+          "token": 33076482,
+          "strike": 1210.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1210PE",
+          "token": 33081090,
+          "strike": 1210.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1220CE",
+          "token": 24592898,
+          "strike": 1220.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1220PE",
+          "token": 24593154,
+          "strike": 1220.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1230CE",
+          "token": 33081346,
+          "strike": 1230.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1230PE",
+          "token": 33085186,
+          "strike": 1230.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1240CE",
+          "token": 24593410,
+          "strike": 1240.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1240PE",
+          "token": 24593666,
+          "strike": 1240.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1250CE",
+          "token": 33085442,
+          "strike": 1250.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1250PE",
+          "token": 33089538,
+          "strike": 1250.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1260CE",
+          "token": 24593922,
+          "strike": 1260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1260PE",
+          "token": 24594178,
+          "strike": 1260.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1270CE",
+          "token": 33090306,
+          "strike": 1270.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "JSWSTEEL25NOV1270PE",
+          "token": 33093122,
+          "strike": 1270.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "KOTAKBANK_2025-11-25": {
+      "underlying": "KOTAKBANK",
+      "expiry": "2025-11-25",
+      "underlying_price": 2079.7,
+      "atm_strike": 2080.0,
+      "current_tokens": [
+        25083906,
+        25084418
+      ],
+      "correct_tokens": [
+        25078018,
+        25078274,
+        33480194,
+        33480450,
+        25078530,
+        25078786,
+        33480706,
+        33480962,
+        25079042,
+        25079298,
+        33481218,
+        33481474,
+        25079554,
+        25079810,
+        33481730,
+        33481986,
+        25080066,
+        25080322,
+        33482242,
+        33482498,
+        25080578,
+        25080834,
+        33482754,
+        33483010,
+        25081090,
+        25081346,
+        33483266,
+        33483522,
+        25081602,
+        25081858,
+        33483778,
+        33484034,
+        25082114,
+        25082370,
+        33487362,
+        33487618,
+        25082626,
+        25082882,
+        33487874,
+        33488130,
+        25083138,
+        25083394
+      ],
+      "missing_tokens": [
+        33482242,
+        25078530,
+        33480450,
+        25078018,
+        25078274,
+        33480194,
+        25078786,
+        33480706,
+        33480962,
+        25079042,
+        25079554,
+        25079810,
+        25080066,
+        25083394,
+        25080322,
+        33481218,
+        33481474,
+        25080578,
+        33481730,
+        25080834,
+        33481986,
+        25081090,
+        25081346,
+        33482498,
+        25081602,
+        33482754,
+        25081858,
+        33483010,
+        25082114,
+        33483266,
+        25082370,
+        33487362,
+        33483522,
+        33487618,
+        25082626,
+        33483778,
+        25082882,
+        33487874,
+        33484034,
+        33488130,
+        25083138,
+        25079298
+      ],
+      "extra_tokens": [
+        25083906,
+        25084418
+      ],
+      "redis_checks": {
+        "25083906": {
+          "redis_days": 52,
+          "api_price": 149,
+          "redis_price": null
+        },
+        "25084418": {
+          "redis_days": 29,
+          "api_price": 183.05,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1880CE",
+          "token": 25078018,
+          "strike": 1880.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1880PE",
+          "token": 25078274,
+          "strike": 1880.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1900CE",
+          "token": 33480194,
+          "strike": 1900.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1900PE",
+          "token": 33480450,
+          "strike": 1900.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1920CE",
+          "token": 25078530,
+          "strike": 1920.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1920PE",
+          "token": 25078786,
+          "strike": 1920.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1940CE",
+          "token": 33480706,
+          "strike": 1940.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1940PE",
+          "token": 33480962,
+          "strike": 1940.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1960CE",
+          "token": 25079042,
+          "strike": 1960.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1960PE",
+          "token": 25079298,
+          "strike": 1960.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1980CE",
+          "token": 33481218,
+          "strike": 1980.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV1980PE",
+          "token": 33481474,
+          "strike": 1980.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2000CE",
+          "token": 25079554,
+          "strike": 2000.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2000PE",
+          "token": 25079810,
+          "strike": 2000.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2020CE",
+          "token": 33481730,
+          "strike": 2020.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2020PE",
+          "token": 33481986,
+          "strike": 2020.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2040CE",
+          "token": 25080066,
+          "strike": 2040.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2040PE",
+          "token": 25080322,
+          "strike": 2040.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2060CE",
+          "token": 33482242,
+          "strike": 2060.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2060PE",
+          "token": 33482498,
+          "strike": 2060.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2080CE",
+          "token": 25080578,
+          "strike": 2080.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2080PE",
+          "token": 25080834,
+          "strike": 2080.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2100CE",
+          "token": 33482754,
+          "strike": 2100.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2100PE",
+          "token": 33483010,
+          "strike": 2100.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2120CE",
+          "token": 25081090,
+          "strike": 2120.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2120PE",
+          "token": 25081346,
+          "strike": 2120.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2140CE",
+          "token": 33483266,
+          "strike": 2140.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2140PE",
+          "token": 33483522,
+          "strike": 2140.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2160CE",
+          "token": 25081602,
+          "strike": 2160.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2160PE",
+          "token": 25081858,
+          "strike": 2160.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2180CE",
+          "token": 33483778,
+          "strike": 2180.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2180PE",
+          "token": 33484034,
+          "strike": 2180.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2200CE",
+          "token": 25082114,
+          "strike": 2200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2200PE",
+          "token": 25082370,
+          "strike": 2200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2220CE",
+          "token": 33487362,
+          "strike": 2220.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2220PE",
+          "token": 33487618,
+          "strike": 2220.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2240CE",
+          "token": 25082626,
+          "strike": 2240.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2240PE",
+          "token": 25082882,
+          "strike": 2240.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2260CE",
+          "token": 33487874,
+          "strike": 2260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2260PE",
+          "token": 33488130,
+          "strike": 2260.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2280CE",
+          "token": 25083138,
+          "strike": 2280.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "KOTAKBANK25NOV2280PE",
+          "token": 25083394,
+          "strike": 2280.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "INDIGO_2025-11-25": {
+      "underlying": "INDIGO",
+      "expiry": "2025-11-25",
+      "underlying_price": 5908.5,
+      "atm_strike": 5900.0,
+      "current_tokens": [
+        30426882,
+        30413314,
+        30413826
+      ],
+      "correct_tokens": [
+        23574786,
+        23575042,
+        30413826,
+        30414082,
+        30414338,
+        30414594,
+        30414850,
+        30415106,
+        23575298,
+        23575554,
+        30415362,
+        30415618,
+        30415874,
+        30416130,
+        30416386,
+        30416642,
+        23575810,
+        23576066,
+        30416898,
+        30417154,
+        30417410,
+        30417666,
+        30417922,
+        30418178,
+        23576322,
+        23576578,
+        30421250,
+        30423298,
+        30423554,
+        30423810,
+        30424578,
+        30426882,
+        23576834,
+        23577090,
+        30427138,
+        30435074,
+        30435330,
+        30435586,
+        30435842,
+        30436098,
+        23577346,
+        23577602
+      ],
+      "missing_tokens": [
+        30414082,
+        30414338,
+        23574786,
+        23575042,
+        30414594,
+        30414850,
+        30415106,
+        23575298,
+        23575554,
+        30416898,
+        23576578,
+        30417154,
+        30421250,
+        23576834,
+        30416642,
+        30417410,
+        23577090,
+        30417666,
+        23577346,
+        30417922,
+        23577602,
+        30418178,
+        30435074,
+        30427138,
+        30435330,
+        30423298,
+        30435586,
+        30415362,
+        30423554,
+        30435842,
+        30415618,
+        30423810,
+        30436098,
+        30415874,
+        30416386,
+        30416130,
+        23575810,
+        30424578,
+        23576066,
+        23576322
+      ],
+      "extra_tokens": [
+        30413314
+      ],
+      "redis_checks": {
+        "30413314": {
+          "redis_days": 30,
+          "api_price": 453.8,
+          "redis_price": null
+        },
+        "30413826": {
+          "redis_days": 30,
+          "api_price": 319.2,
+          "redis_price": null
+        },
+        "30426882": {
+          "redis_days": 31,
+          "api_price": 266.35,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "INDIGO25NOV5400CE",
+          "token": 23574786,
+          "strike": 5400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5400PE",
+          "token": 23575042,
+          "strike": 5400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5450CE",
+          "token": 30413826,
+          "strike": 5450.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5450PE",
+          "token": 30414082,
+          "strike": 5450.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5500CE",
+          "token": 30414338,
+          "strike": 5500.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5500PE",
+          "token": 30414594,
+          "strike": 5500.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5550CE",
+          "token": 30414850,
+          "strike": 5550.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5550PE",
+          "token": 30415106,
+          "strike": 5550.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5600CE",
+          "token": 23575298,
+          "strike": 5600.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5600PE",
+          "token": 23575554,
+          "strike": 5600.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5650CE",
+          "token": 30415362,
+          "strike": 5650.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5650PE",
+          "token": 30415618,
+          "strike": 5650.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5700CE",
+          "token": 30415874,
+          "strike": 5700.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5700PE",
+          "token": 30416130,
+          "strike": 5700.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5750CE",
+          "token": 30416386,
+          "strike": 5750.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5750PE",
+          "token": 30416642,
+          "strike": 5750.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5800CE",
+          "token": 23575810,
+          "strike": 5800.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5800PE",
+          "token": 23576066,
+          "strike": 5800.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5850CE",
+          "token": 30416898,
+          "strike": 5850.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5850PE",
+          "token": 30417154,
+          "strike": 5850.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5900CE",
+          "token": 30417410,
+          "strike": 5900.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5900PE",
+          "token": 30417666,
+          "strike": 5900.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5950CE",
+          "token": 30417922,
+          "strike": 5950.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV5950PE",
+          "token": 30418178,
+          "strike": 5950.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6000CE",
+          "token": 23576322,
+          "strike": 6000.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6000PE",
+          "token": 23576578,
+          "strike": 6000.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6050CE",
+          "token": 30421250,
+          "strike": 6050.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6050PE",
+          "token": 30423298,
+          "strike": 6050.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6100CE",
+          "token": 30423554,
+          "strike": 6100.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6100PE",
+          "token": 30423810,
+          "strike": 6100.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6150CE",
+          "token": 30424578,
+          "strike": 6150.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6150PE",
+          "token": 30426882,
+          "strike": 6150.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6200CE",
+          "token": 23576834,
+          "strike": 6200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6200PE",
+          "token": 23577090,
+          "strike": 6200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6250CE",
+          "token": 30427138,
+          "strike": 6250.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6250PE",
+          "token": 30435074,
+          "strike": 6250.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6300CE",
+          "token": 30435330,
+          "strike": 6300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6300PE",
+          "token": 30435586,
+          "strike": 6300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6350CE",
+          "token": 30435842,
+          "strike": 6350.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6350PE",
+          "token": 30436098,
+          "strike": 6350.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6400CE",
+          "token": 23577346,
+          "strike": 6400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INDIGO25NOV6400PE",
+          "token": 23577602,
+          "strike": 6400.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "INFY_2025-11-25": {
+      "underlying": "INFY",
+      "expiry": "2025-11-25",
+      "underlying_price": 1502.8,
+      "atm_strike": 1500.0,
+      "current_tokens": [
+        120633
+      ],
+      "correct_tokens": [
+        30843138,
+        30843394,
+        23847682,
+        23847938,
+        30843650,
+        30865154,
+        23848194,
+        23848450,
+        30866178,
+        30868738,
+        23848706,
+        23857154,
+        30868994,
+        30869506,
+        23857410,
+        23857666,
+        30870274,
+        30875650,
+        23857922,
+        23858434,
+        30875906,
+        30876674,
+        23858690,
+        23858946,
+        30876930,
+        30877186,
+        23859202,
+        23859458,
+        30877442,
+        30877954,
+        23859714,
+        23859970,
+        30878210,
+        30878466,
+        23860226,
+        23860482,
+        30878722,
+        30881794,
+        23860738,
+        23860994,
+        30882050,
+        30884354
+      ],
+      "missing_tokens": [
+        23847682,
+        23847938,
+        30843138,
+        30843394,
+        30843650,
+        30865154,
+        23848194,
+        23848450,
+        30866178,
+        30868738,
+        30875650,
+        23859202,
+        30875906,
+        23858946,
+        23859458,
+        23859714,
+        30884354,
+        23859970,
+        30876674,
+        23860226,
+        30876930,
+        23860482,
+        30868994,
+        30877186,
+        23860738,
+        23848706,
+        30877442,
+        23860994,
+        23857154,
+        30869506,
+        30881794,
+        23857410,
+        30877954,
+        30882050,
+        23857666,
+        30878210,
+        30870274,
+        23857922,
+        30878466,
+        30878722,
+        23858434,
+        23858690
+      ],
+      "extra_tokens": [
+        120633
+      ],
+      "redis_checks": {
+        "120633": {
+          "redis_days": 4,
+          "api_price": null,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "INFY25NOV1300CE",
+          "token": 30843138,
+          "strike": 1300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1300PE",
+          "token": 30843394,
+          "strike": 1300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1320CE",
+          "token": 23847682,
+          "strike": 1320.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1320PE",
+          "token": 23847938,
+          "strike": 1320.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1340CE",
+          "token": 30843650,
+          "strike": 1340.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1340PE",
+          "token": 30865154,
+          "strike": 1340.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1360CE",
+          "token": 23848194,
+          "strike": 1360.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1360PE",
+          "token": 23848450,
+          "strike": 1360.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1380CE",
+          "token": 30866178,
+          "strike": 1380.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1380PE",
+          "token": 30868738,
+          "strike": 1380.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1400CE",
+          "token": 23848706,
+          "strike": 1400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1400PE",
+          "token": 23857154,
+          "strike": 1400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1420CE",
+          "token": 30868994,
+          "strike": 1420.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1420PE",
+          "token": 30869506,
+          "strike": 1420.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1440CE",
+          "token": 23857410,
+          "strike": 1440.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1440PE",
+          "token": 23857666,
+          "strike": 1440.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1460CE",
+          "token": 30870274,
+          "strike": 1460.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1460PE",
+          "token": 30875650,
+          "strike": 1460.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1480CE",
+          "token": 23857922,
+          "strike": 1480.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1480PE",
+          "token": 23858434,
+          "strike": 1480.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1500CE",
+          "token": 30875906,
+          "strike": 1500.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "INFY25NOV1500PE",
+          "token": 30876674,
+          "strike": 1500.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "INFY25NOV1520CE",
+          "token": 23858690,
+          "strike": 1520.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1520PE",
+          "token": 23858946,
+          "strike": 1520.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1540CE",
+          "token": 30876930,
+          "strike": 1540.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1540PE",
+          "token": 30877186,
+          "strike": 1540.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1560CE",
+          "token": 23859202,
+          "strike": 1560.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1560PE",
+          "token": 23859458,
+          "strike": 1560.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1580CE",
+          "token": 30877442,
+          "strike": 1580.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1580PE",
+          "token": 30877954,
+          "strike": 1580.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1600CE",
+          "token": 23859714,
+          "strike": 1600.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1600PE",
+          "token": 23859970,
+          "strike": 1600.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1620CE",
+          "token": 30878210,
+          "strike": 1620.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1620PE",
+          "token": 30878466,
+          "strike": 1620.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1640CE",
+          "token": 23860226,
+          "strike": 1640.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1640PE",
+          "token": 23860482,
+          "strike": 1640.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1660CE",
+          "token": 30878722,
+          "strike": 1660.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1660PE",
+          "token": 30881794,
+          "strike": 1660.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1680CE",
+          "token": 23860738,
+          "strike": 1680.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1680PE",
+          "token": 23860994,
+          "strike": 1680.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1700CE",
+          "token": 30882050,
+          "strike": 1700.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "INFY25NOV1700PE",
+          "token": 30884354,
+          "strike": 1700.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "TATACONSUM_2025-11-25": {
+      "underlying": "TATACONSUM",
+      "expiry": "2025-11-25",
+      "underlying_price": 1157.8,
+      "atm_strike": 1160.0,
+      "current_tokens": [
+        31178242,
+        37602818,
+        37603330
+      ],
+      "correct_tokens": [
+        31171842,
+        31172098,
+        37602306,
+        37602562,
+        31178242,
+        31178498,
+        37602818,
+        37603074,
+        31179778,
+        31180034,
+        37603330,
+        37603586,
+        31180290,
+        31180546,
+        37603842,
+        37604098,
+        31181314,
+        31181570,
+        37604354,
+        37604610,
+        31181826,
+        31182082,
+        37604866,
+        37605122,
+        31182338,
+        31182594,
+        37605378,
+        37605634,
+        31197442,
+        31197698,
+        37605890,
+        37606146,
+        31197954,
+        31198466,
+        37606402,
+        37606658,
+        31198722,
+        31198978,
+        37606914,
+        37607170,
+        31199234,
+        31199490
+      ],
+      "missing_tokens": [
+        31181314,
+        31180546,
+        37602306,
+        31171842,
+        31172098,
+        37602562,
+        31178498,
+        37603074,
+        37605122,
+        37605378,
+        31199234,
+        37605634,
+        31198978,
+        31199490,
+        37605890,
+        37606146,
+        31179778,
+        37606402,
+        31180034,
+        37606658,
+        31180290,
+        37606914,
+        37607170,
+        31182594,
+        37603586,
+        31197442,
+        37603842,
+        31182338,
+        31197698,
+        37604098,
+        31181570,
+        31197954,
+        37604354,
+        31181826,
+        31198722,
+        37604610,
+        31182082,
+        31198466,
+        37604866
+      ],
+      "extra_tokens": [],
+      "redis_checks": {
+        "31178242": {
+          "redis_days": 53,
+          "api_price": 73.65,
+          "redis_price": null
+        },
+        "37602818": {
+          "redis_days": 30,
+          "api_price": 70.9,
+          "redis_price": null
+        },
+        "37603330": {
+          "redis_days": 30,
+          "api_price": 50.5,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "TATACONSUM25NOV1060CE",
+          "token": 31171842,
+          "strike": 1060.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1060PE",
+          "token": 31172098,
+          "strike": 1060.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1070CE",
+          "token": 37602306,
+          "strike": 1070.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1070PE",
+          "token": 37602562,
+          "strike": 1070.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1080CE",
+          "token": 31178242,
+          "strike": 1080.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1080PE",
+          "token": 31178498,
+          "strike": 1080.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1090CE",
+          "token": 37602818,
+          "strike": 1090.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1090PE",
+          "token": 37603074,
+          "strike": 1090.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1100CE",
+          "token": 31179778,
+          "strike": 1100.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1100PE",
+          "token": 31180034,
+          "strike": 1100.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1110CE",
+          "token": 37603330,
+          "strike": 1110.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1110PE",
+          "token": 37603586,
+          "strike": 1110.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1120CE",
+          "token": 31180290,
+          "strike": 1120.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1120PE",
+          "token": 31180546,
+          "strike": 1120.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1130CE",
+          "token": 37603842,
+          "strike": 1130.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1130PE",
+          "token": 37604098,
+          "strike": 1130.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1140CE",
+          "token": 31181314,
+          "strike": 1140.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1140PE",
+          "token": 31181570,
+          "strike": 1140.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1150CE",
+          "token": 37604354,
+          "strike": 1150.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1150PE",
+          "token": 37604610,
+          "strike": 1150.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1160CE",
+          "token": 31181826,
+          "strike": 1160.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1160PE",
+          "token": 31182082,
+          "strike": 1160.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1170CE",
+          "token": 37604866,
+          "strike": 1170.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1170PE",
+          "token": 37605122,
+          "strike": 1170.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1180CE",
+          "token": 31182338,
+          "strike": 1180.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1180PE",
+          "token": 31182594,
+          "strike": 1180.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1190CE",
+          "token": 37605378,
+          "strike": 1190.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1190PE",
+          "token": 37605634,
+          "strike": 1190.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1200CE",
+          "token": 31197442,
+          "strike": 1200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1200PE",
+          "token": 31197698,
+          "strike": 1200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1210CE",
+          "token": 37605890,
+          "strike": 1210.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1210PE",
+          "token": 37606146,
+          "strike": 1210.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1220CE",
+          "token": 31197954,
+          "strike": 1220.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1220PE",
+          "token": 31198466,
+          "strike": 1220.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1230CE",
+          "token": 37606402,
+          "strike": 1230.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1230PE",
+          "token": 37606658,
+          "strike": 1230.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1240CE",
+          "token": 31198722,
+          "strike": 1240.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1240PE",
+          "token": 31198978,
+          "strike": 1240.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1250CE",
+          "token": 37606914,
+          "strike": 1250.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1250PE",
+          "token": 37607170,
+          "strike": 1250.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1260CE",
+          "token": 31199234,
+          "strike": 1260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TATACONSUM25NOV1260PE",
+          "token": 31199490,
+          "strike": 1260.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "TCS_2025-11-25": {
+      "underlying": "TCS",
+      "expiry": "2025-11-25",
+      "underlying_price": 3106.0,
+      "atm_strike": 3100.0,
+      "current_tokens": [
+        31665410,
+        37787650
+      ],
+      "correct_tokens": [
+        37788674,
+        37788930,
+        31672834,
+        31673090,
+        37789186,
+        37789442,
+        31673346,
+        31673602,
+        37789698,
+        37789954,
+        31673858,
+        31674114,
+        37790210,
+        37790466,
+        31674882,
+        31675138,
+        37790722,
+        37790978,
+        31675394,
+        31677698,
+        37791234,
+        37791490,
+        31677954,
+        31684354,
+        37791746,
+        37792002,
+        31684610,
+        31685890,
+        37792258,
+        37792514,
+        31686146,
+        31686402,
+        37792770,
+        37793026,
+        31686658,
+        31686914,
+        37793282,
+        37793538,
+        31687170,
+        31687938,
+        37793794,
+        37794050
+      ],
+      "missing_tokens": [
+        31672834,
+        37788674,
+        37788930,
+        31673090,
+        37789186,
+        37789442,
+        31673346,
+        31673602,
+        37789698,
+        37789954,
+        31674114,
+        31686658,
+        37793794,
+        31686914,
+        37793282,
+        37794050,
+        37790210,
+        31674882,
+        31687170,
+        31675138,
+        37790466,
+        37790722,
+        31675394,
+        37790978,
+        31687938,
+        37791234,
+        37793538,
+        31677954,
+        37791490,
+        31684354,
+        31686146,
+        37791746,
+        31684610,
+        37792002,
+        37792258,
+        37792514,
+        37792770,
+        31686402,
+        31677698,
+        31685890,
+        37793026,
+        31673858
+      ],
+      "extra_tokens": [
+        31665410,
+        37787650
+      ],
+      "redis_checks": {
+        "31665410": {
+          "redis_days": 53,
+          "api_price": 161.9,
+          "redis_price": null
+        },
+        "37787650": {
+          "redis_days": 30,
+          "api_price": 164,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "TCS25NOV2900CE",
+          "token": 37788674,
+          "strike": 2900.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2900PE",
+          "token": 37788930,
+          "strike": 2900.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2920CE",
+          "token": 31672834,
+          "strike": 2920.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2920PE",
+          "token": 31673090,
+          "strike": 2920.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2940CE",
+          "token": 37789186,
+          "strike": 2940.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2940PE",
+          "token": 37789442,
+          "strike": 2940.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2960CE",
+          "token": 31673346,
+          "strike": 2960.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2960PE",
+          "token": 31673602,
+          "strike": 2960.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2980CE",
+          "token": 37789698,
+          "strike": 2980.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV2980PE",
+          "token": 37789954,
+          "strike": 2980.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3000CE",
+          "token": 31673858,
+          "strike": 3000.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3000PE",
+          "token": 31674114,
+          "strike": 3000.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3020CE",
+          "token": 37790210,
+          "strike": 3020.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3020PE",
+          "token": 37790466,
+          "strike": 3020.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3040CE",
+          "token": 31674882,
+          "strike": 3040.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3040PE",
+          "token": 31675138,
+          "strike": 3040.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3060CE",
+          "token": 37790722,
+          "strike": 3060.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3060PE",
+          "token": 37790978,
+          "strike": 3060.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3080CE",
+          "token": 31675394,
+          "strike": 3080.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3080PE",
+          "token": 31677698,
+          "strike": 3080.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3100CE",
+          "token": 37791234,
+          "strike": 3100.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "TCS25NOV3100PE",
+          "token": 37791490,
+          "strike": 3100.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "TCS25NOV3120CE",
+          "token": 31677954,
+          "strike": 3120.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3120PE",
+          "token": 31684354,
+          "strike": 3120.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3140CE",
+          "token": 37791746,
+          "strike": 3140.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3140PE",
+          "token": 37792002,
+          "strike": 3140.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3160CE",
+          "token": 31684610,
+          "strike": 3160.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3160PE",
+          "token": 31685890,
+          "strike": 3160.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3180CE",
+          "token": 37792258,
+          "strike": 3180.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3180PE",
+          "token": 37792514,
+          "strike": 3180.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3200CE",
+          "token": 31686146,
+          "strike": 3200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3200PE",
+          "token": 31686402,
+          "strike": 3200.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3220CE",
+          "token": 37792770,
+          "strike": 3220.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3220PE",
+          "token": 37793026,
+          "strike": 3220.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3240CE",
+          "token": 31686658,
+          "strike": 3240.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3240PE",
+          "token": 31686914,
+          "strike": 3240.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3260CE",
+          "token": 37793282,
+          "strike": 3260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3260PE",
+          "token": 37793538,
+          "strike": 3260.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3280CE",
+          "token": 31687170,
+          "strike": 3280.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3280PE",
+          "token": 31687938,
+          "strike": 3280.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3300CE",
+          "token": 37793794,
+          "strike": 3300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TCS25NOV3300PE",
+          "token": 37794050,
+          "strike": 3300.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "TECHM_2025-11-25": {
+      "underlying": "TECHM",
+      "expiry": "2025-11-25",
+      "underlying_price": 1439.2,
+      "atm_strike": 1440.0,
+      "current_tokens": [
+        37839106,
+        31774978,
+        31782658,
+        37838594
+      ],
+      "correct_tokens": [
+        31769346,
+        31774978,
+        37834242,
+        37834498,
+        31775234,
+        31776002,
+        37834754,
+        37835010,
+        31776258,
+        31777026,
+        37835266,
+        37835522,
+        31777282,
+        31778050,
+        37835778,
+        37836034,
+        31778306,
+        31778562,
+        37836290,
+        37836546,
+        31778818,
+        31779074,
+        37836802,
+        37837058,
+        31779330,
+        31780098,
+        37837314,
+        37837570,
+        31780354,
+        31780610,
+        37837826,
+        37838082,
+        31780866,
+        31781122,
+        37838338,
+        37838594,
+        31781378,
+        31781634,
+        37838850,
+        37839106,
+        31781890,
+        31782658
+      ],
+      "missing_tokens": [
+        31777282,
+        31778306,
+        31769346,
+        37834498,
+        31775234,
+        37834242,
+        31776002,
+        37834754,
+        37835010,
+        31780610,
+        31780866,
+        37838850,
+        31777026,
+        31781122,
+        37835266,
+        31781378,
+        37835522,
+        31780354,
+        31781634,
+        37835778,
+        31781890,
+        31778050,
+        37836034,
+        37836290,
+        37838338,
+        31778562,
+        37836546,
+        31778818,
+        37836802,
+        31779074,
+        37837058,
+        31779330,
+        37837314,
+        37837570,
+        37837826,
+        31780098,
+        37838082,
+        31776258
+      ],
+      "extra_tokens": [],
+      "redis_checks": {
+        "31774978": {
+          "redis_days": 32,
+          "api_price": 1.45,
+          "redis_price": null
+        },
+        "31782658": {
+          "redis_days": 53,
+          "api_price": 179,
+          "redis_price": null
+        },
+        "37838594": {
+          "redis_days": 29,
+          "api_price": 133,
+          "redis_price": null
+        },
+        "37839106": {
+          "redis_days": 25,
+          "api_price": 155.25,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "TECHM25NOV1240CE",
+          "token": 31769346,
+          "strike": 1240.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1240PE",
+          "token": 31774978,
+          "strike": 1240.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1260CE",
+          "token": 37834242,
+          "strike": 1260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1260PE",
+          "token": 37834498,
+          "strike": 1260.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1280CE",
+          "token": 31775234,
+          "strike": 1280.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1280PE",
+          "token": 31776002,
+          "strike": 1280.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1300CE",
+          "token": 37834754,
+          "strike": 1300.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1300PE",
+          "token": 37835010,
+          "strike": 1300.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1320CE",
+          "token": 31776258,
+          "strike": 1320.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1320PE",
+          "token": 31777026,
+          "strike": 1320.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1340CE",
+          "token": 37835266,
+          "strike": 1340.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1340PE",
+          "token": 37835522,
+          "strike": 1340.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1360CE",
+          "token": 31777282,
+          "strike": 1360.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1360PE",
+          "token": 31778050,
+          "strike": 1360.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1380CE",
+          "token": 37835778,
+          "strike": 1380.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1380PE",
+          "token": 37836034,
+          "strike": 1380.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1400CE",
+          "token": 31778306,
+          "strike": 1400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1400PE",
+          "token": 31778562,
+          "strike": 1400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1420CE",
+          "token": 37836290,
+          "strike": 1420.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1420PE",
+          "token": 37836546,
+          "strike": 1420.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1440CE",
+          "token": 31778818,
+          "strike": 1440.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1440PE",
+          "token": 31779074,
+          "strike": 1440.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1460CE",
+          "token": 37836802,
+          "strike": 1460.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1460PE",
+          "token": 37837058,
+          "strike": 1460.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1480CE",
+          "token": 31779330,
+          "strike": 1480.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1480PE",
+          "token": 31780098,
+          "strike": 1480.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1500CE",
+          "token": 37837314,
+          "strike": 1500.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1500PE",
+          "token": 37837570,
+          "strike": 1500.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1520CE",
+          "token": 31780354,
+          "strike": 1520.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1520PE",
+          "token": 31780610,
+          "strike": 1520.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1540CE",
+          "token": 37837826,
+          "strike": 1540.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1540PE",
+          "token": 37838082,
+          "strike": 1540.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1560CE",
+          "token": 31780866,
+          "strike": 1560.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1560PE",
+          "token": 31781122,
+          "strike": 1560.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1580CE",
+          "token": 37838338,
+          "strike": 1580.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1580PE",
+          "token": 37838594,
+          "strike": 1580.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1600CE",
+          "token": 31781378,
+          "strike": 1600.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1600PE",
+          "token": 31781634,
+          "strike": 1600.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1620CE",
+          "token": 37838850,
+          "strike": 1620.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1620PE",
+          "token": 37839106,
+          "strike": 1620.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1640CE",
+          "token": 31781890,
+          "strike": 1640.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "TECHM25NOV1640PE",
+          "token": 31782658,
+          "strike": 1640.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "ITC_2025-11-25": {
+      "underlying": "ITC",
+      "expiry": "2025-11-25",
+      "underlying_price": 408.15,
+      "atm_strike": 407.5,
+      "current_tokens": [
+        32519170
+      ],
+      "correct_tokens": [
+        32496898,
+        32497154,
+        32502274,
+        32502530,
+        32502786,
+        32503042,
+        24237826,
+        24238082,
+        32503298,
+        32503554,
+        32503810,
+        32504066,
+        32504322,
+        32504578,
+        24238338,
+        24238594,
+        32504834,
+        32505090,
+        32505346,
+        32505602,
+        32505858,
+        32506114,
+        24238850,
+        24239106,
+        32506370,
+        32506626,
+        32512770,
+        32513026,
+        32513282,
+        32513538,
+        24239362,
+        24239618,
+        32513794,
+        32514050,
+        32514306,
+        32514562,
+        32514818,
+        32515074,
+        24240386,
+        24240642,
+        32515330,
+        32515586
+      ],
+      "missing_tokens": [
+        32502530,
+        32496898,
+        32497154,
+        32502274,
+        32502786,
+        32503042,
+        24237826,
+        24238082,
+        32503298,
+        32503554,
+        32505602,
+        32505858,
+        32514050,
+        32506114,
+        32514306,
+        24240386,
+        32513794,
+        32506370,
+        32514562,
+        24240642,
+        32506626,
+        32514818,
+        32515074,
+        32515330,
+        32515586,
+        32503810,
+        32504066,
+        24238338,
+        32504322,
+        24238594,
+        24239618,
+        32504578,
+        24238850,
+        32512770,
+        32504834,
+        24239106,
+        32513026,
+        32513538,
+        32505090,
+        32513282,
+        24239362,
+        32505346
+      ],
+      "extra_tokens": [
+        32519170
+      ],
+      "redis_checks": {
+        "32519170": {
+          "redis_days": 30,
+          "api_price": 33.55,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "ITC25NOV382.5CE",
+          "token": 32496898,
+          "strike": 382.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV382.5PE",
+          "token": 32497154,
+          "strike": 382.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV385CE",
+          "token": 32502274,
+          "strike": 385.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV385PE",
+          "token": 32502530,
+          "strike": 385.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV387.5CE",
+          "token": 32502786,
+          "strike": 387.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV387.5PE",
+          "token": 32503042,
+          "strike": 387.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV390CE",
+          "token": 24237826,
+          "strike": 390.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV390PE",
+          "token": 24238082,
+          "strike": 390.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV392.5CE",
+          "token": 32503298,
+          "strike": 392.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV392.5PE",
+          "token": 32503554,
+          "strike": 392.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV395CE",
+          "token": 32503810,
+          "strike": 395.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV395PE",
+          "token": 32504066,
+          "strike": 395.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV397.5CE",
+          "token": 32504322,
+          "strike": 397.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV397.5PE",
+          "token": 32504578,
+          "strike": 397.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV400CE",
+          "token": 24238338,
+          "strike": 400.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV400PE",
+          "token": 24238594,
+          "strike": 400.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV402.5CE",
+          "token": 32504834,
+          "strike": 402.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV402.5PE",
+          "token": 32505090,
+          "strike": 402.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV405CE",
+          "token": 32505346,
+          "strike": 405.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV405PE",
+          "token": 32505602,
+          "strike": 405.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV407.5CE",
+          "token": 32505858,
+          "strike": 407.5,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "ITC25NOV407.5PE",
+          "token": 32506114,
+          "strike": 407.5,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "ITC25NOV410CE",
+          "token": 24238850,
+          "strike": 410.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV410PE",
+          "token": 24239106,
+          "strike": 410.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV412.5CE",
+          "token": 32506370,
+          "strike": 412.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV412.5PE",
+          "token": 32506626,
+          "strike": 412.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV415CE",
+          "token": 32512770,
+          "strike": 415.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV415PE",
+          "token": 32513026,
+          "strike": 415.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV417.5CE",
+          "token": 32513282,
+          "strike": 417.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV417.5PE",
+          "token": 32513538,
+          "strike": 417.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV420CE",
+          "token": 24239362,
+          "strike": 420.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV420PE",
+          "token": 24239618,
+          "strike": 420.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV422.5CE",
+          "token": 32513794,
+          "strike": 422.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV422.5PE",
+          "token": 32514050,
+          "strike": 422.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV425CE",
+          "token": 32514306,
+          "strike": 425.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV425PE",
+          "token": 32514562,
+          "strike": 425.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV427.5CE",
+          "token": 32514818,
+          "strike": 427.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV427.5PE",
+          "token": 32515074,
+          "strike": 427.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV430CE",
+          "token": 24240386,
+          "strike": 430.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV430PE",
+          "token": 24240642,
+          "strike": 430.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV432.5CE",
+          "token": 32515330,
+          "strike": 432.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "ITC25NOV432.5PE",
+          "token": 32515586,
+          "strike": 432.5,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "WIPRO_2025-11-25": {
+      "underlying": "WIPRO",
+      "expiry": "2025-11-25",
+      "underlying_price": 244.37,
+      "atm_strike": 245.0,
+      "current_tokens": [
+        32937474,
+        128807
+      ],
+      "correct_tokens": [
+        32941314,
+        32941570,
+        38500866,
+        38501122,
+        32941826,
+        32942082,
+        38501378,
+        38501634,
+        32942338,
+        32942594,
+        38501890,
+        38502146,
+        32942850,
+        32943106,
+        38502402,
+        38502658,
+        32948994,
+        32949250,
+        38502914,
+        38503170,
+        32949506,
+        32949762,
+        38503426,
+        38503682,
+        32953090,
+        32953346,
+        38503938,
+        38504194,
+        32955906,
+        32956162,
+        38504450,
+        38504706,
+        32956418,
+        32956674,
+        38504962,
+        38505218,
+        32956930,
+        32957186,
+        38505474,
+        38505730,
+        32957442,
+        32959746
+      ],
+      "missing_tokens": [
+        32948994,
+        32941826,
+        32941314,
+        32941570,
+        38501122,
+        38500866,
+        32942082,
+        38501378,
+        38501634,
+        32942338,
+        38502146,
+        38502402,
+        32956418,
+        38502658,
+        32956674,
+        38502914,
+        32956930,
+        32955906,
+        38503170,
+        32953090,
+        32957186,
+        32949250,
+        38503426,
+        32953346,
+        32957442,
+        32949506,
+        38503682,
+        32949762,
+        38503938,
+        38504194,
+        32956162,
+        38504450,
+        38504706,
+        32942594,
+        38504962,
+        32942850,
+        38505218,
+        32943106,
+        38505474,
+        38505730,
+        32959746,
+        38501890
+      ],
+      "extra_tokens": [
+        32937474,
+        128807
+      ],
+      "redis_checks": {
+        "32937474": {
+          "redis_days": 30,
+          "api_price": 0.07,
+          "redis_price": null
+        },
+        "128807": {
+          "redis_days": 19,
+          "api_price": null,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "WIPRO25NOV220CE",
+          "token": 32941314,
+          "strike": 220.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV220PE",
+          "token": 32941570,
+          "strike": 220.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV222.5CE",
+          "token": 38500866,
+          "strike": 222.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV222.5PE",
+          "token": 38501122,
+          "strike": 222.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV225CE",
+          "token": 32941826,
+          "strike": 225.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV225PE",
+          "token": 32942082,
+          "strike": 225.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV227.5CE",
+          "token": 38501378,
+          "strike": 227.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV227.5PE",
+          "token": 38501634,
+          "strike": 227.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV230CE",
+          "token": 32942338,
+          "strike": 230.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV230PE",
+          "token": 32942594,
+          "strike": 230.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV232.5CE",
+          "token": 38501890,
+          "strike": 232.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV232.5PE",
+          "token": 38502146,
+          "strike": 232.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV235CE",
+          "token": 32942850,
+          "strike": 235.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV235PE",
+          "token": 32943106,
+          "strike": 235.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV237.5CE",
+          "token": 38502402,
+          "strike": 237.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV237.5PE",
+          "token": 38502658,
+          "strike": 237.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV240CE",
+          "token": 32948994,
+          "strike": 240.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV240PE",
+          "token": 32949250,
+          "strike": 240.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV242.5CE",
+          "token": 38502914,
+          "strike": 242.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV242.5PE",
+          "token": 38503170,
+          "strike": 242.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV245CE",
+          "token": 32949506,
+          "strike": 245.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV245PE",
+          "token": 32949762,
+          "strike": 245.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV247.5CE",
+          "token": 38503426,
+          "strike": 247.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV247.5PE",
+          "token": 38503682,
+          "strike": 247.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV250CE",
+          "token": 32953090,
+          "strike": 250.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV250PE",
+          "token": 32953346,
+          "strike": 250.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV252.5CE",
+          "token": 38503938,
+          "strike": 252.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV252.5PE",
+          "token": 38504194,
+          "strike": 252.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV255CE",
+          "token": 32955906,
+          "strike": 255.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV255PE",
+          "token": 32956162,
+          "strike": 255.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV257.5CE",
+          "token": 38504450,
+          "strike": 257.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV257.5PE",
+          "token": 38504706,
+          "strike": 257.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV260CE",
+          "token": 32956418,
+          "strike": 260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV260PE",
+          "token": 32956674,
+          "strike": 260.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV262.5CE",
+          "token": 38504962,
+          "strike": 262.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV262.5PE",
+          "token": 38505218,
+          "strike": 262.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV265CE",
+          "token": 32956930,
+          "strike": 265.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV265PE",
+          "token": 32957186,
+          "strike": 265.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV267.5CE",
+          "token": 38505474,
+          "strike": 267.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV267.5PE",
+          "token": 38505730,
+          "strike": 267.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV270CE",
+          "token": 32957442,
+          "strike": 270.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "WIPRO25NOV270PE",
+          "token": 32959746,
+          "strike": 270.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "NTPC_2025-11-25": {
+      "underlying": "NTPC",
+      "expiry": "2025-11-25",
+      "underlying_price": 328.45,
+      "atm_strike": 327.5,
+      "current_tokens": [
+        35344130,
+        35356418
+      ],
+      "correct_tokens": [
+        35344898,
+        35345154,
+        35345410,
+        35345666,
+        35345922,
+        35346178,
+        27337730,
+        27355394,
+        35346434,
+        35346690,
+        35346946,
+        35347202,
+        35347458,
+        35347714,
+        27355650,
+        27355906,
+        35347970,
+        35348226,
+        35348482,
+        35348738,
+        35348994,
+        35349250,
+        27356162,
+        27356418,
+        35349506,
+        35349762,
+        35350018,
+        35350274,
+        35350530,
+        35350786,
+        27356674,
+        27356930,
+        35351042,
+        35351298,
+        35351554,
+        35351810,
+        35352066,
+        35352322,
+        27357186,
+        27357442,
+        35352578,
+        35352834
+      ],
+      "missing_tokens": [
+        35345666,
+        35344898,
+        35345154,
+        35345922,
+        35345410,
+        35346178,
+        27337730,
+        27355394,
+        35346434,
+        35346690,
+        35348226,
+        35348482,
+        27357186,
+        35352578,
+        35348738,
+        27357442,
+        35352834,
+        35348994,
+        35349250,
+        35349506,
+        35349762,
+        35350018,
+        35350274,
+        27356674,
+        35352066,
+        35350530,
+        35350786,
+        27355650,
+        35346946,
+        35351042,
+        35347202,
+        27355906,
+        35351298,
+        35347458,
+        27356162,
+        27356930,
+        35351554,
+        35352322,
+        35347714,
+        27356418,
+        35351810,
+        35347970
+      ],
+      "extra_tokens": [
+        35344130,
+        35356418
+      ],
+      "redis_checks": {
+        "35344130": {
+          "redis_days": 29,
+          "api_price": 0.2,
+          "redis_price": null
+        },
+        "35356418": {
+          "redis_days": 30,
+          "api_price": 28.8,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "NTPC25NOV302.5CE",
+          "token": 35344898,
+          "strike": 302.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV302.5PE",
+          "token": 35345154,
+          "strike": 302.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV305CE",
+          "token": 35345410,
+          "strike": 305.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV305PE",
+          "token": 35345666,
+          "strike": 305.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV307.5CE",
+          "token": 35345922,
+          "strike": 307.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV307.5PE",
+          "token": 35346178,
+          "strike": 307.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV310CE",
+          "token": 27337730,
+          "strike": 310.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV310PE",
+          "token": 27355394,
+          "strike": 310.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV312.5CE",
+          "token": 35346434,
+          "strike": 312.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV312.5PE",
+          "token": 35346690,
+          "strike": 312.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV315CE",
+          "token": 35346946,
+          "strike": 315.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV315PE",
+          "token": 35347202,
+          "strike": 315.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV317.5CE",
+          "token": 35347458,
+          "strike": 317.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV317.5PE",
+          "token": 35347714,
+          "strike": 317.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV320CE",
+          "token": 27355650,
+          "strike": 320.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV320PE",
+          "token": 27355906,
+          "strike": 320.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV322.5CE",
+          "token": 35347970,
+          "strike": 322.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV322.5PE",
+          "token": 35348226,
+          "strike": 322.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV325CE",
+          "token": 35348482,
+          "strike": 325.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV325PE",
+          "token": 35348738,
+          "strike": 325.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV327.5CE",
+          "token": 35348994,
+          "strike": 327.5,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "NTPC25NOV327.5PE",
+          "token": 35349250,
+          "strike": 327.5,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "NTPC25NOV330CE",
+          "token": 27356162,
+          "strike": 330.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV330PE",
+          "token": 27356418,
+          "strike": 330.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV332.5CE",
+          "token": 35349506,
+          "strike": 332.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV332.5PE",
+          "token": 35349762,
+          "strike": 332.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV335CE",
+          "token": 35350018,
+          "strike": 335.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV335PE",
+          "token": 35350274,
+          "strike": 335.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV337.5CE",
+          "token": 35350530,
+          "strike": 337.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV337.5PE",
+          "token": 35350786,
+          "strike": 337.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV340CE",
+          "token": 27356674,
+          "strike": 340.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV340PE",
+          "token": 27356930,
+          "strike": 340.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV342.5CE",
+          "token": 35351042,
+          "strike": 342.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV342.5PE",
+          "token": 35351298,
+          "strike": 342.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV345CE",
+          "token": 35351554,
+          "strike": 345.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV345PE",
+          "token": 35351810,
+          "strike": 345.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV347.5CE",
+          "token": 35352066,
+          "strike": 347.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV347.5PE",
+          "token": 35352322,
+          "strike": 347.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV350CE",
+          "token": 27357186,
+          "strike": 350.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV350PE",
+          "token": 27357442,
+          "strike": 350.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV352.5CE",
+          "token": 35352578,
+          "strike": 352.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "NTPC25NOV352.5PE",
+          "token": 35352834,
+          "strike": 352.5,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "POWERGRID_2025-11-25": {
+      "underlying": "POWERGRID",
+      "expiry": "2025-11-25",
+      "underlying_price": 271.3,
+      "atm_strike": 272.5,
+      "current_tokens": [
+        36430338,
+        36431874
+      ],
+      "correct_tokens": [
+        36418306,
+        36418562,
+        29094146,
+        29094402,
+        36418818,
+        36419074,
+        36419330,
+        36419586,
+        36419842,
+        36420098,
+        29094658,
+        29094914,
+        36420354,
+        36420610,
+        36420866,
+        36421122,
+        36421378,
+        36421634,
+        29095170,
+        29113346,
+        36421890,
+        36422146,
+        36422402,
+        36422658,
+        36422914,
+        36423170,
+        29113858,
+        29114626,
+        36423426,
+        36423682,
+        36423938,
+        36424194,
+        36424450,
+        36424706,
+        29114882,
+        29115138,
+        36424962,
+        36425218,
+        36425474,
+        36425730,
+        36425986,
+        36426242
+      ],
+      "missing_tokens": [
+        29094402,
+        36418306,
+        36418562,
+        29094146,
+        36418818,
+        36419074,
+        36419330,
+        36419586,
+        36419842,
+        36420098,
+        36421634,
+        36425730,
+        36421890,
+        29114626,
+        36425986,
+        36422146,
+        29114882,
+        36426242,
+        29094658,
+        36422402,
+        29115138,
+        29094914,
+        36422658,
+        29095170,
+        36422914,
+        36423170,
+        36423426,
+        36423682,
+        36423938,
+        36424194,
+        36425218,
+        36420354,
+        36424450,
+        36425474,
+        36420610,
+        29113346,
+        36424706,
+        36420866,
+        36424962,
+        29113858,
+        36421122,
+        36421378
+      ],
+      "extra_tokens": [
+        36430338,
+        36431874
+      ],
+      "redis_checks": {
+        "36430338": {
+          "redis_days": 30,
+          "api_price": 37.6,
+          "redis_price": null
+        },
+        "36431874": {
+          "redis_days": 28,
+          "api_price": 47.5,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "POWERGRID25NOV247.5CE",
+          "token": 36418306,
+          "strike": 247.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV247.5PE",
+          "token": 36418562,
+          "strike": 247.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV250CE",
+          "token": 29094146,
+          "strike": 250.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV250PE",
+          "token": 29094402,
+          "strike": 250.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV252.5CE",
+          "token": 36418818,
+          "strike": 252.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV252.5PE",
+          "token": 36419074,
+          "strike": 252.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV255CE",
+          "token": 36419330,
+          "strike": 255.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV255PE",
+          "token": 36419586,
+          "strike": 255.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV257.5CE",
+          "token": 36419842,
+          "strike": 257.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV257.5PE",
+          "token": 36420098,
+          "strike": 257.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV260CE",
+          "token": 29094658,
+          "strike": 260.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV260PE",
+          "token": 29094914,
+          "strike": 260.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV262.5CE",
+          "token": 36420354,
+          "strike": 262.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV262.5PE",
+          "token": 36420610,
+          "strike": 262.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV265CE",
+          "token": 36420866,
+          "strike": 265.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV265PE",
+          "token": 36421122,
+          "strike": 265.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV267.5CE",
+          "token": 36421378,
+          "strike": 267.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV267.5PE",
+          "token": 36421634,
+          "strike": 267.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV270CE",
+          "token": 29095170,
+          "strike": 270.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV270PE",
+          "token": 29113346,
+          "strike": 270.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV272.5CE",
+          "token": 36421890,
+          "strike": 272.5,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV272.5PE",
+          "token": 36422146,
+          "strike": 272.5,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV275CE",
+          "token": 36422402,
+          "strike": 275.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV275PE",
+          "token": 36422658,
+          "strike": 275.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV277.5CE",
+          "token": 36422914,
+          "strike": 277.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV277.5PE",
+          "token": 36423170,
+          "strike": 277.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV280CE",
+          "token": 29113858,
+          "strike": 280.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV280PE",
+          "token": 29114626,
+          "strike": 280.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV282.5CE",
+          "token": 36423426,
+          "strike": 282.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV282.5PE",
+          "token": 36423682,
+          "strike": 282.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV285CE",
+          "token": 36423938,
+          "strike": 285.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV285PE",
+          "token": 36424194,
+          "strike": 285.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV287.5CE",
+          "token": 36424450,
+          "strike": 287.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV287.5PE",
+          "token": 36424706,
+          "strike": 287.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV290CE",
+          "token": 29114882,
+          "strike": 290.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV290PE",
+          "token": 29115138,
+          "strike": 290.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV292.5CE",
+          "token": 36424962,
+          "strike": 292.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV292.5PE",
+          "token": 36425218,
+          "strike": 292.5,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV295CE",
+          "token": 36425474,
+          "strike": 295.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV295PE",
+          "token": 36425730,
+          "strike": 295.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV297.5CE",
+          "token": 36425986,
+          "strike": 297.5,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "POWERGRID25NOV297.5PE",
+          "token": 36426242,
+          "strike": 297.5,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "SBILIFE_2025-11-25": {
+      "underlying": "SBILIFE",
+      "expiry": "2025-11-25",
+      "underlying_price": 2000.9,
+      "atm_strike": 2000.0,
+      "current_tokens": [
+        37137410,
+        145083,
+        145085
+      ],
+      "correct_tokens": [
+        30049538,
+        30049794,
+        37137922,
+        37138178,
+        30050050,
+        30050306,
+        37138434,
+        37138690,
+        30050562,
+        30050818,
+        37138946,
+        37139202,
+        30051074,
+        30053378,
+        37139458,
+        37139714,
+        30053634,
+        30053890,
+        37139970,
+        37140226,
+        30054146,
+        30054402,
+        37140482,
+        37140738,
+        30059010,
+        30059266,
+        37140994,
+        37141250,
+        30059522,
+        30059778,
+        37141506,
+        37141762,
+        30060034,
+        30060290,
+        37142018,
+        37142274,
+        30060546,
+        30060802,
+        37142530,
+        37142786,
+        30061058,
+        30061314
+      ],
+      "missing_tokens": [
+        37138178,
+        30050050,
+        30049538,
+        30049794,
+        37137922,
+        30050306,
+        37138434,
+        37138690,
+        30050562,
+        30050818,
+        30060290,
+        30060546,
+        37142530,
+        30060802,
+        37142786,
+        37142018,
+        37138946,
+        30061058,
+        37139202,
+        30061314,
+        30053378,
+        37139458,
+        37139714,
+        30053634,
+        30053890,
+        37139970,
+        37142274,
+        37140226,
+        30054146,
+        30054402,
+        37140482,
+        37140738,
+        30059010,
+        37140994,
+        30051074,
+        30059266,
+        37141250,
+        30059522,
+        37141506,
+        30059778,
+        37141762,
+        30060034
+      ],
+      "extra_tokens": [
+        37137410,
+        145083,
+        145085
+      ],
+      "redis_checks": {
+        "37137410": {
+          "redis_days": 0,
+          "api_price": 92.6,
+          "redis_price": null
+        },
+        "145083": {
+          "redis_days": 13,
+          "api_price": null,
+          "redis_price": null
+        },
+        "145085": {
+          "redis_days": 13,
+          "api_price": null,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "SBILIFE25NOV1800CE",
+          "token": 30049538,
+          "strike": 1800.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1800PE",
+          "token": 30049794,
+          "strike": 1800.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1820CE",
+          "token": 37137922,
+          "strike": 1820.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1820PE",
+          "token": 37138178,
+          "strike": 1820.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1840CE",
+          "token": 30050050,
+          "strike": 1840.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1840PE",
+          "token": 30050306,
+          "strike": 1840.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1860CE",
+          "token": 37138434,
+          "strike": 1860.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1860PE",
+          "token": 37138690,
+          "strike": 1860.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1880CE",
+          "token": 30050562,
+          "strike": 1880.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1880PE",
+          "token": 30050818,
+          "strike": 1880.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1900CE",
+          "token": 37138946,
+          "strike": 1900.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1900PE",
+          "token": 37139202,
+          "strike": 1900.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1920CE",
+          "token": 30051074,
+          "strike": 1920.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1920PE",
+          "token": 30053378,
+          "strike": 1920.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1940CE",
+          "token": 37139458,
+          "strike": 1940.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1940PE",
+          "token": 37139714,
+          "strike": 1940.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1960CE",
+          "token": 30053634,
+          "strike": 1960.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1960PE",
+          "token": 30053890,
+          "strike": 1960.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1980CE",
+          "token": 37139970,
+          "strike": 1980.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV1980PE",
+          "token": 37140226,
+          "strike": 1980.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2000CE",
+          "token": 30054146,
+          "strike": 2000.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2000PE",
+          "token": 30054402,
+          "strike": 2000.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2020CE",
+          "token": 37140482,
+          "strike": 2020.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2020PE",
+          "token": 37140738,
+          "strike": 2020.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2040CE",
+          "token": 30059010,
+          "strike": 2040.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2040PE",
+          "token": 30059266,
+          "strike": 2040.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2060CE",
+          "token": 37140994,
+          "strike": 2060.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2060PE",
+          "token": 37141250,
+          "strike": 2060.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2080CE",
+          "token": 30059522,
+          "strike": 2080.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2080PE",
+          "token": 30059778,
+          "strike": 2080.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2100CE",
+          "token": 37141506,
+          "strike": 2100.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2100PE",
+          "token": 37141762,
+          "strike": 2100.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2120CE",
+          "token": 30060034,
+          "strike": 2120.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2120PE",
+          "token": 30060290,
+          "strike": 2120.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2140CE",
+          "token": 37142018,
+          "strike": 2140.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2140PE",
+          "token": 37142274,
+          "strike": 2140.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2160CE",
+          "token": 30060546,
+          "strike": 2160.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2160PE",
+          "token": 30060802,
+          "strike": 2160.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2180CE",
+          "token": 37142530,
+          "strike": 2180.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2180PE",
+          "token": 37142786,
+          "strike": 2180.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2200CE",
+          "token": 30061058,
+          "strike": 2200.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBILIFE25NOV2200PE",
+          "token": 30061314,
+          "strike": 2200.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    },
+    "SBIN_2025-11-25": {
+      "underlying": "SBIN",
+      "expiry": "2025-11-25",
+      "underlying_price": 967.85,
+      "atm_strike": 970.0,
+      "current_tokens": [
+        37206530
+      ],
+      "correct_tokens": [
+        30147842,
+        30153218,
+        37211138,
+        37211394,
+        37211650,
+        37211906,
+        37212162,
+        37212418,
+        30153474,
+        30153730,
+        37212674,
+        37212930,
+        37213186,
+        37213442,
+        37213698,
+        37213954,
+        30153986,
+        30154242,
+        37214210,
+        37214466,
+        37214722,
+        37214978,
+        37215234,
+        37215490,
+        30154498,
+        30154754,
+        37215746,
+        37216002,
+        37216258,
+        37216514,
+        37216770,
+        37217026,
+        30155010,
+        30167810,
+        37217282,
+        37217538,
+        37217794,
+        37218050,
+        37218306,
+        37218562,
+        30168066,
+        30168834
+      ],
+      "missing_tokens": [
+        37211650,
+        30147842,
+        30153218,
+        37211394,
+        37211138,
+        37211906,
+        37212162,
+        37212418,
+        30153474,
+        30153730,
+        30154498,
+        30154754,
+        37216002,
+        37216258,
+        37216514,
+        30155010,
+        37212674,
+        37216770,
+        37212930,
+        37217026,
+        30167810,
+        37213186,
+        37217282,
+        30168066,
+        37213442,
+        37217538,
+        37213698,
+        37217794,
+        37213954,
+        37218050,
+        30168834,
+        37214210,
+        37218306,
+        37214466,
+        37218562,
+        37214722,
+        37215746,
+        37214978,
+        37215234,
+        30153986,
+        37215490,
+        30154242
+      ],
+      "extra_tokens": [
+        37206530
+      ],
+      "redis_checks": {
+        "37206530": {
+          "redis_days": 30,
+          "api_price": 90.9,
+          "redis_price": null
+        }
+      },
+      "correct_options": [
+        {
+          "tradingsymbol": "SBIN25NOV920CE",
+          "token": 30147842,
+          "strike": 920.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV920PE",
+          "token": 30153218,
+          "strike": 920.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV925CE",
+          "token": 37211138,
+          "strike": 925.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV925PE",
+          "token": 37211394,
+          "strike": 925.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV930CE",
+          "token": 37211650,
+          "strike": 930.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV930PE",
+          "token": 37211906,
+          "strike": 930.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV935CE",
+          "token": 37212162,
+          "strike": 935.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV935PE",
+          "token": 37212418,
+          "strike": 935.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV940CE",
+          "token": 30153474,
+          "strike": 940.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV940PE",
+          "token": 30153730,
+          "strike": 940.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV945CE",
+          "token": 37212674,
+          "strike": 945.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV945PE",
+          "token": 37212930,
+          "strike": 945.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV950CE",
+          "token": 37213186,
+          "strike": 950.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV950PE",
+          "token": 37213442,
+          "strike": 950.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV955CE",
+          "token": 37213698,
+          "strike": 955.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV955PE",
+          "token": 37213954,
+          "strike": 955.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV960CE",
+          "token": 30153986,
+          "strike": 960.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV960PE",
+          "token": 30154242,
+          "strike": 960.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV965CE",
+          "token": 37214210,
+          "strike": 965.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV965PE",
+          "token": 37214466,
+          "strike": 965.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV970CE",
+          "token": 37214722,
+          "strike": 970.0,
+          "option_type": "CE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "SBIN25NOV970PE",
+          "token": 37214978,
+          "strike": 970.0,
+          "option_type": "PE",
+          "is_atm": true
+        },
+        {
+          "tradingsymbol": "SBIN25NOV975CE",
+          "token": 37215234,
+          "strike": 975.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV975PE",
+          "token": 37215490,
+          "strike": 975.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV980CE",
+          "token": 30154498,
+          "strike": 980.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV980PE",
+          "token": 30154754,
+          "strike": 980.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV985CE",
+          "token": 37215746,
+          "strike": 985.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV985PE",
+          "token": 37216002,
+          "strike": 985.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV990CE",
+          "token": 37216258,
+          "strike": 990.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV990PE",
+          "token": 37216514,
+          "strike": 990.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV995CE",
+          "token": 37216770,
+          "strike": 995.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV995PE",
+          "token": 37217026,
+          "strike": 995.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1000CE",
+          "token": 30155010,
+          "strike": 1000.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1000PE",
+          "token": 30167810,
+          "strike": 1000.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1005CE",
+          "token": 37217282,
+          "strike": 1005.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1005PE",
+          "token": 37217538,
+          "strike": 1005.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1010CE",
+          "token": 37217794,
+          "strike": 1010.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1010PE",
+          "token": 37218050,
+          "strike": 1010.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1015CE",
+          "token": 37218306,
+          "strike": 1015.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1015PE",
+          "token": 37218562,
+          "strike": 1015.0,
+          "option_type": "PE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1020CE",
+          "token": 30168066,
+          "strike": 1020.0,
+          "option_type": "CE",
+          "is_atm": false
+        },
+        {
+          "tradingsymbol": "SBIN25NOV1020PE",
+          "token": 30168834,
+          "strike": 1020.0,
+          "option_type": "PE",
+          "is_atm": false
+        }
+      ]
+    }
+  },
+  "other_instruments": [
+    {
+      "symbol": "NFO:TATAMOTORS28OCTFUT",
+      "token": 13448194,
+      "info": {
+        "avg_volume_20d": 18852400.0,
+        "avg_price_20d": 407.7,
+        "data_points_20d": 2,
+        "avg_volume_55d": 18852400.0,
+        "avg_price_55d": 407.7,
+        "data_points_55d": 2,
+        "last_updated": "2025-10-28T07:51:39.438640",
+        "name": "TATAMOTORS28OCTFUT",
+        "current_price": 0,
+        "instrument_type": "FUT",
+        "exchange": "NFO",
+        "source": "trading_crawler",
+        "resolved_symbol": "NFO:TATAMOTORS28OCTFUT",
+        "turtle_ready": false
+      }
+    }
+  ]
+}

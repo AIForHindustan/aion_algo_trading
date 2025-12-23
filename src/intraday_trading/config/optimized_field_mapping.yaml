@@ -1,0 +1,611 @@
+# Optimized Field Mapping Configuration
+# Core WebSocket fields only - no processed/derived data
+# Based on actual WebSocket API response fields
+# Updated for Redis session data consistency
+
+# Core WebSocket Fields (Provided by Kite WebSocket API)
+websocket_core_fields:
+  # Primary identifiers - always available
+  instrument_token: "instrument_token"     # Unique instrument identifier
+  tradingsymbol: "tradingsymbol"          # Trading symbol
+  exchange: "exchange"                     # Exchange name
+  segment: "segment"                       # Market segment
+
+  # Price data - always available
+  last_price: "last_price"                # Last traded price
+  last_traded_quantity: "zerodha_last_traded_quantity"  # Zerodha incremental trade size
+  last_quantity: "zerodha_last_traded_quantity"         # Legacy alias → canonical
+
+  # Volume data - always available
+  volume_traded: "zerodha_cumulative_volume"            # Zerodha cumulative session volume
+  volume: "bucket_incremental_volume"                  # Use incremental volume for volume field
+  average_price: "average_price"          # Average traded price
+
+  # OHLC data - always available
+  ohlc: "ohlc"                           # Open, High, Low, Close
+
+  # Timestamps - exchange_timestamp preferred, fallback to timestamp_ns
+  exchange_timestamp: "exchange_timestamp" # Exchange timestamp (preferred)
+  timestamp_ns: "timestamp_ns"            # Nanosecond timestamp (fallback)
+  last_trade_time: "last_trade_time"      # Last trade timestamp
+
+  # Market data - always available
+  mode: "mode"                           # Data mode (full, quote, ltp)
+  tradable: "tradable"                   # Whether instrument is tradable
+
+  # Additional WebSocket fields
+  buy_quantity: "buy_quantity"            # Total pending buy quantity
+  sell_quantity: "sell_quantity"          # Total pending sell quantity
+  net_change: "net_change"               # Absolute change from previous close (WebSocket field, maps to price_change_pct in calculated fields)
+  lower_circuit_limit: "lower_circuit_limit" # Current lower circuit
+  upper_circuit_limit: "upper_circuit_limit" # Current upper circuit
+  oi: "oi"                               # Open interest (F&O)
+  oi_day_high: "oi_day_high"             # Highest OI today
+  oi_day_low: "oi_day_low"                # Lowest OI today
+  depth: "depth"                         # Market depth data
+
+# Redis Session Data Fields (Standardized across all components)
+redis_session_fields:
+  # Core session data - standardized field names (CANONICAL SCHEMA ALIGNED)
+  # ✅ FIXED: All fields now map to canonical schema field names
+  zerodha_cumulative_volume: "zerodha_cumulative_volume"   # ✅ CANONICAL: Zerodha cumulative volume
+  bucket_cumulative_volume: "bucket_cumulative_volume"     # ✅ CANONICAL: Session cumulative tracked by scanner
+  bucket_incremental_volume: "bucket_incremental_volume"   # ✅ CANONICAL: Pattern INCREMENTAL
+  incremental_volume: "bucket_incremental_volume"          # Legacy alias → canonical bucket_incremental_volume
+  volume: "bucket_incremental_volume"                      # Maps to INCREMENTAL volume (canonical)
+  zerodha_last_traded_quantity: "zerodha_last_traded_quantity"   # ✅ CANONICAL: Zerodha per-tick traded quantity
+  last_traded_quantity: "zerodha_last_traded_quantity"           # Legacy alias → canonical
+  last_quantity: "zerodha_last_traded_quantity"                  # Legacy alias → canonical
+  volume_traded: "zerodha_cumulative_volume"                     # Legacy alias → canonical zerodha_cumulative_volume
+  cumulative_volume: "bucket_cumulative_volume"                 # Legacy alias → canonical bucket_cumulative_volume
+  last_price: "last_price"                # ✅ CANONICAL: Last traded price
+  high: "high"                           # ✅ CANONICAL: Session high (standardized)
+  low: "low"                             # ✅ CANONICAL: Session low (standardized)
+  
+  # Timestamps (CANONICAL SCHEMA ALIGNED)
+  exchange_timestamp: "exchange_timestamp"  # ✅ CANONICAL: Exchange timestamp (preferred)
+  last_trade_time: "last_trade_time"        # ✅ CANONICAL: Last trade timestamp
+  timestamp: "timestamp"                    # ✅ CANONICAL: Processing timestamp
+  timestamp_ns: "timestamp_ns"              # Nanosecond timestamp (fallback)
+  
+  # Session metadata
+  session_date: "session_date"           # Trading session date
+  update_count: "update_count"            # Number of updates in session
+  last_update_timestamp: "last_update_timestamp" # Last update time (standardized)
+  first_update: "first_update"            # First update time
+  last_update: "last_update"              # Legacy timestamp field
+  
+  # Backward compatibility fields
+  high_price: "high_price"               # Legacy high field (mapped to 'high')
+  low_price: "low_price"                 # Legacy low field (mapped to 'low')
+  
+  # Price movement tracking
+  first_price: "first_price"             # Opening price for session
+  close_price: "close_price"              # Closing price (if available)
+
+# Calculated Indicator Fields (From TickProcessor and PatternDetector)
+calculated_indicator_fields:
+  # Volume indicators
+  volume_ratio: "volume_ratio"           # Volume ratio vs average (calculated)
+  normalized_volume: "normalized_volume" # Normalized volume (0-1 scale)
+  volume_spike: "volume_spike"           # Volume spike detection
+  volume_trend: "volume_trend"           # Volume trend direction
+  volume: "bucket_incremental_volume"   # Primary volume field → incremental volume
+  bucket_incremental_volume: "bucket_incremental_volume" # Volume change in current tick
+  bucket_cumulative_volume: "bucket_cumulative_volume"   # Total session volume tracked
+  cumulative_volume: "bucket_cumulative_volume"          # Legacy alias
+  incremental_volume: "bucket_incremental_volume"        # Legacy alias
+  
+  # Price indicators
+  price_change: "price_change"           # Price change percentage (calculated)
+  price_change_pct: "price_change_pct"   # Price change percentage (canonical field)
+  net_change: "price_change_pct"         # ✅ ALIAS: net_change → price_change_pct (canonical mapping)
+  change: "price_change_pct"             # ✅ ALIAS: change → price_change_pct (canonical mapping)
+  last_price: "last_price"               # Last traded price (primary field)
+  current_price: "current_price"          # Current price (display alias for templates)
+  
+  # Technical Analysis Indicators
+  rsi: "rsi"                             # Relative Strength Index
+  macd: "macd"                           # MACD line
+  macd_signal: "macd_signal"             # MACD signal line
+  macd_histogram: "macd_histogram"       # MACD histogram
+  bollinger_upper: "bollinger_upper"     # Bollinger upper band
+  bollinger_lower: "bollinger_lower"     # Bollinger lower band
+  bollinger_middle: "bollinger_middle"   # Bollinger middle band
+  vwap: "vwap"                           # Volume Weighted Average Price
+  atr: "atr"                             # Average True Range
+  ema_5: "ema_5"                         # 5-period EMA
+  ema_9: "ema_9"                         # 9-period EMA
+  ema_10: "ema_10"                       # 10-period EMA
+  ema_20: "ema_20"                       # 20-period EMA
+  ema_21: "ema_21"                       # 21-period EMA
+  ema_50: "ema_50"                       # 50-period EMA
+  ema_100: "ema_100"                     # 100-period EMA
+  ema_200: "ema_200"                     # 200-period EMA
+  sma_20: "sma_20"                       # 20-period SMA
+  sma_50: "sma_50"                       # 50-period SMA
+  stochastic_k: "stochastic_k"           # Stochastic %K
+  stochastic_d: "stochastic_d"           # Stochastic %D
+  adx: "adx"                             # Average Directional Index
+  williams_r: "williams_r"               # Williams %R
+  cci: "cci"                             # Commodity Channel Index
+  mfi: "mfi"                             # Money Flow Index
+  obv: "obv"                             # On-Balance Volume
+  roc: "roc"                             # Rate of Change
+  momentum: "momentum"                   # Momentum indicator
+  historical_volatility: "historical_volatility" # Historical volatility
+  z_score: "z_score"                     # Z-Score
+  iv_baseline: "iv_baseline"             # IV baseline
+  
+  # Pattern-specific fields
+  expected_move: "expected_move"         # Expected price movement
+  confidence: "confidence"               # Pattern confidence score
+  signal: "signal"                       # BUY/SELL signal
+  pattern: "pattern"                     # Pattern type/name
+  
+  # ICT-specific fields
+  resistance_level: "resistance_level"   # Support/resistance levels
+  support_level: "support_level"         # Support/resistance levels
+  vix_level: "vix_level"               # VIX level for market regime
+  buy_pressure: "buy_pressure"           # Buy pressure indicator
+  volatility_regime: "volatility_regime" # Current volatility regime
+
+# ✅ NEW: Greek Fields (From UnifiedDataStorage.get_all_greek_names())
+greek_fields:
+  # Basic Greeks (first-order)
+  delta: "delta"                         # Delta - price sensitivity
+  gamma: "gamma"                         # Gamma - delta sensitivity
+  theta: "theta"                         # Theta - time decay
+  vega: "vega"                           # Vega - volatility sensitivity
+  rho: "rho"                             # Rho - interest rate sensitivity
+  
+  # Advanced Greeks (higher-order)
+  vanna: "vanna"                         # dDelta/dVol (cross-gamma)
+  charm: "charm"                         # dDelta/dTime (delta decay)
+  vomma: "vomma"                         # dVega/dVol (volga)
+  speed: "speed"                         # dGamma/dSpot (third-order)
+  zomma: "zomma"                         # dGamma/dVol
+  color: "color"                         # dGamma/dTime
+  
+  # Gamma Exposure and IV
+  gamma_exposure: "gamma_exposure"       # Gamma exposure (GEX)
+  iv: "iv"                               # Implied volatility (decimal)
+  implied_volatility: "iv"               # Alias for iv
+  
+  # Option metadata (stored as Greeks)
+  dte_years: "dte_years"                 # Days to expiry (years)
+  trading_dte: "trading_dte"             # Trading days to expiry
+  calendar_dte: "calendar_dte"           # Calendar days to expiry
+  expiry_series: "expiry_series"         # Expiry series identifier
+  expiry_date: "expiry_date"             # Expiry date
+  option_price: "option_price"           # Option price
+  underlying_price: "underlying_price"   # Underlying price
+  spot_price: "spot_price"               # Spot price (alias)
+
+# ✅ NEW: Microstructure Indicator Fields (Institutional-grade from parser)
+microstructure_indicator_fields:
+  # Price microstructure
+  microprice: "microprice"               # Volume-weighted mid price
+  spread_absolute: "spread_absolute"     # Absolute bid-ask spread
+  spread_bps: "spread_bps"               # Spread in basis points
+  
+  # Order flow indicators
+  order_flow_imbalance: "order_flow_imbalance"   # Buy/sell flow imbalance
+  order_book_imbalance: "order_book_imbalance"   # Bid/ask quantity imbalance
+  depth_imbalance: "depth_imbalance"             # Total depth imbalance
+  cumulative_volume_delta: "cumulative_volume_delta" # Cumulative volume delta
+  
+  # Depth data
+  best_bid_size: "best_bid_size"         # Best bid quantity
+  best_ask_size: "best_ask_size"         # Best ask quantity
+  best_bid_price: "best_bid_price"       # Best bid price
+  best_ask_price: "best_ask_price"       # Best ask price
+  total_bid_depth: "total_bid_depth"     # Total bid depth (all levels)
+  total_ask_depth: "total_ask_depth"     # Total ask depth (all levels)
+  
+  # Cross-asset metrics (MCX/Currency)
+  usdinr_sensitivity: "usdinr_sensitivity"           # USDINR sensitivity
+  usdinr_correlation: "usdinr_correlation"           # USDINR correlation
+  usdinr_theoretical_price: "usdinr_theoretical_price" # Theoretical price from USDINR
+  usdinr_basis: "usdinr_basis"                       # USDINR basis
+
+# Volume Profile Field Mappings (Standardized field names)
+volume_profile_fields:
+  poc_price: "volume_profile_poc"       # Point of Control price
+  poc_volume: "poc_volume"              # Point of Control volume
+  value_area_high: "volume_profile_vah" # Value Area high price
+  value_area_low: "volume_profile_val"  # Value Area low price
+  volume_profile_strength: "volume_profile_strength" # Volume profile strength
+  profile_strength: "profile_strength"   # Profile strength (0.0-1.0)
+  support_levels: "volume_profile_support" # Support levels
+  resistance_levels: "volume_profile_resistance" # Resistance levels
+
+# Volume Profile Pattern Definitions
+volume_profile_patterns:
+  volume_profile_breakout: "Volume Profile Breakout"        # Breakout above/below Value Area
+  volume_node_support_hold: "Volume Node Support Hold"     # Price testing support with volume
+  volume_node_resistance_hold: "Volume Node Resistance Hold" # Price testing resistance with volume
+
+
+# Asset-Specific WebSocket Fields (Additional fields per asset type)
+asset_websocket_fields:
+  equity:
+    # Equity-specific fields from WebSocket
+    additional_fields:
+      - "net_change"                      # Net change from previous close
+      - "buy_quantity"                    # Total buy quantity
+      - "sell_quantity"                   # Total sell quantity
+      - "depth"                          # Market depth data
+      - "lower_circuit_limit"            # Lower circuit limit
+      - "upper_circuit_limit"            # Upper circuit limit
+
+  futures:
+    # Futures-specific fields from WebSocket
+    additional_fields:
+      - "oi"                             # Open Interest
+      - "oi_day_high"                    # Day's high OI
+      - "oi_day_low"                     # Day's low OI
+      - "net_change"                     # Net change from previous close
+      - "buy_quantity"                   # Total buy quantity
+      - "sell_quantity"                  # Total sell quantity
+      - "depth"                         # Market depth data
+      - "lower_circuit_limit"           # Lower circuit limit
+      - "upper_circuit_limit"           # Upper circuit limit
+
+  options:
+    # Options-specific fields from WebSocket
+    additional_fields:
+      - "oi"                            # Open Interest
+      - "oi_day_high"                   # Day's high OI
+      - "oi_day_low"                    # Day's low OI
+      - "strike_price"                  # Option strike price
+      - "expiry"                        # Option expiry date
+      - "option_type"                   # CE/PE
+      - "underlying"                    # Underlying asset
+      - "net_change"                    # Net change from previous close
+      - "buy_quantity"                  # Total buy quantity
+      - "sell_quantity"                 # Total sell quantity
+      - "depth"                         # Market depth data
+      - "lower_circuit_limit"          # Lower circuit limit
+      - "upper_circuit_limit"          # Upper circuit limit
+
+  index:
+    # Index-specific fields from WebSocket
+    additional_fields:
+      - "net_change"                    # Net change from previous close
+      - "price_change"                  # Price change percentage
+
+  currency:
+    # Currency-specific fields from WebSocket
+    additional_fields:
+      - "net_change"                    # Net change from previous close
+      - "buy_quantity"                  # Total buy quantity
+      - "sell_quantity"                 # Total sell quantity
+      - "depth"                         # Market depth data
+
+  commodity:
+    # Commodity-specific fields from WebSocket
+    additional_fields:
+      - "oi"                            # Open Interest
+      - "oi_day_high"                   # Day's high OI
+      - "oi_day_low"                    # Day's low OI
+      - "net_change"                    # Net change from previous close
+      - "buy_quantity"                  # Total buy quantity
+      - "sell_quantity"                 # Total sell quantity
+      - "depth"                         # Market depth data
+      - "lower_circuit_limit"          # Lower circuit limit
+      - "upper_circuit_limit"          # Upper circuit limit
+
+# Timestamp Priority Rules
+timestamp_priority:
+  primary: "exchange_timestamp"          # Preferred timestamp (exchange-provided)
+  fallback: "timestamp_ns"              # Fallback timestamp (nanosecond precision)
+  legacy: "timestamp"                   # Legacy timestamp (ISO format)
+
+# Field Validation Rules
+field_validation:
+  # Required for all asset types
+  universal_required:
+    - "instrument_token"
+    - "last_price"
+    - "volume"
+
+  # Asset-specific requirements
+  equity_required:
+    - "tradingsymbol"
+    - "exchange"
+    - "segment"
+
+  futures_required:
+    - "oi"                             # Open Interest required for futures
+    - "tradingsymbol"
+    - "exchange"
+    - "segment"
+
+  options_required:
+    - "oi"                             # Open Interest required for options
+    - "strike_price"                  # Strike price required for options
+    - "option_type"                   # CE/PE required for options
+    - "expiry"                        # Expiry required for options
+    - "tradingsymbol"
+    - "exchange"
+    - "segment"
+
+  index_required:
+    - "tradingsymbol"
+    - "exchange"
+    - "segment"
+
+# Redis Session Data Validation Rules
+redis_session_validation:
+  # Required session fields
+  session_required:
+    - "zerodha_cumulative_volume"
+    - "bucket_cumulative_volume"
+    - "bucket_incremental_volume"
+    - "last_price"
+    - "high"
+    - "low"
+    - "session_date"
+    - "update_count"
+    - "last_update_timestamp"
+
+  # Optional session fields
+  session_optional:
+    - "first_update"
+    - "last_update"
+    - "first_price"
+    - "close_price"
+    - "high_price"                    # Backward compatibility
+    - "low_price"                     # Backward compatibility
+
+  # Field type validation
+  field_types:
+    zerodha_cumulative_volume: "int"
+    bucket_cumulative_volume: "int"
+    bucket_incremental_volume: "int"
+    volume: "int"                   # Primary volume field
+    cumulative_volume: "int"        # Legacy alias
+    incremental_volume: "int"       # Legacy alias
+    volume_traded: "int"            # Zerodha cumulative alias
+    zerodha_last_traded_quantity: "int"
+    last_traded_quantity: "int"
+    last_quantity: "int"
+    last_price: "float"
+    high: "float"
+    low: "float"
+    session_date: "string"
+    update_count: "int"
+    last_update_timestamp: "float"
+    first_update: "float"
+    last_update: "float"
+    first_price: "float"
+    close_price: "float"
+
+# Calculated Indicator Validation Rules
+calculated_indicator_validation:
+  # Required indicator fields
+  indicator_required:
+    - "volume_ratio"
+    - "price_change"
+    - "last_price"
+    - "volume"
+    - "bucket_incremental_volume"
+    - "bucket_cumulative_volume"
+
+  # Optional indicator fields
+  indicator_optional:
+    - "current_price"                    # Display alias for templates
+    - "expected_move"
+    - "confidence"
+    - "signal"
+    - "pattern"
+
+  # Field type validation
+  field_types:
+    volume_ratio: "float"
+    price_change: "float"
+    price_change_pct: "float"            # ✅ CANONICAL: Price change percentage
+    net_change: "float"                 # ✅ ALIAS: Maps to price_change_pct
+    change: "float"                      # ✅ ALIAS: Maps to price_change_pct
+    last_price: "float"
+    current_price: "float"               # Display alias (same as last_price)
+    volume: "int"                       # Primary volume field
+    bucket_incremental_volume: "int"
+    bucket_cumulative_volume: "int"
+    incremental_volume: "int"           # Legacy alias
+    cumulative_volume: "int"            # Legacy alias
+    expected_move: "float"
+    confidence: "float"
+    signal: "string"
+    pattern: "string"
+
+# Session Key Patterns (Standardized)
+session_key_patterns:
+  # Standard session key pattern (primary)
+  standard: "session:{symbol}:{date}"
+  
+  # Alternative patterns (should be avoided)
+  alternatives:
+    - "session:{symbol}"               # Without date (not recommended)
+    - "market_data:{symbol}:session"  # Legacy pattern (deprecated)
+    - "tick_data:{symbol}:session"    # Legacy pattern (deprecated)
+
+# Field Mapping Rules (Backward Compatibility)
+field_mapping_rules:
+  # Old field names → New field names
+  high_price_to_high: "high_price → high"
+  low_price_to_low: "low_price → low"
+  last_update_to_timestamp: "last_update → last_update_timestamp"
+  
+  # Price field aliases
+  last_price_to_current_price: "last_price → current_price (display alias)"
+  current_price_to_last_price: "current_price → last_price (primary field)"
+  
+  # Validation: Ensure both old and new fields exist during transition
+  transition_validation:
+    - "If high_price exists, ensure high is also set"
+    - "If low_price exists, ensure low is also set"
+    - "If last_update exists, ensure last_update_timestamp is also set"
+    - "current_price is display alias for last_price in alert templates"
+    - "last_price is primary field used throughout data pipeline"
+
+# WebSocket Mode Field Availability
+websocket_modes:
+  ltp:  # Last Traded Price only
+    fields:
+      - "instrument_token"
+      - "last_price"
+      - "mode"
+
+  quote:  # Quote mode (no depth)
+    fields:
+      - "instrument_token"
+      - "last_price"
+      - "last_quantity"
+      - "average_price"
+      - "volume"
+      - "buy_quantity"
+      - "sell_quantity"
+      - "change"
+      - "mode"
+
+  full:  # Full mode (with depth)
+    fields:
+      - "instrument_token"
+      - "last_price"
+      - "last_quantity"
+      - "average_price"
+      - "volume"
+      - "buy_quantity"
+      - "sell_quantity"
+      - "change"
+      - "depth"
+      - "mode"
+
+# Field Categories for Analysis
+field_categories:
+  # Core identification
+  identifiers:
+    - instrument_token
+    - tradingsymbol
+    - exchange
+    - segment
+
+  # Price data
+  price_data:
+    - last_price
+    - ohlc
+    - net_change
+    - average_price
+
+  # Volume data
+  volume_data:
+    - zerodha_cumulative_volume
+    - zerodha_last_traded_quantity
+    - bucket_incremental_volume
+    - volume            # Primary volume field
+    - last_quantity     # Legacy alias
+
+  # Order book data
+  order_book_data:
+    - depth
+    - buy_quantity
+    - sell_quantity
+
+  # Derivatives data
+  derivatives_data:
+    - oi
+    - oi_day_high
+    - oi_day_low
+    - strike_price
+    - expiry
+    - option_type
+    - underlying
+
+  # Timestamps
+  timestamp_data:
+    - exchange_timestamp        # Primary timestamp (preferred)
+    - timestamp_ns             # Fallback timestamp
+    - timestamp                # Legacy timestamp
+
+  # Market microstructure
+  microstructure_data:
+    - mode
+    - tradable
+
+# Redis Storage Layer Integration (Aligned with DatabaseAwareKeyBuilder)
+redis_storage_integration:
+  # Redis storage uses field mapping utilities for consistency
+  storage_components:
+    - "shared_core/redis_clients/unified_data_storage.py"  # UnifiedDataStorage (source of truth)
+    - "shared_core/redis_clients/redis_key_standards.py"   # DatabaseAwareKeyBuilder
+    - "intraday_trading/intraday_scanner/data_pipeline.py" # Uses _get_complete_redis_data
+  
+  # ✅ UPDATED: Redis key patterns from DatabaseAwareKeyBuilder (source of truth)
+  key_patterns:
+    # Live data keys (DB 1)
+    live_ticks_latest: "ticks:latest:{symbol}"
+    live_ticks_raw_stream: "ticks:raw:{symbol}"
+    live_indicator: "ind:{category}:{symbol}:{indicator}"
+    live_greeks: "ind:greeks:{symbol}:{greek_name}"
+    live_custom_indicator: "ind:custom:{symbol}:{indicator}"
+    
+    # Session data keys
+    session_data: "session:{symbol}:{date}"
+    volume_buckets: "volume:{symbol}:{timestamp}"
+    ohlc_data: "ohlc:{symbol}:{timestamp}"
+    market_depth: "depth:{symbol}:{timestamp}"
+    
+    # Futures price cache (for Greeks calculation)
+    futures_price: "fut:price:{symbol}:last"
+    futures_prices_hash: "futures:prices:latest"
+  
+  # Indicator categories (used in live_indicator key pattern)
+  indicator_categories:
+    ta: ["rsi", "macd", "ema_*", "sma_*", "bollinger_*", "vwap", "atr", "stochastic_*", "adx", "williams_r", "cci", "mfi", "obv", "roc", "momentum"]
+    volume: ["volume_ratio", "normalized_volume", "volume_spike", "volume_trend"]
+    custom: ["microprice", "order_flow_imbalance", "order_book_imbalance", "spread_*", "depth_imbalance", "cumulative_volume_delta", "best_*", "total_*", "usdinr_*", "buy_pressure", "vix_level"]
+    greeks: ["delta", "gamma", "theta", "vega", "rho", "vanna", "charm", "vomma", "speed", "zomma", "color", "gamma_exposure", "iv", "dte_*", "trading_dte", "expiry_*", "option_price", "underlying_price", "spot_price"]
+  
+  # Redis field mapping validation
+  redis_field_validation:
+    # All Redis storage operations use canonical field names
+    storage_fields:
+      - "zerodha_cumulative_volume"
+      - "bucket_cumulative_volume" 
+      - "bucket_incremental_volume"
+      - "volume"                    # Primary volume field
+      - "zerodha_last_traded_quantity"
+      - "last_price"
+      - "high"
+      - "low"
+      - "session_date"
+      - "update_count"
+      - "last_update_timestamp"
+    
+    # Field mapping utilities used
+    mapping_utilities:
+      - "resolve_session_field()"  # Primary field resolution
+      - "resolve_redis_session_field()"  # Redis-specific field resolution
+      - "get_field_mapping_manager()"  # Field mapping manager access
+
+# Usage Examples
+usage_examples:
+  # Get all fields for a specific asset class
+  equity_fields: >
+    websocket_core_fields + asset_websocket_fields.equity.additional_fields
+
+  # Get timestamp with priority
+  preferred_timestamp: >
+    exchange_timestamp if exchange_timestamp else timestamp_ns if timestamp_ns else timestamp
+
+  # Validate required fields for asset type
+  validate_equity: >
+    instrument_token, last_price, volume, tradingsymbol, exchange, segment
+  
+  # Redis storage field usage
+  redis_storage_example: >
+    from utils.field_mapping import resolve_session_field
+    last_price = resolve_session_field("last_price")
+    zerodha_cumulative_volume = resolve_session_field("zerodha_cumulative_volume")
